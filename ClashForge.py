@@ -2387,6 +2387,6 @@ if __name__ == '__main__':
   "https://proxypool.link/ss/sub|ss",
   "https://proxypool.link/vmess/sub",
   "https://mxlsub.me/newfull",
-  "https://igdux.top/5Hna",
+  "https://igdux.top/5Hna"
 ]
     work(links, check=True, only_check=False, allowed_types=["ss","hysteria2","hy2","vless","vmess","trojan"])
