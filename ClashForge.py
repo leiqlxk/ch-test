@@ -2359,7 +2359,6 @@ if __name__ == '__main__':
   "https://slink.ltd/https://raw.githubusercontent.com/skka3134/test/refs/heads/main/clash.yaml|links",
   "https://slink.ltd/https://raw.githubusercontent.com/mgit0001/test_clash/refs/heads/main/heima.txt",
   "https://slink.ltd/https://raw.githubusercontent.com/mai19950/clashgithub_com/refs/heads/main/site",
-  "https://slink.ltd/https://raw.githubusercontent.com/aiboboxx/clashfree/refs/heads/main/clash.yml",
   "https://slink.ltd/https://raw.githubusercontent.com/aiboboxx/v2rayfree/refs/heads/main/README.md",
   "https://slink.ltd/https://raw.githubusercontent.com/Pawdroid/Free-servers/refs/heads/main/sub",
   "https://slink.ltd/https://raw.githubusercontent.com/shahidbhutta/Clash/refs/heads/main/Router",
