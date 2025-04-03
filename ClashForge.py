@@ -2425,7 +2425,6 @@ if __name__ == '__main__':
   "https://www.freeclashnode.com/uploads/{Y}/{m}/1-{Ymd}.yaml",
   "https://sub.reajason.eu.org/clash.yaml",
   "https://proxypool.link/trojan/sub",
-  "https://proxypool.link/ss/sub|ss",
-  "https://proxypool.link/vmess/sub"
+  "https://proxypool.link/ss/sub|ss"
 ]
     work(links, check=True, only_check=False, allowed_types=["ss","hysteria2","hy2","vless","vmess","trojan"])
