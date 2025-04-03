@@ -2410,7 +2410,7 @@ if __name__ == '__main__':
   "https://slink.ltd/https://raw.githubusercontent.com/vxiaov/free_proxies/main/clash/clash.provider.yaml",
   "https://slink.ltd/https://raw.githubusercontent.com/wangyingbo/yb_clashgithub_sub/main/clash_sub.yml",
   "https://slink.ltd/https://raw.githubusercontent.com/ljlfct01/ljlfct01.github.io/refs/heads/main/节点",
-  "https://slink.ltd/https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta.yaml",
+  # "https://slink.ltd/https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta.yaml",
   # "https://slink.ltd/https://raw.githubusercontent.com/leetomlee123/freenode/refs/heads/main/README.md",
   # "https://slink.ltd/https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/master/list.yml",
   # "https://slink.ltd/https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml"
