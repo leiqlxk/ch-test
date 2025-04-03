@@ -2423,7 +2423,6 @@ if __name__ == '__main__':
   "https://slink.ltd/https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.meta.yml",
   "https://slink.ltd/https://raw.githubusercontent.com/skka3134/test/refs/heads/main/test.yaml",
   "https://slink.ltd/https://raw.githubusercontent.com/anaer/Sub/refs/heads/main/clash.yaml",
-  "https://slink.ltd/https://raw.githubusercontent.com/a2470982985/getNode/main/clash.yaml",
   "https://slink.ltd/https://raw.githubusercontent.com/free18/v2ray/refs/heads/main/c.yaml",
   "https://slink.ltd/https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.yml",
   "https://slink.ltd/https://raw.githubusercontent.com/mfbpn/tg_mfbpn_sub/main/trial.yaml",
