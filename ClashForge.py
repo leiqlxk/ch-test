@@ -2363,7 +2363,6 @@ if __name__ == '__main__':
 #         "http://webhook.taoqu88.com",
 #         "http://webhook.ss5.xyz",
 #         "http://mjj.oldzhg.com",
-#         "https://mjj.oldzhg.com",
 #         "http://116.31.166.7:81",
 #         "http://139.9.83.218:7777",
 #         "http://www.velaton.xyz",
@@ -2392,7 +2391,6 @@ if __name__ == '__main__':
 #         "https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/refs/heads/master/list.yml",
 #         "https://proxypool.link/clash/proxies",
 #         "https://www.sstank.top/link/sAHQuZoZ1tzQWjrn?clash=1",
-#         "https://github.com/midpoint/pools2/raw/refs/heads/master/Eternity.yml"
 # ]
     links = [
   "https://slink.ltd/https://raw.githubusercontent.com/firefoxmmx2/v2rayshare_subcription/main/subscription/clash_sub.yaml",
@@ -2412,7 +2410,7 @@ if __name__ == '__main__':
   "https://slink.ltd/https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta.yaml",
   "https://slink.ltd/https://raw.githubusercontent.com/leetomlee123/freenode/refs/heads/main/README.md",
   "https://slink.ltd/https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/master/list.yml",
-  "https://slink.ltd/https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml"
+  "https://slink.ltd/https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml",
   "https://slink.ltd/https://raw.githubusercontent.com/mgit0001/test_clash/refs/heads/main/heima.txt",
   "https://slink.ltd/https://raw.githubusercontent.com/mai19950/clashgithub_com/refs/heads/main/site",
   "https://slink.ltd/https://raw.githubusercontent.com/aiboboxx/v2rayfree/refs/heads/main/README.md",
@@ -2425,6 +2423,8 @@ if __name__ == '__main__':
   "https://www.freeclashnode.com/uploads/{Y}/{m}/1-{Ymd}.yaml",
   "https://sub.reajason.eu.org/clash.yaml",
   "https://proxypool.link/trojan/sub",
-  "https://proxypool.link/ss/sub|ss"
+  "https://proxypool.link/ss/sub|ss",
+  "https://github.com/midpoint/pools2/raw/refs/heads/master/Eternity.yml",
+  "https://mjj.oldzhg.com"
 ]
     work(links, check=True, only_check=False, allowed_types=["ss","hysteria2","hy2","vless","vmess","trojan"])
