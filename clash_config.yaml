@@ -32,49 +32,16 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- name: 🇺🇸_US_美国_1
-  type: trojan
-  server: 172.67.200.238
-  port: 443
-  network: ws
-  password: 2fec7227-9abe-46f2-af18-78302b836c45
-  sni: 3s.890689.xyz
-  ws-opts:
-    path: /XjTi1NYwi9A2bckpqdDoAgkondVWl
-  ip-version: dual
-  udp: true
-- name: 🇺🇸_US_美国_2
-  type: trojan
-  server: 104.21.69.41
-  port: 443
-  network: ws
-  password: 6040a753-e35b-4384-8713-96f3c639b621
-  sni: kju84.890602.XYZ
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /WxWOWO1YA9bs2HOmaeWimvT3
-    headers:
-      host: kju84.890602.xyz
-  ip-version: dual
-  udp: true
-- name: 🇬🇧_GB_英国
-  type: trojan
-  server: 51.68.13.106
-  port: 1935
-  network: tcp
-  password: FiSo7J6vfS
-  sni: x1fr-ovh.devefun.net
-  alpn:
-  - h3
-  - h2
-  - http/1.1
-  ip-version: dual
-  udp: true
 - cipher: aes-256-cfb
   name: 🇷🇺_RU_俄罗斯
   password: XPtzA9sCug3SPR4c
   port: 9025
+  server: 217.30.10.18
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇷🇺_RU_俄罗斯_1
+  password: rNBfNuuANFCAk7KB
+  port: 9056
   server: 217.30.10.18
   type: ss
 - cipher: aes-256-cfb
@@ -84,10 +51,22 @@ proxies:
   server: 217.30.10.18
   type: ss
 - cipher: aes-256-cfb
+  name: 🇷🇺_RU_俄罗斯_3
+  password: UkXRsXvR6buDMG2Y
+  port: 9001
+  server: 217.30.10.18
+  type: ss
+- cipher: aes-256-cfb
   name: 🇷🇺_RU_俄罗斯_4
   password: p9z5BVADH2YFs3MN
   port: 9040
   server: 217.30.10.18
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪_DE_德国
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.87.175.65
   type: ss
 - cipher: aes-256-cfb
   name: 🇨🇭_CH_瑞士->🇧🇪_BE_比利时
@@ -101,10 +80,22 @@ proxies:
   port: 9018
   server: 217.30.10.18
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇺🇦_UA_乌克兰
+  password: o38yuvzSe3m5aDNpHtUPH1zGwbGEXXMDsGwVaub2SYEmHUa2WGZUjiezX3Vvva9CCzpjxYtuJLgKsSnsyKBf9ciPVba3y4o3
+  port: 54075
+  server: beta.mattenadene.org
+  type: ss
 - cipher: aes-256-cfb
   name: 🇷🇺_RU_俄罗斯_7
   password: UTJA57ypk2XKQpnm
   port: 9033
+  server: 217.30.10.18
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇷🇺_RU_俄罗斯_8
+  password: Lp27rqyJq72bZsqX
+  port: 9045
   server: 217.30.10.18
   type: ss
 - cipher: aes-256-cfb
@@ -125,6 +116,13 @@ proxies:
   port: 9011
   server: 217.30.10.18
   type: ss
+- cipher: aes-256-gcm
+  name: US美国(mibei77.com 米贝节点分享) 11
+  password: RexnBgU7EV5ADxG
+  port: 7002
+  server: 38.107.226.14
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: HK香港(mibei77.com 米贝节点分享) 10
@@ -140,6 +138,41 @@ proxies:
     Host: 2.58.87.221
   ws-path: /
 - cipher: aes-256-gcm
+  name: US美国(mibei77.com 米贝节点分享) 20
+  password: RexnBgU7EV5ADxG
+  port: 7001
+  server: 38.107.226.14
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: US美国(mibei77.com 米贝节点分享) 28
+  password: PCnnH6SQSnfoS27
+  port: 8091
+  server: 38.107.226.14
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: US美国(mibei77.com 米贝节点分享) 35
+  password: PCnnH6SQSnfoS27
+  port: 8090
+  server: 38.107.226.14
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: US美国(mibei77.com 米贝节点分享) 39
+  password: kDWvXYZoTBcGkC4
+  port: 8882
+  server: 38.107.226.14
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: US美国(mibei77.com 米贝节点分享) 44
+  password: faBAoD54k87UJG7
+  port: 2375
+  server: 38.107.226.14
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
   name: US美国(mibei77.com 米贝节点分享) 50
   password: faBAoD54k87UJG7
   port: 2376
@@ -147,10 +180,24 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-gcm
+  name: US美国(mibei77.com 米贝节点分享) 52
+  password: FoOiGlkAA9yPEGP
+  port: 7306
+  server: 38.107.226.14
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
   name: US美国(mibei77.com 米贝节点分享) 56
   password: PCnnH6SQSnfoS27
   port: 8091
   server: 38.110.1.146
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: US美国(mibei77.com 米贝节点分享) 57
+  password: Nk9asglDzHzjktVzTkvhaA
+  port: 443
+  server: arxfw2b78fi2q9hzylhn.freesocks.work
   type: ss
   udp: true
 - cipher: aes-256-gcm
@@ -202,7 +249,7 @@ proxies:
   type: ss
 - cipher: rc4-md5
   ip-version: dual
-  name: 🇩🇪_DE_德国-c1Tl
+  name: 🇩🇪_DE_德国-CIFo
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 193.108.119.230
@@ -230,33 +277,15 @@ proxies:
     headers: {}
   ip-version: dual
   udp: true
-- name: 🇺🇸_US_美国_3_1
-  type: trojan
-  server: 104.21.16.1
+- type: vless
+  name: xiaoer886_US_8
+  server: 47.251.95.178
   port: 443
-  network: ws
+  uuid: ea286109-d20f-415e-849e-4af20ab04b65
+  skip-cert-verify: true
+  network: tcp
+  servername: 147135001195.sec22org.com
   tls: true
-  password: a8fce442-ae9a-4cc1-a0cc-20308ff0a0db
-  sni: 1g.890699.xyZ
-  skip-cert-verify: false
-  ws-opts:
-    path: /lXENb74xF4ylXngZ
-    headers: {}
-  ip-version: dual
-  udp: true
-- name: 🇺🇸_US_美国_6
-  type: trojan
-  server: 104.21.96.1
-  port: 443
-  network: ws
-  tls: true
-  password: a8fce442-ae9a-4cc1-a0cc-20308ff0a0db
-  sni: 1g.890699.xyZ
-  skip-cert-verify: false
-  ws-opts:
-    path: /lXENb74xF4ylXngZ
-    headers: {}
-  ip-version: dual
   udp: true
 - type: vless
   name: xiaoer886_US_9
@@ -292,6 +321,48 @@ proxies:
     path: /2096/@VRayyNGvpn
     headers:
       host: bEAt.MIRaclETaxbiTS.Top.
+- type: vless
+  name: xiaoer886_US_16
+  server: 104.21.77.44
+  port: 443
+  uuid: 0cda5f7e-cc55-4ff2-8ad8-268b9b99dd01
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: Us6-03.890603.XyZ
+  ws-opts:
+    path: /GuJUq5kZ2d6MQzxVoMQ
+    headers:
+      host: Us6-03.890603.XyZ
+- type: vless
+  name: xiaoer886_US_17
+  server: 104.21.6.179
+  port: 443
+  uuid: 0cda5f7e-cc55-4ff2-8ad8-268b9b99dd01
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: Us6-09.890601.xyZ
+  ws-opts:
+    path: /GuJUq5kZ2d6MQzxVoMQ
+    headers:
+      host: Us6-09.890601.xyZ
+- type: vless
+  name: xiaoer886_US_19
+  server: 172.67.135.23
+  port: 443
+  uuid: 0cda5f7e-cc55-4ff2-8ad8-268b9b99dd01
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: Us6-09.890601.xyZ
+  ws-opts:
+    path: /GuJUq5kZ2d6MQzxVoMQ
+    headers:
+      host: Us6-09.890601.xyZ
 - type: vmess
   name: xiaoer886_US_22
   ws-opts:
@@ -329,316 +400,6 @@ proxies:
     path: /
     headers:
       host: hdwyndjd78.khosgelbalatochipas-nadidamet.com
-- type: vless
-  name: xiaoer886_JO_1
-  server: 109.107.159.69
-  port: 22069
-  uuid: 361427b1-5cf9-4ae6-bd1b-5dbf99a21b61
-  skip-cert-verify: true
-  network: tcp
-  tls: false
-  udp: true
-- type: vless
-  name: xiaoer886_US_55
-  server: 129.80.177.42
-  port: 443
-  uuid: 0cda5f7e-cc55-4ff2-8ad8-268b9b99dd01
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: Us6-03.890603.XyZ
-  ws-opts:
-    path: /GuJUq5kZ2d6MQzxVoMQ
-    headers:
-      host: Us6-03.890603.XyZ
-- type: vless
-  name: xiaoer886_CA_1
-  server: 140.238.158.238
-  port: 443
-  uuid: 4d04b30c-ef7b-4a07-8f9e-f581ec171f8a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: uS7-04.890603.xyZ
-  ws-opts:
-    path: /vlHZSdjes8wMzbGFtV
-    headers:
-      host: uS7-04.890603.xyZ
-- name: 🇺🇸US-37.19.198.244-0295
-  type: ss
-  server: 37.19.198.244
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇺🇸US-37.19.198.243-0289
-  type: ss
-  server: 37.19.198.243
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇺🇸US-37.19.198.160-0291
-  type: ss
-  server: 37.19.198.160
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🏁RELAY-104.21.64.1-0751
-  type: vmess
-  server: ny1-dash.890699.xyz
-  port: 2087
-  uuid: 658b87e0-5d92-4424-d344-c167acd6a77f
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  sni: ''
-  ws-opts:
-    path: ny1-sub.890699.xyz
-    headers:
-      Host: ny1-dash.890699.xyz
-- name: 🇺🇸US-156.146.38.169-0292
-  type: ss
-  server: 156.146.38.169
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🏁RELAY-104.21.16.1-0923
-  type: vmess
-  server: 104.21.16.1
-  port: 8443
-  uuid: 658b87e0-5d92-4424-d344-c167acd6a77f
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  sni: ''
-  ws-opts:
-    path: /ny1-sub.890699.xyz
-    headers:
-      Host: ny1-sub.890699.xyz
-- name: 🇺🇸US-156.146.38.168-0290
-  type: ss
-  server: 156.146.38.168
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇺🇸US-194.5.215.59-0296
-  type: ss
-  server: 194.5.215.59
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-  udp: true
-- name: 🇺🇸US-156.146.38.170-0293
-  type: ss
-  server: 156.146.38.170
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇺🇸US-184.170.241.194-0297
-  type: ss
-  server: 184.170.241.194
-  port: 443
-  cipher: aes-128-cfb
-  password: shadowsocks
-  udp: true
-- name: 🇺🇸US-173.244.56.6-0301
-  type: ss
-  server: 173.244.56.6
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇺🇸US-156.146.38.167-0294
-  type: ss
-  server: 156.146.38.167
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🏁RELAY-141.101.120.195-2345
-  type: vmess
-  server: 141.101.120.195
-  port: 2096
-  uuid: 3bb3c730-e107-49c5-a0b2-b576d1b26a5e
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  sni: 1743919978.speed.adl.cccp.freefly.pp.ua
-  ws-opts:
-    path: /
-    headers:
-      Host: 1743919978.speed.adl.cccp.freefly.pp.ua
-- name: 🇺🇸US-212.102.47.131-0303
-  type: ss
-  server: 212.102.47.131
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇫🇷FR-45.158.171.110-5429
-  type: ss
-  server: 45.158.171.110
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱NL-109.201.152.181-0319
-  type: ss
-  server: 109.201.152.181
-  port: 443
-  cipher: aes-128-cfb
-  password: shadowsocks
-  udp: true
-- name: 🇫🇷FR-195.154.185.174-0320
-  type: ss
-  server: 195.154.185.174
-  port: 989
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-  udp: true
-- name: 🇬🇧GB-146.70.61.18-0339
-  type: ss
-  server: 146.70.61.18
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-  udp: true
-- name: 🇫🇷FR-195.154.169.198-0328
-  type: ss
-  server: 195.154.169.198
-  port: 989
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-  udp: true
-- name: 🏁RELAY-104.21.48.1-5641
-  type: vmess
-  server: ny1-dash.890699.xyz
-  port: 2096
-  uuid: 658b87e0-5d92-4424-d344-c167acd6a77f
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  sni: ny1-sub.890699.xyz
-  ws-opts:
-    path: /ny1-sub.890699.xyz
-    headers:
-      Host: ny1-dash.890699.xyz
-- name: 🇬🇧GB-212.102.53.197-0331
-  type: ss
-  server: uk-dc1.yangon.club
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇬🇧GB-212.102.53.80-0324
-  type: ss
-  server: 212.102.53.80
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🏁RELAY-104.21.80.1-5635
-  type: vmess
-  server: ny1-dash.890699.xyz
-  port: 8443
-  uuid: 658b87e0-5d92-4424-d344-c167acd6a77f
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  sni: ny1-dash.890699.xyz
-  ws-opts:
-    path: /ny1-sub.890699.xyz
-    headers:
-      Host: ny1-dash.890699.xyz
-- name: 🇺🇸US-212.102.47.132-0309
-  type: ss
-  server: 212.102.47.132
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇫🇷FR-51.15.86.181-0792
-  type: trojan
-  server: 51.15.86.181
-  port: 1935
-  password: eG92F3gh09
-  sni: x1ams-scaleway.devefun.net
-  skip-cert-verify: false
-- name: 🇬🇧GB-212.102.53.193-0325
-  type: ss
-  server: 212.102.53.193
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇬🇧GB-212.102.53.79-0332
-  type: ss
-  server: 212.102.53.79
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇬🇧GB-212.102.53.197-0326
-  type: ss
-  server: 212.102.53.197
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇬🇧GB-212.102.53.196-0327
-  type: ss
-  server: 212.102.53.196
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇳🇱NL-149.34.244.71-0337
-  type: ss
-  server: 149.34.244.71
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇺🇸US-212.102.47.130-0307
-  type: ss
-  server: 212.102.47.130
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇬🇧GB-212.102.53.78-0329
-  type: ss
-  server: 212.102.53.78
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇳🇱NL-149.34.244.68-0340
-  type: ss
-  server: 149.34.244.68
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇬🇧GB-212.102.53.194-0106
-  type: ss
-  server: 212.102.53.194
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
 - name: 🇺🇸US-45.55.2.232-0310
   type: ss
   server: 45.55.2.232
@@ -673,6 +434,13 @@ proxies:
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
+  udp: true
+- name: 🇫🇷FR-45.158.171.151-0360
+  type: ss
+  server: 45.158.171.151
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: 1RWwXhwfAB5gAEozU4G2Pg
   udp: true
 - name: 🇨🇭CH-156.146.62.162-0353
   type: ss
@@ -723,13 +491,6 @@ proxies:
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 🇺🇸US-104.207.155.64-0321
-  type: ss
-  server: 104.207.155.64
-  port: 1633
-  cipher: chacha20-ietf-poly1305
-  password: o_A7inN1yqeWtOTL
-  udp: true
 - name: 🇫🇷FR-141.227.160.167-0351
   type: trojan
   server: 141.227.160.167
@@ -737,12 +498,26 @@ proxies:
   password: AXpQXM4vNh
   sni: x2swe-ovh.devefun.net
   skip-cert-verify: false
+- name: 🇱🇹LT-45.87.175.166-5424
+  type: ss
+  server: 45.87.175.166
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: cvII85TrW6n0OGyfpHVS1u
+  udp: true
 - name: 🇫🇷FR-141.227.138.29-0352
   type: trojan
   server: 141.227.138.29
   port: 1935
   password: hZ7JkYVAfB
   sni: x1ch-ovh.devefun.net
+  skip-cert-verify: false
+- name: 🇪🇸ES-141.227.128.69-0359
+  type: trojan
+  server: 141.227.128.69
+  port: 1935
+  password: utF6JLQd2x
+  sni: x1es-ovh.devefun.net
   skip-cert-verify: false
 - name: 🇵🇱PL-92.118.205.228-0357
   type: ss
@@ -856,6 +631,20 @@ proxies:
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
+- name: 🏁RELAY-104.21.48.1-0749
+  type: vmess
+  server: lon1-dash.890699.xyz
+  port: 8443
+  uuid: 41963e6b-295d-45a0-b6cc-38fbdd3e3f75
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  sni: ''
+  ws-opts:
+    path: /lon1-sub.890699.xyz
+    headers:
+      Host: lon1-sub.890699.xyz
 - name: 🇰🇷KR-152.70.249.97-0383
   type: vmess
   server: kr3.ttcc.tech
@@ -870,6 +659,20 @@ proxies:
     path: /
     headers:
       Host: kr3.ttcc.tech
+- name: 🏁RELAY-104.21.80.1-0766
+  type: vmess
+  server: lon1-dash.890699.xyz
+  port: 2087
+  uuid: 41963e6b-295d-45a0-b6cc-38fbdd3e3f75
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  sni: lon1-dash.890699.xyz
+  ws-opts:
+    path: /lon1-sub.890699.xyz
+    headers:
+      Host: lon1-dash.890699.xyz
 - name: 🏁RELAY-104.21.57.38-0794
   type: vmess
   server: lon2-dash.930.pp.ua
@@ -912,20 +715,20 @@ proxies:
     path: /lon2-sub.930.pp.ua
     headers:
       Host: lon2-dash.930.pp.ua
-- name: 🏁RELAY-104.21.57.38-5585
+- name: 🏁RELAY-172.67.131.17-7536
   type: vmess
-  server: lon2-dash.930.pp.ua
-  port: 2096
-  uuid: bc86f949-7152-4367-92f5-7a11eacf9c9b
+  server: 172.67.131.17
+  port: 443
+  uuid: 62aa5f80-0328-4004-a375-7f5a59df4022
   alterId: 0
   cipher: auto
   network: ws
   tls: true
-  sni: lon2-sub.930.pp.ua
+  sni: hms19.best-tizi.top
   ws-opts:
-    path: /lon2-sub.930.pp.ua
+    path: /linkws
     headers:
-      Host: lon2-dash.930.pp.ua
+      Host: hms19.best-tizi.top
 - name: 🇹🇷TR-185.123.101.241-0376
   type: ss
   server: 185.123.101.241
@@ -933,13 +736,90 @@ proxies:
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
   udp: true
-- name: 🇩🇪DE-185.177.229.245-0434
-  type: ss
-  server: 185.177.229.245
-  port: 1866
-  cipher: chacha20-ietf-poly1305
-  password: oXGp1+ihlfKg826H
-  udp: true
+- name: 🏁RELAY-188.114.96.5-7559
+  type: vmess
+  server: 188.114.96.5
+  port: 443
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  sni: linde06.indiavideo.sbs
+  ws-opts:
+    path: /linkws
+    headers:
+      Host: linde06.indiavideo.sbs
+- name: 🏁RELAY-188.114.99.134-7553
+  type: vmess
+  server: 188.114.99.134
+  port: 443
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  sni: linde06.indiavideo.sbs
+  ws-opts:
+    path: /linkws
+    headers:
+      Host: linde06.indiavideo.sbs
+- name: 🏁RELAY-104.21.94.168-7580
+  type: vmess
+  server: 104.21.94.168
+  port: 443
+  uuid: 62aa5f80-0328-4004-a375-7f5a59df4022
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  sni: ''
+  ws-opts:
+    path: /linkws
+    headers:
+      Host: hms19.best-tizi.top
+- name: 🏁RELAY-104.21.9.236-7582
+  type: vmess
+  server: 104.21.9.236
+  port: 443
+  uuid: 62aa5f80-0328-4004-a375-7f5a59df4022
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  sni: ''
+  ws-opts:
+    path: /linkws
+    headers:
+      Host: hms19.best-tizi.top
+- name: 🏁RELAY-104.21.49.59-5609
+  type: vmess
+  server: fk2-bash.890617.xyz
+  port: 2083
+  uuid: feddc326-da70-4fab-95a9-8f98be6da633
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  sni: fk2-bash.890617.xyz
+  ws-opts:
+    path: /fj2-1
+    headers:
+      Host: fk2-bash.890617.xyz
+- name: 🏁RELAY-172.67.138.69-7547
+  type: vmess
+  server: 172.67.138.69
+  port: 443
+  uuid: 62aa5f80-0328-4004-a375-7f5a59df4022
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  sni: hms19.best-tizi.top
+  ws-opts:
+    path: /linkws
+    headers:
+      Host: hms19.best-tizi.top
 - name: 🇩🇪DE-80.92.204.106-5266
   type: ss
   server: 80.92.204.106
@@ -961,6 +841,34 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: JIhN6rBKkaEboLNXVSv5rq
   udp: true
+- name: 🏁RELAY-188.114.99.205-7505
+  type: vmess
+  server: 188.114.99.205
+  port: 443
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  sni: linde06.indiavideo.sbs
+  ws-opts:
+    path: /linkws
+    headers:
+      Host: linde06.indiavideo.sbs
+- name: 🏁RELAY-104.21.49.59-1160
+  type: vmess
+  server: 104.21.49.59
+  port: 2053
+  uuid: feddc326-da70-4fab-95a9-8f98be6da633
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  sni: ''
+  ws-opts:
+    path: /fk2-1
+    headers:
+      Host: fk2-bash.890617.xyz
 - name: 🇨🇦CA-142.4.216.225-0419
   type: ss
   server: ca225.vpnbook.com
@@ -968,6 +876,20 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: JIhN6rBKkaEboLNXVSv5rq
   udp: true
+- name: 🇩🇪DE-91.195.240.12-7607
+  type: vmess
+  server: hms19.best-tizi.top
+  port: 443
+  uuid: 62aa5f80-0328-4004-a375-7f5a59df4022
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  sni: hms19.best-tizi.top
+  ws-opts:
+    path: /linkws
+    headers:
+      Host: hms19.best-tizi.top
 - name: 🇻🇳VN-103.163.218.2-0400
   type: ss
   server: 103.163.218.2
@@ -989,13 +911,6 @@ proxies:
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
   udp: true
-- name: 🇮🇳IN-103.174.86.114-0391
-  type: ss
-  server: 103.174.86.114
-  port: 51348
-  cipher: chacha20-ietf-poly1305
-  password: US4tskJaYStBPUKvcNVkf0PVhXbsAGCNvrhbfZybtOx9u2cF
-  udp: true
 - name: 🇩🇪DE-80.92.204.106-5377
   type: ss
   server: 80.92.204.106
@@ -1003,12 +918,47 @@ proxies:
   cipher: aes-256-cfb
   password: cp8pRSUAyLhTfVWH
   udp: true
+- name: 🏁RELAY-172.67.161.77-7528
+  type: vmess
+  server: 172.67.161.77
+  port: 443
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  sni: linde06.indiavideo.sbs
+  ws-opts:
+    path: /linkws
+    headers:
+      Host: linde06.indiavideo.sbs
 - name: 🇧🇪BE-192.71.249.146-0428
   type: ss
   server: 192.71.249.146
   port: 990
   cipher: chacha20-ietf-poly1305
   password: f8f7aCzcPKbsF8p3
+  udp: true
+- name: 🏁RELAY-172.67.179.199-7522
+  type: vmess
+  server: 172.67.179.199
+  port: 443
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  sni: ''
+  ws-opts:
+    path: /linkws
+    headers:
+      Host: linde06.indiavideo.sbs
+- name: 🇺🇸US-23.157.40.101-0480
+  type: ss
+  server: 23.157.40.101
+  port: 7307
+  cipher: aes-256-gcm
+  password: FoOiGlkAA9yPEGP
   udp: true
 - name: 🏁RELAY-104.21.90.210-0900
   type: vmess
@@ -1030,6 +980,13 @@ proxies:
   port: 989
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
+  udp: true
+- name: 🇺🇸US-142.202.49.84-0464
+  type: ss
+  server: 142.202.49.84
+  port: 5003
+  cipher: aes-256-gcm
+  password: g5MeD6Ft3CWlJId
   udp: true
 - name: 🇺🇸US-38.121.43.71-0473
   type: ss
@@ -1073,6 +1030,13 @@ proxies:
   cipher: aes-256-gcm
   password: Y6R9pAtvxxzmGC
   udp: true
+- name: 🇩🇪DE-80.92.204.106-5380
+  type: ss
+  server: 80.92.204.106
+  port: 9015
+  cipher: aes-256-cfb
+  password: ZpNDDKRu9MagNvaf
+  udp: true
 - name: 🇺🇸US-38.121.43.71-0439
   type: ss
   server: 38.121.43.71
@@ -1101,6 +1065,13 @@ proxies:
   cipher: aes-256-gcm
   password: Y6R9pAtvxxzmGC
   udp: true
+- name: 🇺🇸US-38.121.43.71-0475
+  type: ss
+  server: 38.121.43.71
+  port: 6679
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
+  udp: true
 - name: 🇺🇸US-38.121.43.71-0448
   type: ss
   server: 38.121.43.71
@@ -1114,6 +1085,13 @@ proxies:
   port: 8118
   cipher: aes-256-gcm
   password: cdBIDV42DCwnfIN
+  udp: true
+- name: 🇺🇸US-38.121.43.71-0455
+  type: ss
+  server: 38.121.43.71
+  port: 8090
+  cipher: aes-256-gcm
+  password: PCnnH6SQSnfoS27
   udp: true
 - name: 🇺🇸US-38.121.43.71-5544
   type: ss
@@ -1184,6 +1162,13 @@ proxies:
   port: 8882
   cipher: aes-256-gcm
   password: kDWvXYZoTBcGkC4
+  udp: true
+- name: 🇺🇸US-142.202.49.84-0440
+  type: ss
+  server: 142.202.49.84
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
   udp: true
 - name: 🇺🇸US-38.121.43.71-0476
   type: ss
@@ -1269,6 +1254,13 @@ proxies:
   cipher: aes-256-gcm
   password: faBAoD54k87UJG7
   udp: true
+- name: 🇺🇸US-142.202.49.84-0450
+  type: ss
+  server: 142.202.49.84
+  port: 6679
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
+  udp: true
 - name: 🇺🇸US-38.121.43.71-0456
   type: ss
   server: 38.121.43.71
@@ -1304,6 +1296,34 @@ proxies:
   cipher: aes-256-gcm
   password: g5MeD6Ft3CWlJId
   udp: true
+- name: 🇺🇸US-23.157.40.101-5534
+  type: ss
+  server: 23.157.40.101
+  port: 8000
+  cipher: aes-256-gcm
+  password: KixLvKzwjekG00rm
+  udp: true
+- name: 🇳🇱NL-193.29.139.202-5441
+  type: ss
+  server: 193.29.139.202
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇩🇪DE-80.92.204.106-5375
+  type: ss
+  server: 80.92.204.106
+  port: 9098
+  cipher: aes-256-cfb
+  password: aLpQtfEZe445QyHk
+  udp: true
+- name: 🇪🇸ES-5.188.181.201-5290
+  type: ss
+  server: 5.188.181.201
+  port: 9020
+  cipher: aes-256-cfb
+  password: BNmAXXxAHYpTRdzu
+  udp: true
 - name: 🇩🇪DE-80.92.204.106-5384
   type: ss
   server: 80.92.204.106
@@ -1318,6 +1338,20 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: zCbrIk12Qlg9YcERdnzjoh
   udp: true
+- name: 🇫🇷FR-45.145.165.114-7529
+  type: vmess
+  server: beyonddsz.cfd
+  port: 443
+  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  sni: ''
+  ws-opts:
+    path: /linkws
+    headers:
+      Host: beyonddsz.cfd
 - name: 🇪🇸ES-5.188.181.201-5295
   type: ss
   server: 5.188.181.201
@@ -1339,12 +1373,33 @@ proxies:
   cipher: aes-256-cfb
   password: GeregetR8cvQHzYr
   udp: true
+- name: 🏁RELAY-104.21.15.36-7511
+  type: vmess
+  server: 104.21.15.36
+  port: 443
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  sni: linde06.indiavideo.sbs
+  ws-opts:
+    path: /linkws
+    headers:
+      Host: linde06.indiavideo.sbs
 - name: 🇭🇷HR-46.183.184.60-5348
   type: ss
   server: 46.183.184.60
   port: 989
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
+  udp: true
+- name: 🇩🇪DE-80.92.204.106-5381
+  type: ss
+  server: 80.92.204.106
+  port: 9025
+  cipher: aes-256-cfb
+  password: XPtzA9sCug3SPR4c
   udp: true
 - name: 🇩🇪DE-80.92.204.106-5279
   type: ss
@@ -1374,12 +1429,33 @@ proxies:
   cipher: aes-256-cfb
   password: GA9KzeEgvfxNrgmM
   udp: true
+- name: 🇳🇱NL-103.104.247.49-5436
+  type: ss
+  server: 103.104.247.49
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇩🇪DE-80.92.204.106-5269
+  type: ss
+  server: 80.92.204.106
+  port: 9027
+  cipher: aes-256-cfb
+  password: EXN3S3eQpjE7EJu8
+  udp: true
 - name: 🇺🇸US-38.121.43.71-0444
   type: ss
   server: 38.121.43.71
   port: 8080
   cipher: aes-256-gcm
   password: KixLvKzwjekG00rm
+  udp: true
+- name: 🇩🇪DE-80.92.204.106-5281
+  type: ss
+  server: 80.92.204.106
+  port: 9010
+  cipher: aes-256-cfb
+  password: f63gg8EruDnUrmz4
   udp: true
 - name: 🇩🇪DE-80.92.204.106-5267
   type: ss
@@ -1395,12 +1471,26 @@ proxies:
   cipher: aes-256-gcm
   password: g5MeD6Ft3CWlJId
   udp: true
+- name: 🇩🇪DE-80.92.204.106-5280
+  type: ss
+  server: 80.92.204.106
+  port: 9094
+  cipher: aes-256-cfb
+  password: rpgbNnU9rDDU4aWZ
+  udp: true
 - name: 🇩🇪DE-80.92.204.106-5271
   type: ss
   server: 80.92.204.106
   port: 9080
   cipher: aes-256-cfb
   password: VP8ZPxQpJtZRCjfZ
+  udp: true
+- name: 🇨🇾CY-134.255.210.49-5657
+  type: ss
+  server: 134.255.210.49
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
   udp: true
 - name: 🇫🇷FR-45.158.171.66-5548
   type: ss
@@ -1500,6 +1590,13 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
+- name: 🇵🇱PL-217.30.10.18-5603
+  type: ss
+  server: 217.30.10.18
+  port: 9024
+  cipher: aes-256-cfb
+  password: BejrQvtu9sqUeNuZ
+  udp: true
 - name: 🇺🇸US-38.121.43.71-0449
   type: ss
   server: 38.121.43.71
@@ -1535,26 +1632,75 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: QCXDxuDlTTMD7jtgHUjIoj
   udp: true
-- name: 🏁RELAY-172.67.189.27-0795
-  type: vmess
-  server: lon2-dash.930.pp.ua
-  port: 2083
-  uuid: bc86f949-7152-4367-92f5-7a11eacf9c9b
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  sni: ''
-  ws-opts:
-    path: lon2-sub.930.pp.ua
-    headers:
-      Host: lon2-dash.930.pp.ua
+- name: 🇿🇦ZA-129.232.134.112-5563
+  type: ss
+  server: 129.232.134.112
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: f8f7aCzcPKbsF8p3
+  udp: true
+- name: 🇹🇷TR-45.89.52.66-5343
+  type: ss
+  server: 45.89.52.66
+  port: 9043
+  cipher: aes-256-cfb
+  password: HSZuyJQcWe8dxNdF
+  udp: true
 - name: 🇵🇱PL-217.30.10.18-5668
   type: ss
   server: 217.30.10.18
   port: 9059
   cipher: aes-256-cfb
   password: 9XwYyZsK8SNzQDtY
+  udp: true
+- name: 🇹🇷TR-45.89.52.66-5321
+  type: ss
+  server: 45.89.52.66
+  port: 9001
+  cipher: aes-256-cfb
+  password: UkXRsXvR6buDMG2Y
+  udp: true
+- name: 🇦🇹AT-95.164.9.144-5322
+  type: ss
+  server: 95.164.9.144
+  port: 2927
+  cipher: chacha20-ietf-poly1305
+  password: ug4Fu79SEREdFGlt2sUyT4
+  udp: true
+- name: 🏁RELAY-188.114.97.79-7531
+  type: vmess
+  server: 188.114.97.79
+  port: 443
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  sni: linde06.indiavideo.sbs
+  ws-opts:
+    path: /linkws
+    headers:
+      Host: linde06.indiavideo.sbs
+- name: 🇹🇷TR-185.123.101.241-0375
+  type: ss
+  server: 185.123.101.241
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: f8f7aCzcPKbsF8p3
+  udp: true
+- name: 🇵🇱PL-217.30.10.18-5671
+  type: ss
+  server: 217.30.10.18
+  port: 9037
+  cipher: aes-256-cfb
+  password: TN2YqghxeFDKZfLU
+  udp: true
+- name: 🇱🇹LT-45.87.175.178-5416
+  type: ss
+  server: 45.87.175.178
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: 1RWwXhwfAB5gAEozU4G2Pg
   udp: true
 - name: 🇨🇦CA-51.79.102.253-1153
   type: vmess
@@ -1584,6 +1730,27 @@ proxies:
   cipher: aes-256-gcm
   password: KixLvKzwjekG00rm
   udp: true
+- name: 🇲🇰MK-46.183.185.15-4703
+  type: ss
+  server: 46.183.185.15
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+  udp: true
+- name: 🇨🇾CY-134.255.210.49-5386
+  type: ss
+  server: 134.255.210.49
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: f8f7aCzcPKbsF8p3
+  udp: true
+- name: 🇱🇹LT-45.87.175.164-0362
+  type: ss
+  server: 45.87.175.164
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: cvII85TrW6n0OGyfpHVS1u
+  udp: true
 - name: 🇸🇮SI-192.71.244.150-5349
   type: ss
   server: 192.71.244.150
@@ -1591,12 +1758,40 @@ proxies:
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
   udp: true
-- name: 🇮🇸IS-37.235.49.152-0485
+- name: 🇱🇹LT-45.87.175.199-0348
   type: ss
-  server: 37.235.49.152
-  port: 989
-  cipher: aes-256-cfb
+  server: 45.87.175.199
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: 4a2rfixophdjffa8KVA4Aa
+  udp: true
+- name: 🇵🇷PR-185.47.255.22-5400
+  type: ss
+  server: 185.47.255.22
+  port: 990
+  cipher: chacha20-ietf-poly1305
   password: f8f7aCzcPKbsF8p3
+  udp: true
+- name: 🏁RELAY-188.114.97.6-7534
+  type: vmess
+  server: 188.114.97.6
+  port: 443
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  sni: linde06.indiavideo.sbs
+  ws-opts:
+    path: /linkws
+    headers:
+      Host: linde06.indiavideo.sbs
+- name: 🇵🇱PL-217.30.10.18-5604
+  type: ss
+  server: 217.30.10.18
+  port: 9064
+  cipher: aes-256-cfb
+  password: cp8pRSUAyLhTfVWH
   udp: true
 - name: 🇱🇹LT-45.87.175.35-5661
   type: ss
@@ -1654,6 +1849,13 @@ proxies:
   cipher: aes-256-cfb
   password: QWDDvVE9npNurQfA
   udp: true
+- name: 🇺🇸US-38.121.43.97-5289
+  type: ss
+  server: 38.121.43.97
+  port: 8881
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+  udp: true
 - name: 🇱🇹LT-45.87.175.92-5659
   type: ss
   server: 45.87.175.92
@@ -1703,6 +1905,13 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
+- name: 🇬🇷GR-192.71.166.102-4097
+  type: ss
+  server: 192.71.166.102
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+  udp: true
 - name: 🇺🇸US-38.121.43.97-5557
   type: ss
   server: 38.121.43.97
@@ -1717,6 +1926,41 @@ proxies:
   cipher: aes-256-gcm
   password: Y6R9pAtvxxzmGC
   udp: true
+- name: 🇺🇸US-38.121.43.97-5549
+  type: ss
+  server: 38.121.43.97
+  port: 8119
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+  udp: true
+- name: 🇺🇸US-38.121.43.97-5543
+  type: ss
+  server: 38.121.43.97
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+  udp: true
+- name: 🇱🇹LT-45.87.175.58-5662
+  type: ss
+  server: 45.87.175.58
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇹🇷TR-45.89.52.66-5323
+  type: ss
+  server: 45.89.52.66
+  port: 9041
+  cipher: aes-256-cfb
+  password: U6qnYRhfyDmn8sgn
+  udp: true
+- name: 🇳🇬NG-185.255.123.92-5440
+  type: ss
+  server: 185.255.123.92
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: f8f7aCzcPKbsF8p3
+  udp: true
 - name: 🇺🇸US-38.121.43.97-5260
   type: ss
   server: 38.121.43.97
@@ -1724,12 +1968,33 @@ proxies:
   cipher: aes-256-gcm
   password: PCnnH6SQSnfoS27
   udp: true
+- name: 🇺🇸US-38.121.43.97-5545
+  type: ss
+  server: 38.121.43.97
+  port: 7307
+  cipher: aes-256-gcm
+  password: FoOiGlkAA9yPEGP
+  udp: true
+- name: 🇻🇳VN-160.19.78.75-5564
+  type: ss
+  server: 160.19.78.75
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: Nk9asglDzHzjktVzTkvhaA
+  udp: true
 - name: 🇳🇱NL-213.109.147.242-5566
   type: ss
   server: 213.109.147.242
   port: 62685
   cipher: chacha20-ietf-poly1305
   password: VpKABcOpNNA0l5G2AVOmw8
+  udp: true
+- name: 🇸🇬SG-156.244.9.92-5562
+  type: ss
+  server: 156.244.9.92
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: f8f7aCzcPKbsF8p3
   udp: true
 - name: 🇺🇸US-38.121.43.97-5551
   type: ss
@@ -1751,6 +2016,13 @@ proxies:
   port: 1866
   cipher: chacha20-ietf-poly1305
   password: oXGp1+ihlfKg826H
+  udp: true
+- name: 🇲🇽MX-147.78.1.27-5665
+  type: ss
+  server: 147.78.1.27
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: f8f7aCzcPKbsF8p3
   udp: true
 - name: 🇺🇸US-166.88.131.195-5553
   type: ss
@@ -1794,6 +2066,20 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: QCXDxuDlTTMD7jtgHUjIoj
   udp: true
+- name: 🇵🇾PY-38.165.233.18-0373
+  type: ss
+  server: 38.165.233.18
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: f8f7aCzcPKbsF8p3
+  udp: true
+- name: 🇺🇸US-194.116.173.21-0379
+  type: ss
+  server: 194.116.173.21
+  port: 9038
+  cipher: aes-256-cfb
+  password: gYCYXfkUQEs2TaJQ
+  udp: true
 - name: 🏁RELAY-104.21.32.1-0397
   type: vmess
   server: us01.sh-cloudflare.sbs
@@ -1815,19 +2101,19 @@ proxies:
   cipher: aes-256-gcm
   password: sgg7vReHnfEtUtAsWFPeeFOSJ6Q3d9owYfCQSwQMPnk=
   udp: true
-- name: 🇪🇸ES-5.188.181.201-0429
-  type: ss
-  server: 5.188.181.201
-  port: 9000
-  cipher: aes-256-cfb
-  password: a3GFYt36Sm82Vys9
-  udp: true
 - name: 🇱🇹LT-45.87.175.154-0224
   type: ss
   server: 45.87.175.154
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: 4a2rfixophdjffa8KVA4Aa
+  udp: true
+- name: 🇵🇱PL-217.30.10.18-0486
+  type: ss
+  server: 217.30.10.18
+  port: 9060
+  cipher: aes-256-cfb
+  password: ueLXVkvh4hckhErQ
   udp: true
 - name: 🏁RELAY-104.17.213.241-0693
   type: vmess
@@ -1843,6 +2129,20 @@ proxies:
     path: /dabai.in104.25.239.131
     headers:
       Host: 100-128-12-180.s4.db-link02.top
+- name: 🇺🇸US-137.131.52.173-0704
+  type: vmess
+  server: phx-plus-1ddns.faforex.eu.org
+  port: 23451
+  uuid: f845faba-ef07-4ef0-b055-866bbb81143c
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: false
+  sni: ''
+  ws-opts:
+    path: /
+    headers:
+      Host: phx-plus-1ddns.faforex.eu.org
 - name: 🏁RELAY-104.16.155.10-0755
   type: vmess
   server: s4.db-link02.top
@@ -1885,62 +2185,6 @@ proxies:
     path: /
     headers:
       Host: broadcastlv.chat.bilibili.com
-- name: 🏁RELAY-104.21.64.1-0901
-  type: vmess
-  server: 104.21.64.1
-  port: 80
-  uuid: 4d04b30c-ef7b-4a07-8f9e-f581ec171f8a
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: false
-  sni: ''
-  ws-opts:
-    path: /bua2hMcbA8wMzbGFtV
-    headers:
-      Host: us7-01.890624.xyz
-- name: 🏁RELAY-104.21.80.1-0909
-  type: vmess
-  server: 104.21.80.1
-  port: 443
-  uuid: 4d04b30c-ef7b-4a07-8f9e-f581ec171f8a
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  sni: ''
-  ws-opts:
-    path: /bua2hMcbA8wMzbGFtV
-    headers:
-      Host: us7-02.890624.xyz
-- name: 🏁RELAY-104.16.155.10-0917
-  type: vmess
-  server: 104.16.155.10
-  port: 2095
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: false
-  sni: ''
-  ws-opts:
-    path: /dabai.in104.20.27.115
-    headers:
-      Host: 100-209-47-141.s2.db-link02.top
-- name: 🏁RELAY-104.16.155.10-0927
-  type: vmess
-  server: s2.db-link02.top
-  port: 8880
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: false
-  sni: ''
-  ws-opts:
-    path: /dabai.in104.24.114.165
-    headers:
-      Host: 100-9-89-92.s2.db-link02.top
 - name: 🏁RELAY-104.19.48.236-1159
   type: vmess
   server: s4.db-link02.top
@@ -1990,9 +2234,9 @@ proxies:
   password: 61605c66-6d41-4b9d-a496-b9898f3f95d0
   sni: ''
   skip-cert-verify: false
-- name: 🇭🇰HK-20.255.96.114-3268
+- name: 🇯🇵JP-57.182.217.176-3343
   type: trojan
-  server: sg02.trojanyyds.xyz
+  server: sg01.trojanyyds.xyz
   port: 443
   password: cd41b9d7-df15-46ad-a778-257b0851525a
   sni: ''
@@ -2004,20 +2248,20 @@ proxies:
   password: af4d2493-9156-4514-9f6b-ee5d1a1e4713
   sni: ''
   skip-cert-verify: false
-- name: 🇮🇩ID-38.9.140.66-4488
-  type: trojan
-  server: 38.9.140.66
-  port: 443
-  password: vvip-periantara
-  sni: id3tr.jagoan.vip
-  skip-cert-verify: false
-- name: 🇮🇩ID-38.9.140.66-4491
-  type: trojan
-  server: id3tr.jagoan.vip
-  port: 443
-  password: vvip-periantara
-  sni: id3tr.jagoan.vip
-  skip-cert-verify: false
+- name: 🇪🇸ES-5.188.181.201-5259
+  type: ss
+  server: 5.188.181.201
+  port: 9042
+  cipher: aes-256-cfb
+  password: S7KwUu7yBy58S3Ga
+  udp: true
+- name: 🇪🇸ES-5.188.181.201-5291
+  type: ss
+  server: 5.188.181.201
+  port: 9025
+  cipher: aes-256-cfb
+  password: XPtzA9sCug3SPR4c
+  udp: true
 - name: 🇪🇸ES-5.188.181.201-5292
   type: ss
   server: 5.188.181.201
@@ -2067,6 +2311,13 @@ proxies:
   password: 0FaYIOcSy4lBg38yRxnj7RlR3RZYSq3pC9OaSDAAOw6Oe8FCpy08u8pzx3eKZacDz3XE3
   sni: ''
   skip-cert-verify: false
+- name: 🇪🇸ES-5.188.181.201-5387
+  type: ss
+  server: 5.188.181.201
+  port: 9040
+  cipher: aes-256-cfb
+  password: p9z5BVADH2YFs3MN
+  udp: true
 - name: 🇹🇷TR-95.164.116.35-5405
   type: trojan
   server: tr-full.privateip.net
@@ -2074,6 +2325,20 @@ proxies:
   password: 4d5cc30d-df0f-4d9a-ab3c-6a70ab0ce361
   sni: ''
   skip-cert-verify: false
+- name: 🇰🇿KZ-95.164.114.43-5406
+  type: trojan
+  server: kz-full.privateip.net
+  port: 443
+  password: 6332d0b6-d5c2-4afa-8170-3bfb5e181879
+  sni: ''
+  skip-cert-verify: false
+- name: 🇭🇰HK-203.23.128.33-5410
+  type: ss
+  server: 203.23.128.33
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: f8f7aCzcPKbsF8p3
+  udp: true
 - name: 🇱🇹LT-45.87.175.192-5417
   type: ss
   server: 45.87.175.192
@@ -2088,153 +2353,27 @@ proxies:
   password: a906625d-446c-468f-9e26-1d15981fa0e9
   sni: ''
   skip-cert-verify: false
-- name: 🇳🇱NL-89.23.103.125-5455
-  type: ss
-  server: 89.23.103.125
-  port: 42090
-  cipher: chacha20-ietf-poly1305
-  password: uQS5ntVqC00sSKkeNzUiD3
-  udp: true
-- name: 🇹🇷TR-45.89.52.66-5459
-  type: ss
-  server: 45.89.52.66
-  port: 9065
-  cipher: aes-256-cfb
-  password: PeHSHm5SqEjBuEXE
-  udp: true
-- name: 🇳🇱NL-167.99.35.214-5576
+- name: 🇺🇸US-69.5.52.204-5446
   type: trojan
-  server: nl2-full.privateip.net
+  server: toward.taiwanesefood.link
   port: 443
-  password: c378f9c9-733c-4a28-af47-cfa8b063a7f6
+  password: 5Z3RglCCyER3pjlSe0gSyqOOeExx4qTpwKxBR63XjIa8eNzaaO84pDDBA2DlZYI2n37CX
   sni: ''
   skip-cert-verify: false
-- name: 🏁RELAY-104.21.112.1-5634
+- name: 🇺🇸US-38.150.13.64-7604
   type: vmess
-  server: US7-02.890624.Xyz
-  port: 443
-  uuid: 4d04b30c-ef7b-4a07-8f9e-f581ec171f8a
+  server: 38.150.13.64
+  port: 80
+  uuid: caa995ed-86a9-4968-a332-9c11e7e13107
   alterId: 0
   cipher: auto
   network: ws
-  tls: true
-  sni: us7-02.890624.xyz
+  tls: false
+  sni: ''
   ws-opts:
-    path: /bua2hMcbA8wMzbGFtV
+    path: /
     headers:
-      Host: US7-02.890624.Xyz
-- name: 🏁RELAY-104.21.31.62-7571
-  type: vmess
-  server: 104.21.31.62
-  port: 443
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  sni: obdii.cfd
-  ws-opts:
-    path: /linkws
-    headers:
-      Host: obdii.cfd
-- name: 🏁RELAY-172.67.220.10-7579
-  type: vmess
-  server: 172.67.220.10
-  port: 443
-  uuid: 39cec18f-a439-427c-9a4e-aeb6fcdf6f53
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  sni: linja05.hwcar.sbs
-  ws-opts:
-    path: /linkws
-    headers:
-      Host: linja05.hwcar.sbs
-- name: 🏁RELAY-172.67.220.83-7590
-  type: vmess
-  server: 172.67.220.83
-  port: 443
-  uuid: 39cec18f-a439-427c-9a4e-aeb6fcdf6f53
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  sni: linja05.hwcar.sbs
-  ws-opts:
-    path: /linkws
-    headers:
-      Host: linja05.hwcar.sbs
-- name: 🏁RELAY-104.21.83.208-7593
-  type: vmess
-  server: 104.21.83.208
-  port: 443
-  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  sni: afrhms16v.bestxray.buzz
-  ws-opts:
-    path: /linkws
-    headers:
-      Host: afrhms16v.bestxray.buzz
-- name: 🏁RELAY-172.67.175.56-7595
-  type: vmess
-  server: 172.67.175.56
-  port: 443
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  sni: obdii.cfd
-  ws-opts:
-    path: /linkws
-    headers:
-      Host: obdii.cfd
-- name: 🏁RELAY-104.26.0.95-7599
-  type: vmess
-  server: 104.26.0.95
-  port: 443
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  sni: obdii.cfd
-  ws-opts:
-    path: /linkws
-    headers:
-      Host: obdii.cfd
-- name: 🏁RELAY-172.67.71.160-7606
-  type: vmess
-  server: 172.67.71.160
-  port: 443
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  sni: obdii.cfd
-  ws-opts:
-    path: /linkws
-    headers:
-      Host: obdii.cfd
-- name: 🏁RELAY-104.21.94.64-7628
-  type: vmess
-  server: 104.21.94.64
-  port: 443
-  uuid: 39cec18f-a439-427c-9a4e-aeb6fcdf6f53
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  sni: linja05.hwcar.sbs
-  ws-opts:
-    path: /linkws
-    headers:
-      Host: linja05.hwcar.sbs
+      Host: ''
 - name: 🇹🇷TR-45.89.52.66-8731
   type: ss
   server: 45.89.52.66
@@ -2242,26 +2381,12 @@ proxies:
   cipher: aes-256-cfb
   password: S7KwUu7yBy58S3Ga
   udp: true
-- name: 🇹🇷TR-45.89.52.66-8734
-  type: ss
-  server: 45.89.52.66
-  port: 9037
-  cipher: aes-256-cfb
-  password: TN2YqghxeFDKZfLU
-  udp: true
 - name: 🇹🇷TR-45.89.52.66-8735
   type: ss
   server: 45.89.52.66
   port: 9031
   cipher: aes-256-cfb
   password: BwcAUZk8hUFAkDGN
-  udp: true
-- name: 🇵🇱PL-217.30.10.70-8858
-  type: ss
-  server: 217.30.10.70
-  port: 9044
-  cipher: aes-256-cfb
-  password: KBGjZYcy4SyRShmA
   udp: true
 - name: 🏁RELAY-141.101.120.27-0808
   server: 1743919941.tencentapp.cn
@@ -2358,16 +2483,36 @@ proxies:
     path: /dabai.in104.18.128.173
     headers:
       Host: 100-28-190-253.s2.cn-db.top
-- name: 🇯🇵JP-13.231.87.40-1963
-  server: jp-am48-6.eqnode.net
-  port: 8081
-  type: ssr
-  cipher: aes-256-cfb
-  password: eAokbaDN6
-  protocol: origin
-  obfs: tls1.2_ticket_auth
-  protocol-param: ''
-  obfs-param: ''
+- name: 🏁RELAY-141.101.120.176-2222
+  server: 1744007541.tencentapp.cn
+  port: 2083
+  type: vmess
+  uuid: 381cb6d1-6ad4-4909-8494-b8d786cf78ce
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  servername: 1744007578.speed.ruanewa.cccp.freefly.pp.ua
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 1744007578.speed.ruanewa.cccp.freefly.pp.ua
+- name: 🏁RELAY-141.101.120.176-2223
+  server: 1744007541.tencentapp.cn
+  port: 2053
+  type: vmess
+  uuid: 381cb6d1-6ad4-4909-8494-b8d786cf78ce
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  servername: 1744007578.speed.zjgza.cccp.freefly.pp.ua
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 1744007578.speed.zjgza.cccp.freefly.pp.ua
 - name: 🏁RELAY-141.101.120.176-2224
   server: 1744007541.tencentapp.cn
   port: 8443
@@ -2383,6 +2528,34 @@ proxies:
     path: /
     headers:
       Host: 1744007578.speed.adl.cccp.freefly.pp.ua
+- name: 🇩🇪DE-130.61.160.153-2226
+  server: 130.61.160.153
+  port: 30015
+  type: trojan
+  password: NPpPQZoTPt
+  sni: ge1986a.iamback.top
+  skip-cert-verify: false
+- name: 🇩🇪DE-130.61.160.153-2227
+  server: ge1986a.iamback.top
+  port: 30015
+  type: trojan
+  password: NPpPQZoTPt
+  sni: ge1986a.iamback.top
+  skip-cert-verify: false
+- name: 🇬🇧GB-130.162.189.112-2280
+  server: www.ak-hk.top
+  port: 10200
+  type: trojan
+  password: b19c4375-d847-4c40-9824-4767c88b5f38
+  sni: www.ak-hk.top
+  skip-cert-verify: false
+- name: 🇮🇳IN-140.245.11.125-2281
+  server: www.hk-jd.top
+  port: 10021
+  type: trojan
+  password: b19c4375-d847-4c40-9824-4767c88b5f38
+  sni: www.hk-jd.top
+  skip-cert-verify: false
 - name: 🇭🇰HK-150.107.46.21-5483
   server: 150.107.46.21
   port: 8083
@@ -2393,27 +2566,43 @@ proxies:
   obfs: tls1.2_ticket_auth
   protocol-param: ''
   obfs-param: ''
-- name: SS-英国-NF解锁荷兰地区非自制剧-ChatGPT-TikTok-YouTube-77.239.117.121:28694
-  type: ss
-  server: 77.239.117.121
-  port: 28694
-  password: U3IlgIvgAkAkaBCn0SUAsX
-  cipher: chacha20-ietf-poly1305
+- name: VMESS-未知>乌克兰-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-104.21.112.1:80
+  type: vmess
+  server: 104.21.112.1
+  port: 80
+  uuid: 7f8a1bb9-bee0-40a8-f908-21a65da0f3cc
+  alterId: 0
+  cipher: auto
+  network: ws
+  servername: us2vmess.rnmcnm.com
+  http-opts: {}
+  h2-opts: {}
+  skip-cert-verify: true
+  ws-opts:
+    path: /123qwe
+    headers:
+      HOST: us2vmess.rnmcnm.com
 - name: SS-瑞典-NF解锁瑞典地区非自制剧-ChatGPT-TikTok-YouTube-151.236.206.42:39649
   type: ss
   server: 151.236.206.42
   port: 39649
   password: zCbrIk12Qlg9YcERdnzjoh
   cipher: chacha20-ietf-poly1305
-- name: VMESS-未知>美国-NF解锁自制剧-TikTok-YouTube-US7-01.890624.XyZ:443
+- name: SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-109.120.177.122:6774
+  type: ss
+  server: 109.120.177.122
+  port: 6774
+  password: yFhyOiBBsvNn72ARpHGuZu
+  cipher: chacha20-ietf-poly1305
+- name: VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-US7-02.890624.xyZ:443
   type: vmess
-  server: US7-01.890624.XyZ
+  server: US7-02.890624.xyZ
   port: 443
   uuid: 4d04b30c-ef7b-4a07-8f9e-f581ec171f8a
   alterId: 0
   cipher: auto
   network: ws
-  servername: us7-01.890624.xyz
+  servername: us7-02.890624.xyz
   http-opts: {}
   h2-opts: {}
   tls: true
@@ -2421,14 +2610,8 @@ proxies:
   ws-opts:
     path: /bua2hMcbA8wMzbGFtV
     headers:
-      HOST: us7-01.890624.xyz
-- name: SS-瑞士-NF解锁荷兰地区非自制剧-ChatGPT-TikTok-YouTube-91.103.253.151:19057
-  type: ss
-  server: 91.103.253.151
-  port: 19057
-  password: mY7tuyBQ4cpKrizUnQdiWv
-  cipher: chacha20-ietf-poly1305
-- name: CH_2db7b_0001
+      HOST: us7-02.890624.xyz
+- name: CH_18def_0001
   server: yapc-1.afshin.ir
   port: 443
   type: vless
@@ -2439,7 +2622,7 @@ proxies:
   client-fingerprint: chrome
   servername: YAPC-1.afshin.ir
   udp: true
-- name: JP_2db7b_0018
+- name: JP_18def_0010
   server: jp104-cdn-route.couldflare-cdn.com
   port: 443
   type: http
@@ -2447,21 +2630,7 @@ proxies:
   password: exaxgqkKkd0TAMrCxeonWg==
   tls: true
   udp: true
-- name: NL_2db7b_0019
-  server: 45.131.4.192
-  port: 80
-  type: vless
-  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
-  tls: false
-  skip-cert-verify: true
-  servername: gozargah.validbv7996.ir
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳@WangCai2/?ed=2560
-    headers:
-      Host: gozargah.validbv7996.ir
-  udp: true
-- name: NL_2db7b_0025
+- name: NL_18def_0011
   server: 45.131.4.194
   port: 80
   type: vless
@@ -2475,8 +2644,8 @@ proxies:
     headers:
       Host: gozargah.validbv7996.ir
   udp: true
-- name: NL_2db7b_0026
-  server: 45.131.4.254
+- name: NL_18def_0022
+  server: 45.131.4.192
   port: 80
   type: vless
   uuid: c5293efa-28f8-4a0f-8f34-541078970cee
@@ -2489,7 +2658,7 @@ proxies:
     headers:
       Host: gozargah.validbv7996.ir
   udp: true
-- name: NL_2db7b_0043
+- name: NL_18def_0025
   server: 45.131.5.67
   port: 80
   type: vless
@@ -2503,21 +2672,7 @@ proxies:
     headers:
       Host: gozargah.validbv7996.ir
   udp: true
-- name: NL_2db7b_0044
-  server: elena.netmxspeedtest.net
-  port: 2095
-  type: vless
-  uuid: 150a4f27-f855-433e-8c97-388b94a1d749
-  tls: false
-  skip-cert-verify: true
-  servername: vPncustomize.www.webdade.com.www.speedtest.net.irna.ir.ips.ddns-ip.net.
-  network: ws
-  ws-opts:
-    path: /Channel-@ELiV2RAY----Channel-@ELiV2RAY----Channel-@ELiV2RAY----Channel-@ELiV2RAY----Channel-@ELiV2RAY----Channel-@ELiV2RAY----Channel-@ELiV2RAY----Channel-@ELiV2RAY----Channel-@ELiV2RAY----Channel-@ELiV2RAY----Channel-@ELiV2RAY?ed=2560
-    headers:
-      Host: vPncustomize.www.webdade.com.www.speedtest.net.irna.ir.ips.ddns-ip.net.
-  udp: true
-- name: NL_2db7b_0051
+- name: NL_18def_0038
   server: 45.131.5.26
   port: 80
   type: vless
@@ -2531,7 +2686,7 @@ proxies:
     headers:
       Host: gozargah.validbv7996.ir
   udp: true
-- name: TW_2db7b_0084
+- name: TW_18def_0073
   server: twmoon1-cdn-route.couldflare-cdn.com
   port: 1443
   type: http
@@ -2539,26 +2694,7 @@ proxies:
   password: exaxgqkKkd0TAMrCxeonWg==
   tls: true
   udp: true
-- name: US_2db7b_0085
-  server: www.speedtest.net
-  port: 8880
-  type: vless
-  uuid: 150a4f27-f855-433e-8c97-388b94a1d749
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: VPNCUSTOMIZE.www.webdade.com.www.speedtest.net.irna.ir.ips.ddns-ip.net.
-  alpn:
-  - h3
-  - h2
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /Channel----VPNCUSTOMIZE----VPNCUSTOMIZE----VPNCUSTOMIZE---VPNCUSTOMIZE---VPNCUSTOMIZE---VPNCUSTOMIZE?ed=2048
-    headers:
-      Host: VPNCUSTOMIZE.www.webdade.com.www.speedtest.net.irna.ir.ips.ddns-ip.net.
-  udp: true
-- name: US_2db7b_0087
+- name: US_18def_0074
   server: discord.cloudflare.com
   port: 80
   type: vless
@@ -2572,66 +2708,7 @@ proxies:
     headers:
       Host: gozargah.validbv7996.ir
   udp: true
-- name: US_2db7b_0091
-  server: 14595913-sunz40-t324jc-fazp.se.plebai.net
-  port: 8880
-  type: vmess
-  uuid: c1142c6a-a1a8-a70d-d7ad-9608849fdff1
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-  udp: true
-- name: US_2db7b_0092
-  server: eafecb68-sugkg0-ta7nh3-ejvo.se.plebai.net
-  port: 8880
-  type: vmess
-  uuid: af9a9ef0-71e7-303d-a14c-fdf0d6472b43
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-  udp: true
-- name: US_2db7b_0093
-  server: www.digitalocean.com
-  port: 443
-  type: vless
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  tls: true
-  skip-cert-verify: true
-  servername: zx.ylka.dpdns.org
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: zx.ylka.dpdns.org
-  udp: true
-- name: US_2db7b_0094
-  server: ff67370b-sugkg0-svnl1v-cq5n.se.plebai.net
-  port: 8880
-  type: vmess
-  uuid: fb3d8bb2-e288-11ec-b2b4-f23c91cfbbc9
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-  udp: true
-- name: US_2db7b_0096
+- name: US_18def_0079
   server: 104.18.31.60
   port: 80
   type: vless
@@ -2645,22 +2722,7 @@ proxies:
     headers:
       Host: gozargah.validbv7996.ir
   udp: true
-- name: US_2db7b_0097
-  server: 96d2c7af-sugkg0-t67sv3-1snfs.se.plebai.net
-  port: 8880
-  type: vmess
-  uuid: b79d79ae-8bce-11ef-a2b8-f23c9164ca5d
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-  udp: true
-- name: US_2db7b_0098
+- name: US_18def_0080
   server: wilson.ns.cloudflare.com
   port: 443
   type: vless
@@ -2674,21 +2736,7 @@ proxies:
     headers:
       Host: zx.ylka.dpdns.org
   udp: true
-- name: US_2db7b_0099
-  server: craig.ns.cloudflare.com
-  port: 443
-  type: vless
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  tls: true
-  skip-cert-verify: true
-  servername: zx.ylka.dpdns.org
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: zx.ylka.dpdns.org
-  udp: true
-- name: US_2db7b_0100
+- name: US_18def_0081
   server: 192.18.143.57
   port: 443
   type: vless
@@ -2702,7 +2750,21 @@ proxies:
     headers:
       Host: zx.ylka.dpdns.org
   udp: true
-- name: US_2db7b_0101
+- name: US_18def_0082
+  server: www.digitalocean.com
+  port: 443
+  type: vless
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  tls: true
+  skip-cert-verify: true
+  servername: zx.ylka.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: zx.ylka.dpdns.org
+  udp: true
+- name: US_18def_0083
   server: 104.18.30.60
   port: 80
   type: vless
@@ -2716,8 +2778,8 @@ proxies:
     headers:
       Host: gozargah.validbv7996.ir
   udp: true
-- name: US_2db7b_0102
-  server: dnschecker.org
+- name: US_18def_0084
+  server: craig.ns.cloudflare.com
   port: 443
   type: vless
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
@@ -2730,7 +2792,7 @@ proxies:
     headers:
       Host: zx.ylka.dpdns.org
   udp: true
-- name: US_2db7b_0103
+- name: US_18def_0085
   server: 104.17.148.22
   port: 2052
   type: vless
@@ -2740,29 +2802,29 @@ proxies:
   servername: Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt
   network: ws
   ws-opts:
-    path: /Telegram@V2ray_Alpha/?ed=2560
+    path: /Telegram@mtmvpn/?ed=2560
     headers:
       Host: Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt
   udp: true
-- name: US_2db7b_0108
-  server: 154.21.83.154
-  port: 443
-  type: vless
-  uuid: 15372547-4201-48e4-9d4b-8691d9915ceb
-  tls: true
-  skip-cert-verify: true
-  servername: usb.cayuo.me
+- name: 🇺🇸 美国-拉斯维加斯-002-1L
+  type: vmess
+  server: 45.147.201.231
+  port: 23062
+  uuid: 33cbd8a5-2a80-469b-831c-009405920a0e
+  alterId: 0
+  cipher: auto
   network: ws
+  tls: false
+  sni: ''
   ws-opts:
-    path: /bing
+    path: /
     headers:
-      Host: usb.cayuo.me
-  udp: true
+      Host: ''
 - name: 🇭🇰 香港
   type: vmess
   server: xg.dashuai.cyou
   port: 19901
-  uuid: 2a6bbc14-0e05-4682-b46a-b3ef6471f11a
+  uuid: dda61481-fdf2-462e-b4b4-6530a6c683e6
   alterId: 0
   cipher: auto
   network: tcp
@@ -2780,59 +2842,27 @@ proxies:
   tls: false
   sni: ''
   ws-opts: {}
-- name: 2|🇩🇪5
-  type: vless
-  server: tv2rayrr.set7.site
-  port: 34311
-  uuid: 003ab005-1b05-4311-a23b-c0d898c264ca
-  security: none
-  tls: false
-  sni: ''
-  skip-cert-verify: false
-  network: tcp
-  ws-opts: {}
-- name: 美国 CloudFlare节点-Xdzp
+- name: 15|🇸🇬 新加坡3|@ripaojiedian
+  type: ss
+  server: 103.106.229.219
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+  udp: true
+- name: 美国 CloudFlare节点-MQdU
   type: vmess
-  server: s4.db-link01.top
-  port: 2095
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  server: 141.101.120.64
+  port: 2053
+  uuid: 381cb6d1-6ad4-4909-8494-b8d786cf78ce
   alterId: 0
   cipher: auto
   network: ws
-  tls: false
-  sni: ''
+  tls: true
+  sni: 1744007578.speed.zjgza.cccp.freefly.pp.ua
   ws-opts:
-    path: /dabai.in104.17.28.240
+    path: /
     headers:
-      Host: 100-114-107-221.s4.db-link01.top
-- name: 美国 CloudFlare节点-dZi1
-  type: vmess
-  server: s2.db-link01.top
-  port: 8880
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: false
-  sni: ''
-  ws-opts:
-    path: /dabai.in172.64.0.32
-    headers:
-      Host: 100-14-147-154.s2.db-link01.top
-- name: 美国 CloudFlare节点-Di7s
-  type: vmess
-  server: s4.cn-db.top
-  port: 2086
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: false
-  sni: ''
-  ws-opts:
-    path: /dabai.in172.67.103.33
-    headers:
-      Host: 100-59-133-139.s4.cn-db.top
+      Host: 1744007578.speed.zjgza.cccp.freefly.pp.ua
 - name: AlvinQuick-1
   type: hysteria
   server: 185.22.155.71
@@ -2888,18 +2918,18 @@ proxies:
   tls: true
   type: http
   username: mrwdfNTD8M79LCukCieldrqZWqs=
-- name: vpnshield
-  port: 80
-  server: 162.159.250.246
+- name: US-WS-1
+  port: 2082
+  server: 159.112.235.174
   type: vless
   network: ws
   udp: true
   skip-cert-verify: true
   ws-opts:
-    path: /
+    path: /?ed=2048
     headers:
-      host: vpnshield5554.vpnvpnfree5.workers.dev
-  uuid: 63583ca2-b618-4bd8-96a1-08febe3a6730
+      host: workerr.schodog1.workers.dev
+  uuid: 47e9a0db-50c6-4522-8819-502c55b06dde
   client-fingerprint: chrome
 - name: Hy-dongtaiwang
   type: hysteria
@@ -2937,7 +2967,7 @@ proxies:
     path: /Telegram@V2ray_Alpha/?ed=2560
 - alpn:
   - h3
-  name: 10|@ا ا
+  name: 9|@ا ا
   obfs: salamander
   obfs-password: '@SiNAVM-@SiNAVM-@SiNAVM-@SiNAVM-@SiNAVM-@SiNAVM'
   password: Telegram-SiNAVM-SiNAVM-SiNAVM-SiNAVM
@@ -2945,22 +2975,6 @@ proxies:
   server: sinavm.soft10.ir
   tls: false
   type: hysteria2
-- name: 美国 003
-  type: vmess
-  network: ws
-  server: www.wn03.cc
-  port: 80
-  uuid: 2f38f848-a899-4c87-9807-207a41615e3c
-  skip-cert-verify: true
-  tls: false
-  udp: true
-  tfo: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: us.freeyyds.dpdns.org
-    path: /rongseven?ed=2048
 - name: 美国 056
   type: vless
   network: ws
@@ -3027,20 +3041,6 @@ proxies:
     headers:
       Host: warp.irss.eu.org
     path: /?ed=2048
-- name: 美国 072
-  type: vless
-  network: ws
-  server: download.yunzhongzhuan.com
-  port: 80
-  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
-  skip-cert-verify: false
-  tls: false
-  tfo: false
-  client-fingerprint: randomized
-  ws-opts:
-    headers:
-      Host: warp.irss.eu.org
-    path: /?ed=2048
 - name: 美国 080
   type: vless
   network: ws
@@ -3097,10 +3097,10 @@ proxies:
     headers:
       Host: warp.irss.eu.org
     path: /?ed=2048
-- name: 美国 085
+- name: 美国 088
   type: vless
   network: ws
-  server: skk.moe
+  server: gur.gov.ua
   port: 80
   uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
   skip-cert-verify: false
@@ -3111,10 +3111,10 @@ proxies:
     headers:
       Host: warp.irss.eu.org
     path: /?ed=2048
-- name: 美国 086
+- name: 美国 089
   type: vless
   network: ws
-  server: www.visa.com.hk
+  server: www.zsu.gov.ua
   port: 80
   uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
   skip-cert-verify: false
@@ -3283,6 +3283,30 @@ proxies:
     headers:
       Host: s1-c3r.pages.dev
     path: /MtljuRgZmD08Uoa5?ed=2560
+- name: 美国 260
+  type: vless
+  network: ws
+  server: 172.67.180.227
+  port: 443
+  uuid: a8e84392-4d52-4886-afa6-76fdfaf49c86
+  servername: dewuxian.pai50288.uk
+  skip-cert-verify: false
+  tls: true
+  udp: true
+  tfo: false
+  ws-opts:
+    headers:
+      Host: dewuxian.pai50288.uk
+    path: /a8e84392
+- name: 美国 324
+  type: vmess
+  network: tcp
+  server: 107.148.207.249
+  port: 48712
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  skip-cert-verify: true
+  alterId: 64
+  cipher: auto
 - name: 美国 325
   type: vmess
   network: tcp
@@ -3491,7 +3515,14 @@ proxies:
     headers:
       Host: gozargah.validbv7996.ir
     path: /Telegram@WangCai2
-- name: 🏁 ZZ_303
+- name: RU_Moscow_LLC BAXET
+  password: dongtaiwang.com
+  port: 4395
+  server: 46.17.41.217
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- name: 🏁 ZZ_277
   type: trojan
   server: beseech.homeofbrave.net
   port: 443
@@ -3500,75 +3531,82 @@ proxies:
   skip-cert-verify: false
 - name: _01
   type: ss
-  server: 38.121.43.71
-  port: '5000'
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
+  server: 185.123.101.241
+  port: '989'
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
   udp: true
 - name: _02
   type: ss
-  server: 212.102.53.196
-  port: '443'
-  cipher: aes-128-gcm
-  password: shadowsocks
+  server: 45.89.52.66
+  port: '9031'
+  cipher: aes-256-cfb
+  password: BwcAUZk8hUFAkDGN
   udp: true
 - name: _03
+  type: ss
+  server: 217.30.10.18
+  port: '9060'
+  cipher: aes-256-cfb
+  password: ueLXVkvh4hckhErQ
+  udp: true
+- name: _04
   type: ss
   server: uk-dc1.yangon.club
   port: '443'
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: _04
+- name: _05
   type: ss
   server: 142.4.216.225
   port: '80'
   cipher: chacha20-ietf-poly1305
   password: JIhN6rBKkaEboLNXVSv5rq
   udp: true
-- name: _05
+- name: _06
   type: ss
   server: 38.121.43.71
   port: '2376'
   cipher: aes-256-gcm
   password: faBAoD54k87UJG7
   udp: true
-- name: _06
+- name: _07
   type: ss
   server: 80.92.204.106
   port: '9000'
   cipher: aes-256-cfb
   password: a3GFYt36Sm82Vys9
   udp: true
-- name: _07
+- name: _08
   type: ss
   server: 80.92.204.106
   port: '9024'
   cipher: aes-256-cfb
   password: BejrQvtu9sqUeNuZ
   udp: true
-- name: _08
+- name: _09
   type: ss
   server: 80.92.204.106
   port: '9005'
   cipher: aes-256-cfb
   password: ZET59LF6DvCC8KVt
   udp: true
-- name: _09
+- name: _10
   type: ss
   server: 80.92.204.106
   port: '9027'
   cipher: aes-256-cfb
   password: EXN3S3eQpjE7EJu8
   udp: true
-- name: _10
+- name: _11
   type: ss
   server: 212.102.53.194
   port: '443'
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: _11
+- name: _12
   type: ss
   server: 80.92.204.106
   port: '9080'
@@ -3577,12 +3615,26 @@ proxies:
   udp: true
 - name: _13
   type: ss
+  server: 45.144.48.63
+  port: '57456'
+  cipher: chacha20-ietf-poly1305
+  password: d3837224ed465f00
+  udp: true
+- name: _14
+  type: ss
   server: 38.121.43.71
   port: '8008'
   cipher: aes-256-gcm
   password: XKFKl2rULjIp74
   udp: true
 - name: _15
+  type: ss
+  server: war.ssvpnapp.win
+  port: '57456'
+  cipher: chacha20-ietf-poly1305
+  password: d3837224ed465f00
+  udp: true
+- name: _16
   type: ss
   server: 38.121.43.71
   port: '8000'
@@ -3596,12 +3648,33 @@ proxies:
   cipher: aes-256-cfb
   password: c3NtHJ5ujV2tGDfj
   udp: true
+- name: _18
+  type: ss
+  server: 80.92.204.106
+  port: '9094'
+  cipher: aes-256-cfb
+  password: rpgbNnU9rDDU4aWZ
+  udp: true
+- name: _19
+  type: ss
+  server: 80.92.204.106
+  port: '9010'
+  cipher: aes-256-cfb
+  password: f63gg8EruDnUrmz4
+  udp: true
 - name: _20
   type: ss
   server: 80.92.204.106
   port: '9019'
   cipher: aes-256-cfb
   password: GA9KzeEgvfxNrgmM
+  udp: true
+- name: _21
+  type: ss
+  server: 80.92.204.106
+  port: '9020'
+  cipher: aes-256-cfb
+  password: BNmAXXxAHYpTRdzu
   udp: true
 - name: _22
   type: ss
@@ -3641,65 +3714,100 @@ proxies:
 - name: _27
   type: ss
   server: 38.121.43.97
+  port: '6697'
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
+  udp: true
+- name: _28
+  type: ss
+  server: 38.121.43.97
   port: '8881'
   cipher: aes-256-gcm
   password: kDWvXYZoTBcGkC4
   udp: true
+- name: _29
+  type: ss
+  server: 5.188.181.201
+  port: '9020'
+  cipher: aes-256-cfb
+  password: BNmAXXxAHYpTRdzu
+  udp: true
 - name: _30
+  type: ss
+  server: 5.188.181.201
+  port: '9019'
+  cipher: aes-256-cfb
+  password: GA9KzeEgvfxNrgmM
+  udp: true
+- name: _31
   type: ss
   server: 5.188.181.201
   port: '9029'
   cipher: aes-256-cfb
   password: dU3DSNS8wYPXzEKw
   udp: true
+- name: _32
+  type: ss
+  server: 5.188.181.201
+  port: '9054'
+  cipher: aes-256-cfb
+  password: VcFuyXvND2yQWSFY
+  udp: true
 - name: _33
+  type: ss
+  server: 5.188.181.201
+  port: '9011'
+  cipher: aes-256-cfb
+  password: M3t2ZEQcMGRWBjRa
+  udp: true
+- name: _34
+  type: ss
+  server: 5.188.181.201
+  port: '9003'
+  cipher: aes-256-cfb
+  password: JdmRK9gMEqFgs8nP
+  udp: true
+- name: _35
   type: ss
   server: 38.121.43.71
   port: '5001'
   cipher: aes-256-gcm
   password: Y6R9pAtvxxzmGC
   udp: true
-- name: _34
+- name: _36
   type: ss
   server: 38.110.1.88
   port: '5499'
   cipher: aes-256-gcm
   password: lGqs95QkFHo2NV
   udp: true
-- name: _35
+- name: _37
   type: ss
   server: 38.121.43.71
   port: '7002'
   cipher: aes-256-gcm
   password: RexnBgU7EV5ADxG
   udp: true
-- name: _37
+- name: _38
+  type: ss
+  server: 38.121.43.71
+  port: '6679'
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
+  udp: true
+- name: _39
   type: ss
   server: 38.121.43.71
   port: '5004'
   cipher: aes-256-gcm
   password: g5MeD6Ft3CWlJId
   udp: true
-- name: _38
+- name: _40
   type: ss
   server: 38.121.43.71
   port: '443'
   cipher: aes-256-gcm
   password: pKEW8JPByTVTLtM
-  udp: true
-- name: _39
-  type: ss
-  server: 38.110.1.197
-  port: '5003'
-  cipher: aes-256-gcm
-  password: g5MeD6Ft3CWlJId
-  udp: true
-- name: _40
-  type: ss
-  server: 212.102.53.197
-  port: '443'
-  cipher: aes-128-gcm
-  password: shadowsocks
   udp: true
 - name: _41
   type: ss
@@ -3711,191 +3819,345 @@ proxies:
 - name: _42
   type: ss
   server: 38.121.43.71
-  port: '5600'
+  port: '5500'
   cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
+  password: KixLvKzwjekG00rm
   udp: true
 - name: _43
   type: ss
   server: 38.121.43.71
-  port: '8888'
+  port: '5000'
   cipher: aes-256-gcm
   password: Y6R9pAtvxxzmGC
   udp: true
 - name: _44
   type: ss
   server: 38.121.43.71
-  port: '7001'
+  port: '5600'
   cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
+  password: Y6R9pAtvxxzmGC
   udp: true
 - name: _45
   type: ss
-  server: 37.143.129.230
-  port: '989'
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
+  server: 38.121.43.71
+  port: '8888'
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
   udp: true
 - name: _46
+  type: ss
+  server: 38.110.1.197
+  port: '5003'
+  cipher: aes-256-gcm
+  password: g5MeD6Ft3CWlJId
+  udp: true
+- name: _47
   type: ss
   server: 38.121.43.71
   port: '8091'
   cipher: aes-256-gcm
   password: PCnnH6SQSnfoS27
   udp: true
-- name: _47
-  type: ss
-  server: 38.114.114.143
-  port: '443'
-  cipher: aes-256-gcm
-  password: pKEW8JPByTVTLtM
-  udp: true
 - name: _48
+  type: ss
+  server: 37.235.49.152
+  port: '989'
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+  udp: true
+- name: _49
   type: ss
   server: 38.121.43.71
   port: '9101'
   cipher: aes-256-gcm
   password: e4FCWrgpkji3QY
   udp: true
-- name: _49
+- name: _50
   type: ss
   server: 38.110.1.88
   port: '5600'
   cipher: aes-256-gcm
   password: Y6R9pAtvxxzmGC
   udp: true
-- name: _50
+- name: _51
   type: ss
   server: 38.121.43.71
   port: '3389'
   cipher: aes-256-gcm
   password: Y6R9pAtvxxzmGC
   udp: true
-- name: _51
+- name: _52
   type: ss
   server: 38.121.43.71
   port: '2375'
   cipher: aes-256-gcm
   password: faBAoD54k87UJG7
   udp: true
-- name: _52
+- name: _53
   type: ss
   server: 38.110.1.88
   port: '2376'
   cipher: aes-256-gcm
   password: faBAoD54k87UJG7
   udp: true
+- name: _54
+  type: ss
+  server: 37.143.129.230
+  port: '989'
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+  udp: true
+- name: _55
+  type: ss
+  server: 45.89.52.66
+  port: '9001'
+  cipher: aes-256-cfb
+  password: UkXRsXvR6buDMG2Y
+  udp: true
 - name: _56
+  type: ss
+  server: 95.164.9.144
+  port: '2927'
+  cipher: chacha20-ietf-poly1305
+  password: ug4Fu79SEREdFGlt2sUyT4
+  udp: true
+- name: _57
+  type: ss
+  server: 45.89.52.66
+  port: '9041'
+  cipher: aes-256-cfb
+  password: U6qnYRhfyDmn8sgn
+  udp: true
+- name: _59
   type: ss
   server: 5.188.181.201
   port: '9030'
   cipher: aes-256-cfb
   password: GeregetR8cvQHzYr
   udp: true
-- name: _58
+- name: _60
   type: ss
   server: 38.121.43.71
   port: '8882'
   cipher: aes-256-gcm
   password: kDWvXYZoTBcGkC4
   udp: true
-- name: _59
+- name: _61
   type: ss
   server: 109.201.152.181
   port: '443'
   cipher: aes-128-cfb
   password: shadowsocks
   udp: true
-- name: _60
+- name: _62
   type: ss
   server: 195.154.169.198
   port: '989'
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
   udp: true
-- name: _61
+- name: _63
   type: ss
   server: 184.170.241.194
   port: '443'
   cipher: aes-128-cfb
   password: shadowsocks
   udp: true
-- name: _62
+- name: _64
   type: ss
   server: 212.102.53.79
   port: '443'
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: _63
+- name: _65
   type: ss
   server: 38.114.114.143
   port: '2376'
   cipher: aes-256-gcm
   password: faBAoD54k87UJG7
   udp: true
-- name: _65
+- name: _66
+  type: ss
+  server: 45.55.2.232
+  port: '14293'
+  cipher: aes-256-cfb
+  password: 2170f8
+  udp: true
+- name: _67
   type: ss
   server: 38.121.43.71
   port: '8119'
   cipher: aes-256-gcm
   password: cdBIDV42DCwnfIN
   udp: true
-- name: _69
+- name: _68
   type: ss
-  server: 38.121.43.71
-  port: '5500'
-  cipher: aes-256-gcm
-  password: KixLvKzwjekG00rm
+  server: 212.102.53.193
+  port: '443'
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
-- name: 🇩🇪 DE_101
+- name: _70
   type: ss
-  server: 45.80.181.77
-  port: '28187'
-  cipher: aes-256-gcm
-  password: sgg7vReHnfEtUtAsWFPeeFOSJ6Q3d9owYfCQSwQMPnk=
+  server: 212.102.53.81
+  port: '443'
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
-- name: 🇩🇪 DE_103
+- name: _71
+  type: ss
+  server: 212.102.53.196
+  port: '443'
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: _72
+  type: ss
+  server: 212.102.53.78
+  port: '443'
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: _73
+  type: ss
+  server: 192.71.249.78
+  port: '989'
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+  udp: true
+- name: _74
+  type: ss
+  server: 212.102.53.197
+  port: '443'
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: _75
+  type: ss
+  server: 38.114.114.143
+  port: '443'
+  cipher: aes-256-gcm
+  password: pKEW8JPByTVTLtM
+  udp: true
+- name: _77
+  type: ss
+  server: 194.71.126.31
+  port: '989'
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+  udp: true
+- name: _78
+  type: ss
+  server: 192.36.27.94
+  port: '989'
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+  udp: true
+- name: _79
+  type: ss
+  server: 46.183.185.15
+  port: '989'
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+  udp: true
+- name: _80
+  type: ss
+  server: 171.22.254.17
+  port: '989'
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+  udp: true
+- name: _81
+  type: ss
+  server: 45.89.52.66
+  port: '9043'
+  cipher: aes-256-cfb
+  password: HSZuyJQcWe8dxNdF
+  udp: true
+- name: _82
+  type: ss
+  server: 80.92.204.106
+  port: '9011'
+  cipher: aes-256-cfb
+  password: M3t2ZEQcMGRWBjRa
+  udp: true
+- name: _83
+  type: ss
+  server: 5.188.181.201
+  port: '9000'
+  cipher: aes-256-cfb
+  password: a3GFYt36Sm82Vys9
+  udp: true
+- name: 🇧🇩 BD_87
+  type: ss
+  server: 103.106.1.92
+  port: '23492'
+  cipher: chacha20-ietf-poly1305
+  password: yMX9WGPgUEcRZmlaa0YHHC
+  udp: true
+- name: 🇨🇦CA_98
+  type: ss
+  server: ca225.vpnbook.com
+  port: '80'
+  cipher: chacha20-ietf-poly1305
+  password: JIhN6rBKkaEboLNXVSv5rq
+  udp: true
+- name: 🇨🇴 CO_103
+  type: ss
+  server: 181.119.30.20
+  port: '990'
+  cipher: chacha20-ietf-poly1305
+  password: f8f7aCzcPKbsF8p3
+  udp: true
+- name: 🇨🇿 CZ_104
+  type: ss
+  server: 195.181.160.6
+  port: '990'
+  cipher: chacha20-ietf-poly1305
+  password: f8f7aCzcPKbsF8p3
+  udp: true
+- name: 🇩🇪 DE_105
   type: ss
   server: 92.118.205.228
   port: '990'
   cipher: chacha20-ietf-poly1305
   password: f8f7aCzcPKbsF8p3
   udp: true
-- name: 🇩🇪DE_104
+- name: 🇩🇪 DE_106
+  type: ss
+  server: beta.mattenadene.org
+  port: '54075'
+  cipher: chacha20-ietf-poly1305
+  password: o38yuvzSe3m5aDNpHtUPH1zGwbGEXXMDsGwVaub2SYEmHUa2WGZUjiezX3Vvva9CCzpjxYtuJLgKsSnsyKBf9ciPVba3y4o3
+  udp: true
+- name: 🇩🇪 DE_107
+  type: ss
+  server: 45.80.181.77
+  port: '28187'
+  cipher: aes-256-gcm
+  password: sgg7vReHnfEtUtAsWFPeeFOSJ6Q3d9owYfCQSwQMPnk=
+  udp: true
+- name: 🇩🇪DE_108
   type: ss
   server: 80.92.204.106
-  port: '9046'
+  port: '9097'
   cipher: aes-256-cfb
-  password: NvS8N4Vf8qAGPSCL
+  password: Sn5B7jTqr76aCJT8
   udp: true
-- name: 🇩🇪DE_105
-  type: ss
-  server: 80.92.204.106
-  port: '9025'
-  cipher: aes-256-cfb
-  password: XPtzA9sCug3SPR4c
-  udp: true
-- name: 🇩🇪DE_106
+- name: 🇩🇪DE_109
   type: ss
   server: 80.92.204.106
   port: '9006'
   cipher: aes-256-cfb
   password: FAdUvMJUq5vDgKEq
   udp: true
-- name: 🇩🇪DE_107
+- name: 🇩🇪DE_110
   type: ss
   server: 80.92.204.106
-  port: '9042'
+  port: '9098'
   cipher: aes-256-cfb
-  password: S7KwUu7yBy58S3Ga
-  udp: true
-- name: 🇩🇪DE_109
-  type: ss
-  server: 80.92.204.106
-  port: '9061'
-  cipher: aes-256-cfb
-  password: 4R3hUfZ2FHhDmNcP
+  password: aLpQtfEZe445QyHk
   udp: true
 - name: 🇩🇪DE_111
   type: ss
@@ -3907,79 +4169,72 @@ proxies:
 - name: 🇩🇪DE_112
   type: ss
   server: 80.92.204.106
-  port: '9015'
+  port: '9061'
   cipher: aes-256-cfb
-  password: ZpNDDKRu9MagNvaf
+  password: 4R3hUfZ2FHhDmNcP
   udp: true
 - name: 🇩🇪DE_113
   type: ss
   server: 80.92.204.106
-  port: '9098'
+  port: '9064'
   cipher: aes-256-cfb
-  password: aLpQtfEZe445QyHk
+  password: cp8pRSUAyLhTfVWH
   udp: true
-- name: 🇫🇷FR_118
+- name: 🇩🇪DE_114
+  type: ss
+  server: 80.92.204.106
+  port: '9025'
+  cipher: aes-256-cfb
+  password: XPtzA9sCug3SPR4c
+  udp: true
+- name: 🇩🇪DE_115
+  type: ss
+  server: 80.92.204.106
+  port: '9042'
+  cipher: aes-256-cfb
+  password: S7KwUu7yBy58S3Ga
+  udp: true
+- name: 🇩🇪DE_116
+  type: ss
+  server: 80.92.204.106
+  port: '9046'
+  cipher: aes-256-cfb
+  password: NvS8N4Vf8qAGPSCL
+  udp: true
+- name: 🇩🇪DE_117
+  type: ss
+  server: 80.92.204.106
+  port: '9015'
+  cipher: aes-256-cfb
+  password: ZpNDDKRu9MagNvaf
+  udp: true
+- name: 🇫🇷FR_121
   type: ss
   server: 195.154.185.174
   port: '989'
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
   udp: true
-- name: 🇬🇧 GB_120
-  type: ss
-  server: 185.5.38.111
-  port: '55988'
-  cipher: chacha20-ietf-poly1305
-  password: BpFieMT6SobpqRiKFefvYu7eXk99XfCeWfjpntzSh81FfMx9R7rJW6LTmzH78StTEhCd7w32ZMxbGJZS98gpn1ozr9jAbMoa
-  udp: true
-- name: 🇬🇧 GB_121
-  type: ss
-  server: 185.5.38.111
-  port: '55988'
-  cipher: chacha20-ietf-poly1305
-  password: 4ju873evpjeaAi8Zq12YoRHWp63o5exdnZ71aUg1YEChiPTc2HkasYhUBxRz7UGi4K6cLrsGaU6b44H4Qa6f4cJn3zBp2cnX
-  udp: true
 - name: 🇬🇧 GB_122
   type: ss
-  server: 185.5.38.111
-  port: '55988'
-  cipher: chacha20-ietf-poly1305
-  password: 2EmWRS1TkS3TkxKApnrihb3aHjDSXRvT1T1K9U2Bruxrnp5A8zmpTxwwTNje6BkVqmn9BgRF6pq8qoRHCfZdcah7BLbjrpT1
+  server: 141.98.101.178
+  port: '443'
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
-- name: 🇬🇧 GB_123
-  type: ss
-  server: 185.47.253.227
-  port: '990'
-  cipher: chacha20-ietf-poly1305
-  password: f8f7aCzcPKbsF8p3
-  udp: true
-- name: 🇬🇧 GB_124
+- name: 🇬🇧 GB_125
   type: ss
   server: 185.47.255.22
   port: '990'
   cipher: chacha20-ietf-poly1305
   password: f8f7aCzcPKbsF8p3
   udp: true
-- name: 🇬🇧 GB_125
-  type: ss
-  server: 185.5.38.111
-  port: '55988'
-  cipher: chacha20-ietf-poly1305
-  password: iZDJs2CDckHKqJ5W7cpvCq2veqsqWn95iqs6Kr6F3YNnyMsk2uPdRrChQfShvH1v56Br1qWEW44qJna5QcMcZF7RCJmdvwuq
-  udp: true
 - name: 🇬🇧 GB_126
   type: ss
   server: mx2.drawnrisha.one
   port: '55988'
   cipher: chacha20-ietf-poly1305
-  password: FjgGNNHQiELzxXmaHRxxtQbxDDvGXFxYdTbYe91JKZsjvKLHoY9rn9ruYE45377WjtU3m4kmXQZDXiHBJsgVfhmpawEoGvq9
-  udp: true
-- name: 🇬🇧 GB_127
-  type: ss
-  server: 141.98.101.178
-  port: '443'
-  cipher: aes-128-gcm
-  password: shadowsocks
+  password: bZ87amPpdG7KuWM62bKtm1KHoowuVjnV8CKtq653ymHcg2dPYcPJfnaQ61stuAjr2ZiLDaqH56XpkxEYuwDzzRrMWieebWGt
   udp: true
 - name: 🇬🇧GB_129
   type: ss
@@ -3997,479 +4252,129 @@ proxies:
   udp: true
 - name: 🇭🇰 HK_136
   type: ss
-  server: 103.36.91.23
-  port: '8388'
-  cipher: chacha20-ietf
-  password: asd123456
-  udp: true
-- name: 🇮🇳 IN_138
-  type: ss
-  server: 159.65.149.72
-  port: '51348'
+  server: 203.23.128.33
+  port: '990'
   cipher: chacha20-ietf-poly1305
-  password: p7EhC8MR7o7GuRn27YF8SQNAKJ2lUbBNIjcyqSmBHsy8wLbJ
+  password: f8f7aCzcPKbsF8p3
   udp: true
-- name: 🇱🇹 LT_141
+- name: 🇱🇹 LT_138
   type: ss
-  server: 45.87.175.192
-  port: '8080'
-  cipher: chacha20-ietf-poly1305
-  password: 4a2rfixophdjffa8KVA4Aa
-  udp: true
-- name: 🇱🇹 LT_142
-  type: ss
-  server: beesyar.org
+  server: 45.87.175.178
   port: '8080'
   cipher: chacha20-ietf-poly1305
   password: cvII85TrW6n0OGyfpHVS1u
   udp: true
-- name: 🇱🇹 LT_146
+- name: 🇱🇹 LT_139
   type: ss
-  server: 45.87.175.192
-  port: '8080'
-  cipher: chacha20-ietf-poly1305
-  password: cvII85TrW6n0OGyfpHVS1u
-  udp: true
-- name: 🇱🇹 LT_154
-  type: ss
-  server: 45.87.175.157
-  port: '8080'
-  cipher: chacha20-ietf-poly1305
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  udp: true
-- name: 🇱🇹 LT_157
-  type: ss
-  server: 45.87.175.192
-  port: '8080'
-  cipher: chacha20-ietf-poly1305
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  udp: true
-- name: 🇱🇹 LT_158
-  type: ss
-  server: 45.87.175.192
-  port: '8080'
-  cipher: chacha20-ietf-poly1305
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  udp: true
-- name: 🇱🇹 LT_163
-  type: ss
-  server: beesyar.org
-  port: '8080'
-  cipher: chacha20-ietf-poly1305
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  udp: true
-- name: 🇱🇹 LT_166
-  type: ss
-  server: 45.158.171.110
+  server: 45.87.175.65
   port: '8080'
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: 🇱🇹 LT_170
+- name: 🇱🇹 LT_140
   type: ss
-  server: 45.158.171.146
-  port: '8080'
-  cipher: chacha20-ietf-poly1305
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  udp: true
-- name: 🇱🇹 LT_171
-  type: ss
-  server: 45.87.175.171
+  server: 45.87.175.164
   port: '8080'
   cipher: chacha20-ietf-poly1305
   password: 1RWwXhwfAB5gAEozU4G2Pg
   udp: true
-- name: 🇱🇹 LT_172
+- name: 🇱🇹 LT_141
+  type: ss
+  server: 45.87.175.164
+  port: '8080'
+  cipher: chacha20-ietf-poly1305
+  password: cvII85TrW6n0OGyfpHVS1u
+  udp: true
+- name: 🇱🇹 LT_142
+  type: ss
+  server: 45.87.175.199
+  port: '8080'
+  cipher: chacha20-ietf-poly1305
+  password: cvII85TrW6n0OGyfpHVS1u
+  udp: true
+- name: 🇱🇹 LT_143
+  type: ss
+  server: 45.87.175.178
+  port: '8080'
+  cipher: chacha20-ietf-poly1305
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  udp: true
+- name: 🇱🇹 LT_144
+  type: ss
+  server: 45.87.175.164
+  port: '8080'
+  cipher: chacha20-ietf-poly1305
+  password: 4a2rfixophdjffa8KVA4Aa
+  udp: true
+- name: 🇱🇹 LT_146
+  type: ss
+  server: 45.87.175.199
+  port: '8080'
+  cipher: chacha20-ietf-poly1305
+  password: 4a2rfixophdjffa8KVA4Aa
+  udp: true
+- name: 🇱🇹 LT_147
+  type: ss
+  server: 45.87.175.154
+  port: '8080'
+  cipher: chacha20-ietf-poly1305
+  password: cvII85TrW6n0OGyfpHVS1u
+  udp: true
+- name: 🇱🇹 LT_148
+  type: ss
+  server: 45.87.175.166
+  port: '8080'
+  cipher: chacha20-ietf-poly1305
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  udp: true
+- name: 🇱🇹 LT_149
+  type: ss
+  server: 45.87.175.154
+  port: '8080'
+  cipher: chacha20-ietf-poly1305
+  password: 4a2rfixophdjffa8KVA4Aa
+  udp: true
+- name: 🇱🇹 LT_151
+  type: ss
+  server: 45.87.175.166
+  port: '8080'
+  cipher: chacha20-ietf-poly1305
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  udp: true
+- name: 🇱🇹 LT_152
+  type: ss
+  server: 45.87.175.199
+  port: '8080'
+  cipher: chacha20-ietf-poly1305
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  udp: true
+- name: 🇱🇹 LT_154
+  type: ss
+  server: 45.87.175.166
+  port: '8080'
+  cipher: chacha20-ietf-poly1305
+  password: cvII85TrW6n0OGyfpHVS1u
+  udp: true
+- name: 🇱🇹 LT_155
   type: ss
   server: 45.158.171.151
   port: '8080'
   cipher: chacha20-ietf-poly1305
   password: 1RWwXhwfAB5gAEozU4G2Pg
   udp: true
-- name: 🇳🇱 NL_178
+- name: 🇱🇹 LT_156
   type: ss
-  server: 103.104.247.49
+  server: 45.87.175.199
   port: '8080'
   cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
+  password: QCXDxuDlTTMD7jtgHUjIoj
   udp: true
-- name: 🇳🇱 NL_181
+- name: 🇱🇹 LT_159
   type: ss
-  server: 103.104.247.47
+  server: 45.87.175.166
   port: '8080'
   cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱NL_182
-  type: ss
-  server: 193.29.139.251
-  port: '8080'
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇵🇱PL_189
-  type: ss
-  server: 217.30.10.18
-  port: '9033'
-  cipher: aes-256-cfb
-  password: UTJA57ypk2XKQpnm
-  udp: true
-- name: 🇷🇴 RO_190
-  type: ss
-  server: 86.104.74.243
-  port: '14255'
-  cipher: chacha20-ietf-poly1305
-  password: fDDmH4QefmWqMJ8UURZrGh
-  udp: true
-- name: 🇷🇺 RU_195
-  type: ss
-  server: 45.151.62.54
-  port: '28825'
-  cipher: chacha20-ietf-poly1305
-  password: 0zyDRZ1XmNXaaCAN7KEA8a
-  udp: true
-- name: 🇷🇺RU_197
-  type: ss
-  server: 45.89.52.66
-  port: '9003'
-  cipher: aes-256-cfb
-  password: JdmRK9gMEqFgs8nP
-  udp: true
-- name: 🇷🇺RU_198
-  type: ss
-  server: 45.89.52.66
-  port: '9005'
-  cipher: aes-256-cfb
-  password: ZET59LF6DvCC8KVt
-  udp: true
-- name: 🇷🇺RU_199
-  type: ss
-  server: 45.89.52.66
-  port: '9042'
-  cipher: aes-256-cfb
-  password: S7KwUu7yBy58S3Ga
-  udp: true
-- name: 🇸🇪 SE_202
-  type: ss
-  server: 45.154.206.192
-  port: '990'
-  cipher: chacha20-ietf-poly1305
-  password: f8f7aCzcPKbsF8p3
-  udp: true
-- name: 🇸🇪 SE_203
-  type: ss
-  server: sto2.a.edgeservers.org
-  port: '39649'
-  cipher: chacha20-ietf-poly1305
-  password: zCbrIk12Qlg9YcERdnzjoh
-  udp: true
-- name: 🇹🇷 TR_206
-  type: ss
-  server: 185.123.101.241
-  port: '990'
-  cipher: chacha20-ietf-poly1305
-  password: f8f7aCzcPKbsF8p3
-  udp: true
-- name: 🇺🇦 UA_207
-  type: ss
-  server: 188.191.147.127
-  port: '31348'
-  cipher: chacha20-ietf-poly1305
-  password: 6IVOuzMfH5ROpgwtRTcNJKYJvYe9FDVaU7wAYYh8PRLxxZs6
-  udp: true
-- name: 🇺🇸 US_208
-  type: ss
-  server: 142.202.49.84
-  port: '8008'
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 🇺🇸 US_209
-  type: ss
-  server: 208.67.105.87
-  port: '42501'
-  cipher: chacha20-ietf-poly1305
-  password: nq96KftrZAj3LuFQESqmn44Mo5oCuo2cipoEsae25mrmHG2oJ4VT37scBfVBpN5DWtUELZutVhhXs8Le5B8fZ9hLn9ytwvbf
-  udp: true
-- name: 🇺🇸 US_210
-  type: ss
-  server: 156.146.62.163
-  port: '443'
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇺🇸 US_211
-  type: ss
-  server: 156.146.62.164
-  port: '443'
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇺🇸 US_212
-  type: ss
-  server: 156.146.38.170
-  port: '443'
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇺🇸 US_213
-  type: ss
-  server: 156.146.38.167
-  port: '443'
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇺🇸 US_214
-  type: ss
-  server: 156.146.62.161
-  port: '443'
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇺🇸 US_215
-  type: ss
-  server: 156.146.62.162
-  port: '443'
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇺🇸 US_216
-  type: ss
-  server: 154.90.63.193
-  port: '990'
-  cipher: chacha20-ietf-poly1305
-  password: f8f7aCzcPKbsF8p3
-  udp: true
-- name: 🇺🇸 US_217
-  type: ss
-  server: 212.102.47.130
-  port: '443'
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇺🇸 US_221
-  type: ss
-  server: 142.202.49.84
-  port: '6679'
-  cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
-  udp: true
-- name: 🇺🇸 US_222
-  type: ss
-  server: 142.202.49.84
-  port: '5003'
-  cipher: aes-256-gcm
-  password: g5MeD6Ft3CWlJId
-  udp: true
-- name: 🇺🇸 US_223
-  type: ss
-  server: 142.202.49.84
-  port: '5004'
-  cipher: aes-256-gcm
-  password: g5MeD6Ft3CWlJId
-  udp: true
-- name: 🇺🇸 US_225
-  type: ss
-  server: 208.67.105.196
-  port: '42029'
-  cipher: chacha20-ietf-poly1305
-  password: SjdGCHwafjktt1rzpGxTKYTvVBWb8Xa6E5DTr6MzbdHQSwvpLiDczj3n6MBjy2uyFSzgqgvCWsDQmpM4VQzfPzyGYF58wdyD
-  udp: true
-- name: 🇺🇸US_258
-  type: ss
-  server: 23.157.40.101
-  port: '7307'
-  cipher: aes-256-gcm
-  password: FoOiGlkAA9yPEGP
-  udp: true
-- name: 🇺🇸US_259
-  type: ss
-  server: 38.121.43.97
-  port: '2376'
-  cipher: aes-256-gcm
-  password: faBAoD54k87UJG7
-  udp: true
-- name: 🇺🇸US_261
-  type: ss
-  server: 38.121.43.71
-  port: '9102'
-  cipher: aes-256-gcm
-  password: e4FCWrgpkji3QY
-  udp: true
-- name: 🇺🇸US_262
-  type: ss
-  server: 23.157.40.101
-  port: '8000'
-  cipher: aes-256-gcm
-  password: KixLvKzwjekG00rm
-  udp: true
-- name: 🇺🇸US_263
-  type: ss
-  server: 38.121.43.71
-  port: '8118'
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
-  udp: true
-- name: 🇺🇸US_264
-  type: ss
-  server: 38.121.43.97
-  port: '8119'
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
-  udp: true
-- name: 🇺🇸US_265
-  type: ss
-  server: 38.121.43.97
-  port: '7307'
-  cipher: aes-256-gcm
-  password: FoOiGlkAA9yPEGP
-  udp: true
-- name: 🇺🇸US_266
-  type: ss
-  server: 38.121.43.97
-  port: '7306'
-  cipher: aes-256-gcm
-  password: FoOiGlkAA9yPEGP
-  udp: true
-- name: 🇺🇸US_267
-  type: ss
-  server: 216.39.248.133
-  port: '7001'
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-  udp: true
-- name: 🇺🇸US_268
-  type: ss
-  server: 38.121.43.97
-  port: '5500'
-  cipher: aes-256-gcm
-  password: KixLvKzwjekG00rm
-  udp: true
-- name: 🇺🇸US_269
-  type: ss
-  server: 38.121.43.71
-  port: '8080'
-  cipher: aes-256-gcm
-  password: KixLvKzwjekG00rm
-  udp: true
-- name: 🇺🇸US_270
-  type: ss
-  server: 38.114.114.143
-  port: '7002'
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-  udp: true
-- name: 🇺🇸US_271
-  type: ss
-  server: 38.121.43.71
-  port: '4444'
-  cipher: aes-256-gcm
-  password: pKEW8JPByTVTLtM
-  udp: true
-- name: 🇺🇸US_272
-  type: ss
-  server: 38.121.43.71
-  port: '5601'
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 🇺🇸US_273
-  type: ss
-  server: 38.121.43.97
-  port: '7001'
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-  udp: true
-- name: 🇺🇸US_275
-  type: ss
-  server: 38.114.114.143
-  port: '4444'
-  cipher: aes-256-gcm
-  password: pKEW8JPByTVTLtM
-  udp: true
-- name: 🇺🇸US_276
-  type: ss
-  server: 2.58.87.221
-  port: '16899'
-  cipher: aes-128-gcm
-  password: Yc2CtrIz8L
-  udp: true
-- name: 🇺🇸US_277
-  type: ss
-  server: 38.121.43.71
-  port: '8009'
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 🇺🇸US_278
-  type: ss
-  server: 38.121.43.71
-  port: '8881'
-  cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
-  udp: true
-- name: 🇺🇸US_279
-  type: ss
-  server: 38.121.43.71
-  port: '8090'
-  cipher: aes-256-gcm
-  password: PCnnH6SQSnfoS27
-  udp: true
-- name: 🇺🇸US_280
-  type: ss
-  server: 38.121.43.71
-  port: '6379'
-  cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
-  udp: true
-- name: 🇺🇸US_281
-  type: ss
-  server: 45.158.171.66
-  port: '8080'
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇺🇸US_282
-  type: ss
-  server: exchange.gameaurela.click
-  port: '52952'
-  cipher: chacha20-ietf-poly1305
-  password: LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj
-  udp: true
-- name: 🇺🇸US_283
-  type: ss
-  server: 23.157.40.101
-  port: '8008'
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 🇿🇦 ZA_286
-  type: ss
-  server: 156.244.9.92
-  port: '990'
-  cipher: chacha20-ietf-poly1305
-  password: f8f7aCzcPKbsF8p3
-  udp: true
-- name: 🇿🇦 ZA_287
-  type: ss
-  server: 129.232.134.112
-  port: '990'
-  cipher: chacha20-ietf-poly1305
-  password: f8f7aCzcPKbsF8p3
-  udp: true
-- name: 🏁 ZZ_291
-  type: ss
-  server: 213.109.147.242
-  port: '62685'
-  cipher: chacha20-ietf-poly1305
-  password: VpKABcOpNNA0l5G2AVOmw8
-  udp: true
-- name: 🏁ZZ_304
-  type: ss
-  server: 23.154.136.148
-  port: '6679'
-  cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
+  password: 4a2rfixophdjffa8KVA4Aa
   udp: true
 proxy-groups:
 - name: 节点选择
@@ -4483,506 +4388,506 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
+  - 🇺🇸US-142.202.49.84-0464
+  - 🇺🇸US-142.202.49.84-0458
   - 🇺🇸US-15.197.162.184-3863
   - xiaoer886_US_24
-  - 🇺🇸US-142.202.49.84-0461
-  - 🇺🇸 US_208
-  - 🇺🇸US-37.19.198.243-0289
-  - 🇺🇸US-37.19.198.160-0291
-  - 🇺🇸US-37.19.198.244-0295
-  - xiaoer886_US_11
-  - xiaoer886_US_9
-  - _37
-  - 🇺🇸US-38.121.43.71-0443
-  - 🇺🇸US-38.121.43.71-0449
-  - _65
-  - 🇺🇸US_280
-  - _42
-  - 🇺🇸US-38.121.43.71-0471
-  - 🇺🇸US-38.121.43.71-0468
-  - 🇺🇸US-38.121.43.71-0451
-  - _48
-  - 🇺🇸US-38.121.43.71-0463
-  - _13
   - 🇺🇸US-142.202.49.84-0469
-  - 🇺🇸US-38.121.43.71-0442
-  - 🇺🇸US-38.121.43.71-0439
-  - 🇺🇸US-38.121.43.71-0456
-  - _24
-  - 🇺🇸US_272
-  - _46
-  - 🇺🇸US_263
-  - _15
-  - _25
-  - _69
-  - 🇺🇸US-38.121.43.71-0478
-  - 🇺🇸US-38.121.43.71-4754
-  - 🇺🇸US-38.121.43.71-0476
-  - _51
-  - _58
-  - _05
-  - _23
-  - 🇺🇸US-38.121.43.71-0447
-  - 🇺🇸US-38.121.43.71-0460
-  - _41
-  - 🇺🇸US-38.121.43.71-0448
-  - _33
-  - _35
-  - 🇺🇸US-38.121.43.71-0483
-  - 🇺🇸US-38.121.43.71-0467
-  - 🇺🇸US-38.121.43.71-0465
-  - 🇺🇸US-38.121.43.71-0474
-  - _50
-  - 🇺🇸US_271
-  - 🇺🇸US_261
-  - 🇺🇸US-38.121.43.71-0473
-  - 🇺🇸US-38.121.43.71-0446
-  - 🇺🇸US-38.121.43.71-0441
-  - 🇺🇸US-38.121.43.71-0470
-  - 🇺🇸US-142.202.49.84-0458
-  - _01
-  - US_2db7b_0096
-  - 🇺🇸US_278
-  - 🇺🇸US-38.121.43.71-0453
-  - 🇺🇸US_277
-  - 🇺🇸US-38.121.43.71-0445
-  - 🇺🇸US-38.121.43.71-5544
-  - 🇺🇸US-38.121.43.71-0452
-  - 🇺🇸US_269
-  - 🇺🇸US-38.121.43.71-0482
-  - 🇺🇸US-38.121.43.71-0472
-  - FR_Paris_Oracle Corporation_OpenAI
-  - _44
-  - _43
-  - NL_2db7b_0043
-  - 美国 082
-  - NL_2db7b_0051
-  - NL_2db7b_0026
-  - _38
-  - US_2db7b_0087
-  - _04
-  - 美国 385
-  - 🇺🇸US-194.5.215.59-0296
-  - GB_London_Amazon Technologies Inc._OpenAI
-  - 美国 102
-  - US_2db7b_0101
-  - 🏁RELAY-104.21.90.210-0900
-  - 美国 104
-  - 美国 100
-  - 🇺🇸 US_221
-  - NL_2db7b_0019
-  - 美国 106
-  - 🇺🇸US-23.154.136.148-5575
-  - 🇺🇸 US_223
-  - NL_2db7b_0025
-  - _22
-  - 🇺🇸US-216.39.248.133-0477
-  - 美国 071
-  - 🏁RELAY-104.21.48.1-5641
-  - 🇺🇸 US_212
-  - 🇺🇸US_279
-  - 🇺🇸US-156.146.38.168-0290
-  - 🇺🇸US-156.146.38.169-0292
-  - 美国 099
-  - 美国 090
-  - vpnshield
-  - 美国 101
-  - 美国 103
-  - 🏁RELAY-104.21.16.1-0923
-  - 🇺🇸US-156.146.38.167-0294
-  - US_2db7b_0098
-  - 🇺🇸US-156.146.38.170-0293
-  - GOzaRGAh-TLS
-  - 美国 080
-  - 美国 070
-  - 🏁ZZ_304
-  - 🇨🇦CA-142.4.216.225-0421
-  - 🇺🇸US-38.121.43.97-5288
-  - 美国 084
-  - 美国 107
-  - 🏁RELAY-172.67.189.27-0779
-  - 🇺🇸US_267
-  - 美国 105
-  - 🏁RELAY-104.21.80.1-5635
-  - US_2db7b_0102
-  - US_2db7b_0099
-  - 🇺🇸US-38.110.1.197-0459
-  - US_2db7b_0093
-  - 🇺🇸 US_213
-  - 🏁RELAY-172.67.189.27-0783
-  - 🏁RELAY-104.21.57.38-0782
-  - 🇺🇸US-104.207.155.64-0321
-  - 🇺🇸US_275
-  - 🇺🇸US-38.114.114.143-0466
-  - 🇺🇸US-38.114.114.143-0457
-  - 🇺🇸US-38.114.114.143-0462
-  - _47
-  - _63
-  - 🇺🇸US_270
-  - 🇺🇸US-38.114.114.143-0454
-  - 🇺🇸US-212.102.47.132-0309
-  - _61
-  - 🇺🇸US-15.197.162.184-3016
-  - 🇺🇸US-45.55.2.232-0310
-  - 捷克 001
-  - 🇺🇸 US_217
-  - 🇺🇸US-184.170.241.194-0297
-  - _34
-  - US美国(mibei77.com 米贝节点分享) 50
-  - 🇺🇸US_276
-  - xiaoer886_US_55
-  - 🇺🇸US-173.244.56.6-0301
-  - 丹麦 001
-  - 🏁RELAY-104.21.64.1-0751
-  - 🇺🇸US-38.121.43.71-0444
-  - _02
-  - 🇬🇧GB-212.102.53.194-0106
-  - _03
-  - 🇬🇧GB-212.102.53.193-0325
-  - 🇬🇧GB-212.102.53.196-0327
-  - 美国 336
-  - 🇬🇧GB_129
-  - US_2db7b_0085
-  - 🇬🇧GB_130
-  - 🇬🇧GB-212.102.53.80-0324
-  - 🇳🇱NL-109.201.152.181-0319
-  - 🇬🇧GB-212.102.53.78-0329
-  - 🇬🇧GB-212.102.53.197-0326
-  - 🇱🇹 LT_166
-  - 🇬🇧GB-212.102.53.81-0335
-  - _40
-  - 🇨🇦CA-142.4.216.225-0419
-  - 🇳🇱NL-149.34.244.71-0337
-  - 🇧🇬_BG_保加利亚->🇺🇸_US_美国
-  - 🇳🇱NL-149.34.244.68-0340
-  - _10
-  - 🇬🇧GB-212.102.53.195-0330
-  - 🇬🇧GB-212.102.53.79-0332
-  - 🇺🇸US-38.114.114.245-2372
-  - _56
-  - 🇬🇧GB-212.102.53.198-0333
-  - 🇪🇸ES-5.188.181.201-5298
-  - 美国 325
-  - _59
-  - 🇫🇷FR_118
-  - 🇫🇷FR-195.154.185.174-0320
-  - 🇺🇸US-2.58.87.221-5541
-  - 🇬🇧GB-169.150.210.233-0345
-  - 🇫🇷FR-45.158.171.110-5429
-  - 🇪🇸ES-5.188.181.201-5297
-  - 🏁RELAY-104.21.3.219-0300
-  - _60
-  - 🇪🇸ES-5.188.181.201-5295
-  - 🇺🇸US-212.102.47.131-0303
-  - 🇺🇸US-212.102.47.130-0307
-  - 🇪🇸ES-5.188.181.201-5293
-  - 美国 335
-  - _52
-  - 🇬🇧 GB_127
-  - 🇺🇸_美国_2
-  - NL_2db7b_0044
-  - 🇫🇷FR-195.154.169.198-0328
-  - 🇱🇹 LT_170
-  - 🇺🇸US_281
-  - 美国 085
-  - US美国(mibei77.com 米贝节点分享) 56
-  - 美国 403
-  - 🇨🇭CH-156.146.62.164-0350
-  - 🇨🇭CH-156.146.62.163-0365
-  - 美国 086
-  - 🇺🇸 US_211
-  - 🇸🇪SE-151.236.206.42-5463
-  - 🇺🇸 US_210
-  - 🇨🇭CH-156.146.62.161-0356
-  - HK香港(mibei77.com 米贝节点分享) 10
-  - 美国 351
-  - 🏁RELAY-104.21.64.1-0901
-  - _49
-  - _62
-  - SS-瑞典-NF解锁瑞典地区非自制剧-ChatGPT-TikTok-YouTube-151.236.206.42:39649
-  - 🇺🇸US_283
-  - 美国 404
-  - Hy2-dongtaiwang
-  - 🇺🇸US-23.157.40.101-0479
-  - 🇲🇩MD-86.104.74.243-5448
-  - 🇺🇸_US_美国_2
+  - US美国(mibei77.com 米贝节点分享) 44
   - 美国 079
-  - 🇪🇸ES-5.188.181.201-5292
-  - _30
-  - 🇬🇧GB-146.70.61.18-0339
-  - 🇧🇪BE-192.71.249.146-0428
-  - 🇨🇿CZ-195.181.160.6-0347
-  - 🇦🇺_AU_澳大利亚
-  - AlvinQuick-2
-  - 🇧🇪BE-192.71.249.78-0426
-  - 🇩🇪DE-185.177.229.245-0434
-  - 美国 003
-  - 🇺🇸 US_222
-  - 🇸🇪 SE_202
-  - 🇺🇸 US_215
-  - 🇺🇸 US_214
-  - 🇨🇭CH-156.146.62.162-0353
-  - 🇵🇱PL-217.30.10.70-8858
-  - 🇩🇪DE_105
-  - 🇨🇭_CH_瑞士->🇧🇪_BE_比利时
-  - 🇷🇴 RO_190
-  - 🏁RELAY-104.17.213.241-1162
-  - US美国(mibei77.com 米贝节点分享) 67
-  - 🏁RELAY-104.19.48.236-1159
-  - 🇺🇸 US_209
-  - 🇵🇱PL-92.118.205.228-0357
-  - 🇫🇷FR-51.15.86.181-0792
-  - 🇪🇸ES-5.188.181.201-5354
-  - 🇩🇪 DE_103
-  - 🏁 ZZ_291
-  - 🏁RELAY-141.101.120.195-2345
-  - _45
-  - 🇪🇸ES-45.154.206.192-5464
-  - 🏁RELAY-104.17.213.241-0693
-  - 美国 CloudFlare节点-dZi1
-  - AlvinQuick-3
-  - 🇸🇪SE-121.127.46.147-5578
-  - 🇮🇹_IT_意大利->🇷🇺_RU_俄罗斯
-  - 🏁RELAY-104.19.48.236-0920
-  - US美国(mibei77.com 米贝节点分享) 71
-  - 🇺🇸 US_225
-  - 🏁RELAY-104.18.149.76-0680
-  - 🇩🇪DE-80.92.204.106-5268
-  - 🇩🇰DK-192.36.27.94-0418
-  - 🏁RELAY-104.21.80.1-0909
-  - VMESS-未知>美国-NF解锁自制剧-TikTok-YouTube-US7-01.890624.XyZ:443
-  - 🇫🇷FR-45.158.171.66-5548
-  - 🇱🇹LT-45.87.175.69-5660
-  - 🏁RELAY-141.101.120.27-0808
-  - 🇳🇱NL-193.29.139.189-5435
-  - 🇱🇹LT-185.237.185.160-5664
-  - 🇺🇸US-38.110.1.88-5316
-  - 🇲🇹MT-171.22.254.17-5344
-  - 🇹🇷TR-185.123.101.241-0376
-  - 🇬🇧GB-212.102.53.197-0331
+  - NL_18def_0011
+  - xiaoer886_US_9
+  - US_18def_0079
+  - NL_18def_0025
+  - _42
+  - _67
+  - _41
+  - _16
+  - GB_London_Amazon Technologies Inc._OpenAI
+  - _35
+  - xiaoer886_US_11
+  - _40
+  - _43
+  - _24
   - _06
-  - 🇷🇴RO-194.14.217.38-0358
-  - 🇩🇪DE_104
-  - 🇱🇹LT-45.87.175.192-5417
-  - 🇩🇪_DE_德国-c1Tl
-  - 🏁RELAY-104.21.112.1-5634
-  - 🇪🇸ES-5.188.181.201-0429
-  - 🇬🇧_GB_英国
-  - 🇺🇸US-166.88.131.195-5553
-  - 🏁RELAY-104.17.221.248-0909
-  - 🇫🇷FR-141.227.138.29-0352
-  - 🇬🇧GB-141.98.101.178-0363
-  - 🇳🇱NL-213.109.147.242-5566
-  - 🏁RELAY-104.16.155.10-0927
-  - 🇩🇪DE_107
-  - 🏁RELAY-104.17.213.241-0924
-  - 🇺🇸US-38.121.43.97-5542
-  - 🇷🇸RS-194.71.126.31-0361
-  - 🏁RELAY-104.16.155.10-0917
-  - 🇯🇵JP-149.22.87.240-0367
-  - 🇸🇪 SE_203
-  - 🇺🇸US-38.121.43.97-5287
-  - 🇺🇸US-173.230.155.32-0771
-  - 🇺🇸US-45.33.50.141-0772
-  - _17
-  - 🇺🇸US-23.157.40.101-0481
-  - 🇨🇴CO-181.119.30.20-5369
-  - xiaoer886_CA_1
-  - 🇺🇸_US_美国_1_1
-  - 🇹🇷 TR_206
-  - 🇩🇪DE-80.92.204.106-5382
-  - 🇫🇷FR-141.227.160.167-0351
-  - 🇹🇷TR-45.89.52.66-5328
-  - US_2db7b_0100
-  - 🇩🇪DE_106
-  - 🇺🇦 UA_207
-  - _08
-  - _07
-  - 🇬🇧_GB_英国->🇯🇵_JP_日本
-  - 🇩🇪DE-80.92.204.106-5282
-  - 美国 CloudFlare节点-Xdzp
-  - 🇩🇪DE-80.92.204.106-5283
-  - 🇺🇸US-64.176.184.129-1152
-  - 🇭🇷HR-46.183.184.60-5348
-  - 🏁 ZZ_303
-  - 🏁RELAY-172.67.189.27-0788
-  - 🇮🇸IS-37.235.49.152-0485
-  - 🇫🇷FR-45.158.171.146-0355
-  - 🇯🇵JP-149.22.87.241-0368
-  - US_2db7b_0092
-  - 🇳🇱NL-167.99.35.214-5576
-  - 🇲🇰MK-46.183.185.37-5434
-  - US_2db7b_0097
-  - US_2db7b_0091
-  - 🇷🇺RU_199
-  - 🇬🇧 GB_123
-  - 🇳🇱NL-188.119.112.242-5443
-  - 🏁RELAY-172.67.189.27-0795
-  - 🇱🇹 LT_172
+  - _38
+  - 🇺🇸US-38.121.43.71-0470
+  - 🇺🇸US-38.121.43.71-0442
+  - _23
+  - 🇺🇸US-38.121.43.71-0452
+  - 🇺🇸US-38.121.43.71-0465
+  - _47
+  - 🇺🇸US-38.121.43.71-0463
+  - 🇺🇸US-38.121.43.71-0455
+  - 🇺🇸US-38.121.43.71-0446
+  - 🇺🇸US-38.121.43.71-0443
   - _39
-  - 🇰🇷KR-154.90.63.193-0484
-  - US_2db7b_0094
-  - xiaoer886_IR_1
-  - 🏁RELAY-172.67.71.160-7606
-  - 🇱🇹 LT_154
-  - 🇺🇸US_273
-  - 🇳🇱NL-208.67.105.87-5487
-  - 🇷🇺RU_197
-  - 🇩🇪DE-80.92.204.106-5267
-  - 🏁RELAY-104.21.80.1-0705
-  - 🇺🇸US_282
-  - 🇺🇸 US_216
-  - 🇷🇺RU-45.151.62.54-5452
-  - 🏁RELAY-172.67.175.56-7595
-  - 🇸🇰_SK_斯洛伐克
-  - 10|@ا ا
-  - 🇷🇺RU_198
-  - SS-瑞士-NF解锁荷兰地区非自制剧-ChatGPT-TikTok-YouTube-91.103.253.151:19057
-  - 11|11|11|11|11|11,16|日本|@ripaojie...
-  - 🏁RELAY-104.21.94.64-7628
-  - xiaoer886_JO_1
-  - 🇱🇹LT-45.87.175.171-5423
-  - 🇦🇺AU-103.224.212.127-3043
-  - 美国 CloudFlare节点-Di7s
-  - 2|🇩🇪5
-  - 🏁RELAY-104.21.31.62-7571
-  - 🇺🇸US_268
-  - 🇹🇷TR-45.89.52.66-8735
-  - 美国 387
-  - 美国 072
-  - 🇬🇧GB-185.5.38.111-5397
-  - 🏁RELAY-172.67.220.10-7579
-  - 🇺🇸US_258
-  - 🇧🇴BO-185.93.173.218-5432
-  - 🇳🇱NL_182
-  - 🏁RELAY-104.21.32.1-0397
-  - 🇬🇧 GB_122
-  - 🇸🇬SG-68.183.227.4-0381
-  - 🇺🇸US_265
-  - 🏁RELAY-104.26.0.95-7599
-  - 🇵🇱PL-45.144.48.63-0432
-  - 🇱🇹 LT_141
-  - 🇩🇪DE-80.92.204.106-5379
-  - 🇸🇬SG-45.80.181.77-0411
-  - 🇭🇰 HK_136
-  - 🇱🇹 LT_142
-  - 🏁RELAY-104.17.213.241-1177
-  - 🇺🇸US-103.36.91.23-5409
-  - 🇹🇷TR-95.164.116.35-5405
-  - 🇺🇸US-38.121.43.97-5260
-  - 英国 007
-  - 🇺🇸_美国_7
-  - 🇺🇸_US_美国_1
-  - 🇬🇧 GB_124
-  - 🇺🇸US-38.121.43.97-5559
-  - 🇺🇸US-38.110.1.88-5319
-  - CH_2db7b_0001
-  - 🇺🇸US-38.121.43.97-5551
-  - 🇪🇨EC-185.47.253.227-5398
-  - 🇺🇸US-166.1.157.228-5471
-  - 🇷🇺_RU_俄罗斯_6
-  - xiaoer886_US_22
-  - SS-英国-NF解锁荷兰地区非自制剧-ChatGPT-TikTok-YouTube-77.239.117.121:28694
-  - 🏁RELAY-172.67.210.210-0809
-  - _09
-  - 美国 183
-  - 🇹🇷TR-45.89.52.66-8731
-  - 🇺🇸US_266
-  - 🇩🇪 DE_101
-  - 🇩🇪DE-80.92.204.106-2446
-  - 🏁RELAY-104.21.23.115-0810
-  - xiaoer886_US_15
-  - _27
-  - _26
-  - 🇵🇱PL-217.30.10.18-5668
-  - 🇺🇸US_262
-  - 🇭🇰 香港
-  - 🏁RELAY-141.101.120.176-2224
-  - 美国 056
-  - 🇹🇷TR-45.89.52.66-5459
-  - 🇺🇸US_259
-  - 🇷🇺_RU_俄罗斯_10
-  - US_2db7b_0103
-  - 🇩🇪DE-80.92.204.106-5377
-  - 🇱🇹 LT_146
-  - 🇬🇧 GB_126
-  - 🇩🇪DE_109
-  - 🇬🇧_英国_2
-  - 🏁RELAY-104.16.155.10-0755
-  - 🇩🇪DE_113
-  - US美国(mibei77.com 米贝节点分享) 98
-  - 🇳🇱 NL_181
-  - 🇿🇦 ZA_286
-  - 🇬🇧_英国_1
-  - 🇱🇹 LT_157
-  - 🇯🇵JP-5.253.41.160-5355
+  - 🇺🇸US-38.121.43.71-0456
+  - _25
+  - _14
+  - _37
+  - 🇺🇸US-38.121.43.71-0483
+  - 🇺🇸US-38.121.43.71-0439
+  - FR_Paris_Oracle Corporation_OpenAI
+  - 🇺🇸US-38.121.43.71-0453
+  - _49
+  - 🇺🇸US-38.121.43.71-0445
+  - 🇺🇸US-38.121.43.71-0448
+  - 🇺🇸US-38.121.43.71-5544
+  - _60
+  - GOzaRGAh-TLS
+  - 美国 071
+  - _45
+  - 🇺🇸US-38.121.43.71-0444
+  - 🇺🇸US-38.121.43.71-0474
+  - 🇺🇸US-38.121.43.71-0451
+  - 🇺🇸US-38.121.43.71-0471
+  - _44
+  - 🇺🇸US-38.121.43.71-0468
+  - 🇺🇸US-194.116.173.21-0379
+  - 🇺🇸US-38.121.43.71-0467
+  - NL_18def_0022
+  - NL_18def_0038
+  - US_18def_0083
+  - 🇺🇸US-38.121.43.71-0475
+  - 🇺🇸US-38.121.43.71-0460
+  - _51
+  - 🇺🇸US-38.121.43.71-0449
+  - 美国 107
+  - 🇺🇸US-142.202.49.84-0440
+  - 美国 105
+  - US_18def_0074
+  - 🇺🇸US-142.202.49.84-0450
+  - 美国 103
+  - _22
+  - 🇺🇸US-38.121.43.71-0472
+  - _52
+  - 美国 070
+  - 🇺🇸US-38.121.43.71-0473
+  - 美国 100
+  - 🇺🇸US-38.121.43.71-0478
+  - 🏁RELAY-104.21.90.210-0900
+  - 美国 106
+  - US-WS-1
+  - 🇺🇸US-38.121.43.97-5543
+  - 🇺🇸US-38.121.43.97-5542
+  - 🇺🇸US-38.121.43.71-0476
+  - 🇨🇦CA-142.4.216.225-0421
+  - 🇺🇸US-38.121.43.97-5549
+  - 美国 102
+  - _46
+  - 🏁RELAY-104.21.57.38-0782
+  - 🇺🇸US-38.121.43.71-0441
+  - 美国 104
+  - 美国 099
+  - 美国 101
+  - 🇺🇸US-38.121.43.71-0447
+  - 🏁RELAY-172.67.189.27-0779
+  - US_18def_0084
+  - 🇺🇸US-142.202.49.84-0461
   - 🇺🇸US-38.121.43.97-5557
-  - 🇩🇪DE_112
-  - 🇮🇳 IN_138
-  - 🇱🇹LT-45.87.175.92-5659
-  - 🇩🇪DE-80.92.204.106-5279
-  - 🇯🇵JP-13.231.87.40-1963
-  - 🇷🇺 RU_195
-  - 🏁RELAY-104.21.57.38-5585
-  - 🇩🇪DE_111
-  - 🏁RELAY-104.21.57.38-5589
-  - 🇬🇧 GB_125
-  - 🇱🇹 LT_158
-  - 🇮🇳IN-159.65.149.72-0385
-  - 🏁RELAY-104.21.57.38-0794
-  - 🇻🇳VN-103.163.218.2-0400
-  - 🇸🇮SI-192.71.244.150-5349
-  - 🇺🇸US_264
-  - 🇬🇧GB-185.5.38.111-5396
-  - 🇵🇱PL-217.30.10.18-5666
-  - 🇩🇪DE-80.92.204.106-5384
-  - US_2db7b_0108
-  - _11
-  - AlvinSingbox-2
-  - 🇮🇩ID-38.9.140.66-4488
-  - 🇱🇹 LT_171
-  - 🇺🇸_US_美国_6
-  - 🇩🇪DE-80.92.204.106-5378
-  - 🇬🇧 GB_121
-  - 🇳🇱NL-193.29.139.251-5442
-  - 🇷🇺_RU_俄罗斯_9
-  - Hy-dongtaiwang
-  - 🇬🇧 GB_120
-  - 🇺🇸_US_美国_3_1
-  - 🇳🇱 NL_178
-  - _20
-  - AlvinQuick-1
-  - 🇳🇱NL-208.67.105.196-5489
-  - 🇷🇺_RU_俄罗斯_7
-  - 🇳🇱NL-103.104.247.47-5438
-  - 🇮🇳IN-103.174.86.114-0391
-  - 🇨🇦CA-51.79.102.253-1153
-  - 🇷🇺_RU_俄罗斯_4
-  - 🇷🇺_RU_俄罗斯_2
-  - 🇵🇱PL_189
-  - 🇷🇺_RU_俄罗斯
-  - 🇱🇹LT-45.87.175.35-5661
-  - 🇩🇪DE-80.92.204.106-5266
-  - 🏁RELAY-172.67.220.83-7590
-  - 🏁RELAY-104.21.83.208-7593
-  - 🇯🇵JP-43.207.112.226-5356
-  - JP_2db7b_0018
-  - 🇭🇰HK-20.255.96.114-3268
-  - 🇰🇷KR-152.70.249.97-0383
-  - 🇹🇷TR-45.89.52.66-8734
-  - 🇩🇪DE-80.92.204.106-5376
-  - 🇮🇩ID-38.9.140.66-4491
-  - 🇳🇱NL-89.23.103.125-5455
-  - 🇿🇦 ZA_287
-  - 🇩🇪DE-80.92.204.106-5271
-  - TW_2db7b_0084
-  - 🇱🇹LT-45.87.175.154-0224
-  - 🇩🇪DE-80.92.204.106-5383
+  - US美国(mibei77.com 米贝节点分享) 52
+  - 🇺🇸US-38.121.43.71-4754
+  - 美国 082
+  - 美国 090
+  - 🇺🇸US-38.121.43.97-5289
+  - US美国(mibei77.com 米贝节点分享) 39
+  - 美国 088
+  - 美国 084
+  - 🇺🇸US-38.110.1.197-0459
+  - 🇺🇸US-38.121.43.71-0482
+  - 🇨🇦CA_98
+  - _27
+  - 🇺🇸US-216.39.248.133-0477
+  - 美国 080
+  - 🏁RELAY-172.67.189.27-0783
+  - _26
+  - _05
+  - 🇺🇸US-38.121.43.97-5288
+  - 美国 385
+  - US_18def_0082
+  - _75
+  - US_18def_0080
+  - 🇺🇸US-38.114.114.143-0457
+  - 🇺🇸US-38.114.114.245-2372
+  - 🇺🇸US-38.110.1.88-5316
+  - 美国 387
+  - 🇺🇸US-38.121.43.97-5559
+  - 🇺🇸US-38.114.114.143-0454
+  - _65
+  - 🇺🇸US-38.114.114.143-0462
+  - 🇺🇸US-38.114.114.143-0466
+  - 🇺🇸US-45.55.2.232-0310
+  - US美国(mibei77.com 米贝节点分享) 35
+  - _50
   - 🇺🇸US-38.110.1.88-5301
-  - 🇭🇰HK-150.107.46.21-5483
-  - 🇱🇹 LT_163
-  - HK-HTTP-1
+  - _28
+  - US美国(mibei77.com 米贝节点分享) 67
+  - 🇺🇸US-2.58.87.221-5541
+  - _66
+  - _11
+  - 🇬🇧GB-212.102.53.195-0330
+  - 🇬🇧GB_129
+  - 🇬🇧GB-212.102.53.81-0335
+  - 🇬🇧GB_130
+  - _70
+  - _74
+  - _68
+  - 🇬🇧GB-212.102.53.198-0333
+  - 🇱🇹 LT_139
+  - 🇺🇸US-38.121.43.97-5287
+  - _53
+  - 🇳🇱NL-103.104.247.47-5438
+  - 🇬🇧 GB_122
+  - 🇱🇹LT-45.87.175.35-5661
+  - 🇳🇱NL-193.29.139.202-5441
+  - 🇫🇷FR_121
+  - 🇬🇧GB-141.98.101.178-0363
+  - 🇪🇸ES-5.188.181.201-5259
+  - 🇪🇸ES-5.188.181.201-5387
+  - 🇪🇸ES-5.188.181.201-5354
+  - 🇱🇹LT-45.87.175.69-5660
+  - 🇩🇪_DE_德国
+  - 🇺🇦_UA_乌克兰
+  - 🇺🇸US-23.157.40.101-5534
+  - 🇬🇧GB-169.150.210.233-0345
+  - _29
+  - 🇱🇹LT-45.87.175.58-5662
+  - 🇪🇸ES-5.188.181.201-5291
+  - _32
+  - _72
+  - 🇱🇹LT-45.87.175.92-5659
+  - 🇳🇱NL-103.104.247.49-5436
+  - 🇦🇹AT-95.164.9.144-5322
+  - 🇱🇹LT-45.87.175.192-5417
+  - 🇺🇸US-23.157.40.101-0481
+  - 🇱🇹LT-45.87.175.171-5423
+  - 🇺🇸US-38.121.43.97-5551
+  - 🏁RELAY-172.67.210.210-0809
+  - 🇪🇸ES-5.188.181.201-5298
+  - _31
+  - 🇲🇩MD-86.104.74.243-5448
+  - 🇱🇹 LT_148
+  - 🇱🇹LT-45.87.175.164-0362
+  - _61
+  - 🇳🇱NL-208.67.105.87-5487
+  - 🇺🇸US-23.157.40.101-0480
+  - 🇱🇹 LT_138
+  - _30
+  - 美国 089
+  - 🇱🇹 LT_146
+  - 🇺🇸US-38.110.1.88-5319
+  - 🇪🇸ES-5.188.181.201-5292
+  - 🇳🇱NL-193.29.139.251-5442
+  - 美国 324
+  - 捷克 001
+  - 🇨🇦CA-142.4.216.225-0419
+  - 🇳🇱NL-193.29.139.189-5435
+  - VMESS-未知>乌克兰-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-104.21.112.1:80
+  - 🇪🇸ES-5.188.181.201-5295
+  - 🇱🇹 LT_155
+  - 🇱🇹 LT_143
+  - _18
+  - SS-瑞典-NF解锁瑞典地区非自制剧-ChatGPT-TikTok-YouTube-151.236.206.42:39649
+  - US美国(mibei77.com 米贝节点分享) 71
+  - 🇱🇹LT-45.87.175.166-5424
+  - 🇪🇸ES-5.188.181.201-5297
+  - _63
+  - 🇨🇭CH-156.146.62.162-0353
+  - _17
+  - 🇧🇩 BD_87
+  - 🇨🇭CH-156.146.62.161-0356
+  - 🇱🇹 LT_154
+  - 🇱🇹 LT_142
+  - 🇨🇭CH-156.146.62.163-0365
+  - 🇩🇪_DE_德国-CIFo
+  - _62
+  - 🇱🇹 LT_151
+  - 🏁RELAY-104.21.23.115-0810
+  - 🏁RELAY-104.21.3.219-0300
+  - 🇫🇷FR-45.158.171.66-5548
+  - 🇱🇹 LT_159
   - 🇱🇹LT-45.87.175.10-0424
+  - 丹麦 001
+  - 🇳🇱NL-213.109.147.242-5566
+  - 🇨🇿 CZ_104
+  - 🇺🇸US-38.121.43.97-5545
+  - 美国 351
+  - 🇱🇹LT-45.87.175.178-5416
+  - 🇺🇸US-64.176.184.129-1152
+  - 🇪🇸ES-5.188.181.201-5293
+  - 🇵🇱PL-217.30.10.18-5666
+  - 🏁RELAY-104.16.155.10-0755
+  - 🇺🇸US-23.157.40.101-0479
+  - 🇧🇬_BG_保加利亚->🇺🇸_US_美国
+  - 美国 325
+  - 🇷🇺_RU_俄罗斯_6
+  - 🇩🇪DE-80.92.204.106-5268
+  - 🇵🇱PL-217.30.10.18-5668
+  - 🇪🇸ES-5.188.181.201-5290
+  - 🇷🇺_RU_俄罗斯_1
+  - 🇷🇺_RU_俄罗斯_8
+  - 🇷🇺_RU_俄罗斯_10
+  - 🇨🇿CZ-195.181.160.6-0347
+  - 美国 336
+  - 🇷🇺_RU_俄罗斯_9
+  - 🇷🇺_RU_俄罗斯
+  - 🇳🇱NL-208.67.105.196-5489
+  - 🏁RELAY-104.19.48.236-0920
+  - 🇺🇸US-38.121.43.97-5260
+  - 🇷🇺_RU_俄罗斯_3
+  - VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-US7-02.890624.xyZ:443
+  - 🇱🇹 LT_144
+  - _83
+  - 🇩🇪 DE_106
+  - 🇩🇪 DE_105
+  - HK香港(mibei77.com 米贝节点分享) 10
+  - 🇧🇪BE-192.71.249.78-0426
+  - 🇵🇱PL-92.118.205.228-0357
+  - 🇦🇺_AU_澳大利亚
+  - _59
+  - Hy2-dongtaiwang
+  - _56
+  - 🏁RELAY-104.17.221.248-0909
+  - 🇱🇹 LT_156
+  - 🇩🇪DE-80.92.204.106-5383
+  - 🇩🇪DE-80.92.204.106-5266
+  - 🇸🇰_SK_斯洛伐克
+  - 🇪🇸ES-45.154.206.192-5464
+  - _71
+  - 🇷🇺_RU_俄罗斯_2
+  - 🇨🇭_CH_瑞士->🇧🇪_BE_比利时
+  - 🇨🇭CH-156.146.62.164-0350
+  - 🇵🇷PR-185.47.255.22-5400
+  - 🇧🇪BE-192.71.249.146-0428
+  - 🇱🇹 LT_141
+  - 美国 403
+  - 美国 335
+  - 🇱🇹 LT_140
+  - 🇩🇪DE-80.92.204.106-5382
+  - 🏁RELAY-104.18.149.76-0680
+  - 🇱🇹 LT_149
+  - 🇺🇸_美国_2
+  - _34
+  - 🏁RELAY-104.17.213.241-1162
+  - 🇪🇨EC-185.47.253.227-5398
+  - 🇮🇹_IT_意大利->🇷🇺_RU_俄罗斯
+  - _33
+  - US_18def_0081
+  - _54
+  - US美国(mibei77.com 米贝节点分享) 50
+  - 🇩🇪DE-80.92.204.106-5267
+  - 🇬🇧 GB_125
+  - 🇭🇷HR-46.183.184.60-5348
+  - _08
+  - 🏁RELAY-104.19.48.236-1159
+  - 🇱🇹 LT_147
+  - 🇩🇪DE-80.92.204.106-5283
+  - 🇸🇪SE-121.127.46.147-5578
+  - xiaoer886_US_17
+  - 🇩🇰DK-192.36.27.94-0418
+  - 🇱🇹 LT_152
+  - _78
+  - _03
+  - xiaoer886_US_16
+  - 🇩🇪DE-80.92.204.106-5381
+  - _20
+  - 🇲🇹MT-171.22.254.17-5344
+  - 🇩🇪DE-80.92.204.106-5279
+  - SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-109.120.177.122:6774
+  - 🇱🇹LT-45.87.175.154-0224
+  - AlvinQuick-2
+  - _09
+  - US美国(mibei77.com 米贝节点分享) 28
+  - 🇩🇪DE-80.92.204.106-5384
+  - 🇩🇪DE-130.61.160.153-2226
+  - 🇫🇷FR-141.227.160.167-0351
+  - 🇫🇷FR-141.227.138.29-0352
+  - _64
+  - 🏁RELAY-104.17.213.241-0924
+  - 🇺🇸US-166.88.131.195-5553
+  - xiaoer886_US_22
+  - 美国 CloudFlare节点-MQdU
+  - AlvinQuick-3
+  - _73
+  - 🇩🇪DE-80.92.204.106-5375
+  - 🇹🇷TR-185.123.101.241-0375
+  - 🇱🇹LT-185.237.185.160-5664
+  - _01
+  - 🇹🇷TR-185.123.101.241-0376
+  - 🇨🇴 CO_103
+  - 🇬🇧_GB_英国->🇯🇵_JP_日本
+  - 🇸🇪SE-151.236.206.42-5463
+  - 🇺🇸US-45.33.50.141-0772
+  - 🇬🇧GB-185.5.38.111-5396
+  - _77
+  - 🇩🇪DE-80.92.204.106-5282
+  - _21
+  - _57
+  - 🇺🇸US-173.230.155.32-0771
+  - 🇬🇧 GB_126
+  - 🇷🇴RO-194.14.217.38-0358
+  - _48
+  - 🇩🇪DE-80.92.204.106-5271
+  - 🇯🇵JP-149.22.87.241-0368
+  - _12
+  - 美国 404
+  - 🇩🇪DE_117
+  - 🇪🇸ES-141.227.128.69-0359
+  - _15
+  - 🇩🇪DE-80.92.204.106-5378
+  - _80
+  - 🇹🇷TR-45.89.52.66-5321
+  - 🇯🇵JP-149.22.87.240-0367
+  - 🇩🇪DE_116
+  - 🇩🇪DE_115
+  - 🏁RELAY-141.101.120.176-2224
+  - 🇺🇸US-15.197.162.184-3016
+  - 🇱🇹LT-45.87.175.199-0348
+  - 🇩🇪DE_114
+  - 🇹🇷TR-45.89.52.66-5328
+  - 🇵🇱PL-217.30.10.18-5671
+  - 🇩🇪DE-80.92.204.106-5376
+  - 🇩🇪DE_113
+  - 🇵🇾PY-38.165.233.18-0373
+  - 🇹🇷TR-45.89.52.66-5323
+  - _04
+  - 🇩🇪DE_112
+  - US美国(mibei77.com 米贝节点分享) 98
+  - 🇺🇸US-166.1.157.228-5471
+  - 🇰🇷KR-154.90.63.193-0484
+  - 🇩🇪DE_111
+  - 🇩🇪DE-80.92.204.106-5269
+  - 🇩🇪DE_109
+  - _13
+  - _19
+  - 🇹🇷TR-45.89.52.66-8731
+  - 🏁RELAY-104.21.48.1-0749
+  - 🇳🇱NL-188.119.112.242-5443
+  - US美国(mibei77.com 米贝节点分享) 20
+  - 🇵🇱PL-217.30.10.18-0486
+  - xiaoer886_IR_1
+  - 🇩🇪DE_110
+  - 🏁RELAY-104.21.57.38-0794
+  - CH_18def_0001
+  - _02
+  - 🇬🇧GB-130.162.189.112-2280
+  - 11|11|11|11|11|11,16|日本|@ripaojie...
+  - 🇲🇽MX-147.78.1.27-5665
+  - 🇷🇺RU-45.151.62.54-5452
+  - xiaoer886_US_19
+  - xiaoer886_US_8
+  - 🇵🇱PL-217.30.10.18-5604
+  - 🇷🇸RS-194.71.126.31-0361
+  - 🇦🇺AU-103.224.212.127-3043
+  - 🇷🇺_RU_俄罗斯_4
+  - 🏁RELAY-104.21.80.1-0766
+  - 15|🇸🇬 新加坡3|@ripaojiedian
+  - 🇭🇰 HK_136
+  - 🇺🇸_US_美国_1_1
+  - 🏁 ZZ_277
+  - 🏁RELAY-104.17.213.241-0693
+  - 🇿🇦ZA-129.232.134.112-5563
+  - 🇸🇬SG-68.183.227.4-0381
+  - 🇹🇷TR-45.89.52.66-5343
+  - 🏁RELAY-141.101.120.176-2223
+  - 🇨🇾CY-134.255.210.49-5386
+  - _36
+  - 🇫🇷FR-45.158.171.151-0360
+  - 🇩🇪DE-80.92.204.106-5379
+  - 🇩🇪DE-80.92.204.106-5281
+  - 🏁RELAY-141.101.120.27-0808
+  - 🇸🇬SG-45.80.181.77-0411
+  - 🏁RELAY-172.67.138.69-7547
+  - 🇸🇬SG-156.244.9.92-5562
+  - 🏁RELAY-104.21.32.1-0397
+  - 美国 260
+  - 🏁RELAY-104.21.57.38-5589
+  - _82
+  - 🇭🇰HK-203.23.128.33-5410
+  - 🇩🇪 DE_107
+  - 🏁RELAY-104.21.9.236-7582
+  - 🇨🇴CO-181.119.30.20-5369
+  - xiaoer886_US_15
+  - 🏁RELAY-104.21.94.168-7580
+  - 🇺🇸US-137.131.52.173-0704
+  - 🇬🇧GB-185.5.38.111-5397
+  - 🇹🇷TR-95.164.116.35-5405
+  - _55
+  - _07
+  - 🇩🇪DE_108
+  - RU_Moscow_LLC BAXET
+  - 🇩🇪DE-80.92.204.106-5377
+  - _79
+  - 🇵🇱PL-45.144.48.63-0432
+  - 🇫🇷FR-45.158.171.146-0355
+  - 🇨🇾CY-134.255.210.49-5657
+  - 🏁RELAY-104.21.15.36-7511
+  - 美国 183
+  - 🇨🇦CA-51.79.102.253-1153
+  - US美国(mibei77.com 米贝节点分享) 11
+  - 🏁RELAY-104.17.213.241-1177
+  - US_18def_0085
+  - 🇭🇰 香港
+  - 🇹🇷TR-45.89.52.66-8735
+  - 美国 056
+  - 9|@ا ا
+  - 英国 007
+  - 🇩🇪DE-91.195.240.12-7607
+  - 🏁RELAY-172.67.131.17-7536
+  - 🇩🇪DE-80.92.204.106-2446
+  - 🇩🇪DE-80.92.204.106-5380
+  - _81
+  - 🇺🇸_美国_7
+  - 🇻🇳VN-103.163.218.2-0400
+  - 🇺🇸US-23.154.136.148-5575
+  - 🇩🇪DE-130.61.160.153-2227
+  - 🇵🇱PL-217.30.10.18-5603
+  - 🏁RELAY-172.67.189.27-0788
+  - 🇲🇰MK-46.183.185.15-4703
+  - 🏁RELAY-188.114.99.134-7553
+  - 🇷🇺_RU_俄罗斯_7
+  - AlvinQuick-1
+  - Hy-dongtaiwang
+  - 🇬🇧_英国_1
+  - 🇰🇿KZ-95.164.114.43-5406
+  - 🇯🇵JP-5.253.41.160-5355
+  - 🏁RELAY-188.114.96.5-7559
+  - AlvinSingbox-2
+  - 🏁RELAY-172.67.179.199-7522
+  - 🇻🇳VN-160.19.78.75-5564
+  - 🇬🇧_英国_2
+  - 🏁RELAY-188.114.97.79-7531
+  - 🇬🇷GR-192.71.166.102-4097
+  - 🇮🇳IN-140.245.11.125-2281
+  - 🇺🇸US-69.5.52.204-5446
+  - 🏁RELAY-172.67.161.77-7528
+  - US美国(mibei77.com 米贝节点分享) 57
+  - 🏁RELAY-188.114.97.6-7534
+  - 🇺🇸US-38.150.13.64-7604
+  - 🇮🇳IN-159.65.149.72-0385
+  - 🇭🇰HK-150.107.46.21-5483
+  - 🏁RELAY-141.101.120.176-2222
+  - 🇺🇸US-103.36.91.23-5409
+  - 🇯🇵JP-43.207.112.226-5356
+  - 🏁RELAY-104.21.49.59-1160
+  - 🏁RELAY-188.114.99.205-7505
+  - 🇳🇬NG-185.255.123.92-5440
+  - 🇯🇵JP-57.182.217.176-3343
+  - 🇰🇷KR-152.70.249.97-0383
+  - JP_18def_0010
+  - 🇩🇪DE-80.92.204.106-5280
+  - 🇧🇴BO-185.93.173.218-5432
+  - US美国(mibei77.com 米贝节点分享) 56
+  - 🏁RELAY-104.21.49.59-5609
+  - TW_18def_0073
+  - _10
+  - 🇸🇮SI-192.71.244.150-5349
+  - 🏁RELAY-104.21.80.1-0705
+  - 🇫🇷FR-45.145.165.114-7529
+  - HK-HTTP-1
+  - 🇲🇰MK-46.183.185.37-5434
+  - 🇺🇸 美国-拉斯维加斯-002-1L
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
@@ -4990,1011 +4895,1011 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
+  - 🇺🇸US-142.202.49.84-0464
+  - 🇺🇸US-142.202.49.84-0458
   - 🇺🇸US-15.197.162.184-3863
   - xiaoer886_US_24
-  - 🇺🇸US-142.202.49.84-0461
-  - 🇺🇸 US_208
-  - 🇺🇸US-37.19.198.243-0289
-  - 🇺🇸US-37.19.198.160-0291
-  - 🇺🇸US-37.19.198.244-0295
-  - xiaoer886_US_11
-  - xiaoer886_US_9
-  - _37
-  - 🇺🇸US-38.121.43.71-0443
-  - 🇺🇸US-38.121.43.71-0449
-  - _65
-  - 🇺🇸US_280
-  - _42
-  - 🇺🇸US-38.121.43.71-0471
-  - 🇺🇸US-38.121.43.71-0468
-  - 🇺🇸US-38.121.43.71-0451
-  - _48
-  - 🇺🇸US-38.121.43.71-0463
-  - _13
   - 🇺🇸US-142.202.49.84-0469
-  - 🇺🇸US-38.121.43.71-0442
-  - 🇺🇸US-38.121.43.71-0439
-  - 🇺🇸US-38.121.43.71-0456
-  - _24
-  - 🇺🇸US_272
-  - _46
-  - 🇺🇸US_263
-  - _15
-  - _25
-  - _69
-  - 🇺🇸US-38.121.43.71-0478
-  - 🇺🇸US-38.121.43.71-4754
-  - 🇺🇸US-38.121.43.71-0476
-  - _51
-  - _58
-  - _05
-  - _23
-  - 🇺🇸US-38.121.43.71-0447
-  - 🇺🇸US-38.121.43.71-0460
-  - _41
-  - 🇺🇸US-38.121.43.71-0448
-  - _33
-  - _35
-  - 🇺🇸US-38.121.43.71-0483
-  - 🇺🇸US-38.121.43.71-0467
-  - 🇺🇸US-38.121.43.71-0465
-  - 🇺🇸US-38.121.43.71-0474
-  - _50
-  - 🇺🇸US_271
-  - 🇺🇸US_261
-  - 🇺🇸US-38.121.43.71-0473
-  - 🇺🇸US-38.121.43.71-0446
-  - 🇺🇸US-38.121.43.71-0441
-  - 🇺🇸US-38.121.43.71-0470
-  - 🇺🇸US-142.202.49.84-0458
-  - _01
-  - US_2db7b_0096
-  - 🇺🇸US_278
-  - 🇺🇸US-38.121.43.71-0453
-  - 🇺🇸US_277
-  - 🇺🇸US-38.121.43.71-0445
-  - 🇺🇸US-38.121.43.71-5544
-  - 🇺🇸US-38.121.43.71-0452
-  - 🇺🇸US_269
-  - 🇺🇸US-38.121.43.71-0482
-  - 🇺🇸US-38.121.43.71-0472
-  - FR_Paris_Oracle Corporation_OpenAI
-  - _44
-  - _43
-  - NL_2db7b_0043
-  - 美国 082
-  - NL_2db7b_0051
-  - NL_2db7b_0026
-  - _38
-  - US_2db7b_0087
-  - _04
-  - 美国 385
-  - 🇺🇸US-194.5.215.59-0296
-  - GB_London_Amazon Technologies Inc._OpenAI
-  - 美国 102
-  - US_2db7b_0101
-  - 🏁RELAY-104.21.90.210-0900
-  - 美国 104
-  - 美国 100
-  - 🇺🇸 US_221
-  - NL_2db7b_0019
-  - 美国 106
-  - 🇺🇸US-23.154.136.148-5575
-  - 🇺🇸 US_223
-  - NL_2db7b_0025
-  - _22
-  - 🇺🇸US-216.39.248.133-0477
-  - 美国 071
-  - 🏁RELAY-104.21.48.1-5641
-  - 🇺🇸 US_212
-  - 🇺🇸US_279
-  - 🇺🇸US-156.146.38.168-0290
-  - 🇺🇸US-156.146.38.169-0292
-  - 美国 099
-  - 美国 090
-  - vpnshield
-  - 美国 101
-  - 美国 103
-  - 🏁RELAY-104.21.16.1-0923
-  - 🇺🇸US-156.146.38.167-0294
-  - US_2db7b_0098
-  - 🇺🇸US-156.146.38.170-0293
-  - GOzaRGAh-TLS
-  - 美国 080
-  - 美国 070
-  - 🏁ZZ_304
-  - 🇨🇦CA-142.4.216.225-0421
-  - 🇺🇸US-38.121.43.97-5288
-  - 美国 084
-  - 美国 107
-  - 🏁RELAY-172.67.189.27-0779
-  - 🇺🇸US_267
-  - 美国 105
-  - 🏁RELAY-104.21.80.1-5635
-  - US_2db7b_0102
-  - US_2db7b_0099
-  - 🇺🇸US-38.110.1.197-0459
-  - US_2db7b_0093
-  - 🇺🇸 US_213
-  - 🏁RELAY-172.67.189.27-0783
-  - 🏁RELAY-104.21.57.38-0782
-  - 🇺🇸US-104.207.155.64-0321
-  - 🇺🇸US_275
-  - 🇺🇸US-38.114.114.143-0466
-  - 🇺🇸US-38.114.114.143-0457
-  - 🇺🇸US-38.114.114.143-0462
-  - _47
-  - _63
-  - 🇺🇸US_270
-  - 🇺🇸US-38.114.114.143-0454
-  - 🇺🇸US-212.102.47.132-0309
-  - _61
-  - 🇺🇸US-15.197.162.184-3016
-  - 🇺🇸US-45.55.2.232-0310
-  - 捷克 001
-  - 🇺🇸 US_217
-  - 🇺🇸US-184.170.241.194-0297
-  - _34
-  - US美国(mibei77.com 米贝节点分享) 50
-  - 🇺🇸US_276
-  - xiaoer886_US_55
-  - 🇺🇸US-173.244.56.6-0301
-  - 丹麦 001
-  - 🏁RELAY-104.21.64.1-0751
-  - 🇺🇸US-38.121.43.71-0444
-  - _02
-  - 🇬🇧GB-212.102.53.194-0106
-  - _03
-  - 🇬🇧GB-212.102.53.193-0325
-  - 🇬🇧GB-212.102.53.196-0327
-  - 美国 336
-  - 🇬🇧GB_129
-  - US_2db7b_0085
-  - 🇬🇧GB_130
-  - 🇬🇧GB-212.102.53.80-0324
-  - 🇳🇱NL-109.201.152.181-0319
-  - 🇬🇧GB-212.102.53.78-0329
-  - 🇬🇧GB-212.102.53.197-0326
-  - 🇱🇹 LT_166
-  - 🇬🇧GB-212.102.53.81-0335
-  - _40
-  - 🇨🇦CA-142.4.216.225-0419
-  - 🇳🇱NL-149.34.244.71-0337
-  - 🇧🇬_BG_保加利亚->🇺🇸_US_美国
-  - 🇳🇱NL-149.34.244.68-0340
-  - _10
-  - 🇬🇧GB-212.102.53.195-0330
-  - 🇬🇧GB-212.102.53.79-0332
-  - 🇺🇸US-38.114.114.245-2372
-  - _56
-  - 🇬🇧GB-212.102.53.198-0333
-  - 🇪🇸ES-5.188.181.201-5298
-  - 美国 325
-  - _59
-  - 🇫🇷FR_118
-  - 🇫🇷FR-195.154.185.174-0320
-  - 🇺🇸US-2.58.87.221-5541
-  - 🇬🇧GB-169.150.210.233-0345
-  - 🇫🇷FR-45.158.171.110-5429
-  - 🇪🇸ES-5.188.181.201-5297
-  - 🏁RELAY-104.21.3.219-0300
-  - _60
-  - 🇪🇸ES-5.188.181.201-5295
-  - 🇺🇸US-212.102.47.131-0303
-  - 🇺🇸US-212.102.47.130-0307
-  - 🇪🇸ES-5.188.181.201-5293
-  - 美国 335
-  - _52
-  - 🇬🇧 GB_127
-  - 🇺🇸_美国_2
-  - NL_2db7b_0044
-  - 🇫🇷FR-195.154.169.198-0328
-  - 🇱🇹 LT_170
-  - 🇺🇸US_281
-  - 美国 085
-  - US美国(mibei77.com 米贝节点分享) 56
-  - 美国 403
-  - 🇨🇭CH-156.146.62.164-0350
-  - 🇨🇭CH-156.146.62.163-0365
-  - 美国 086
-  - 🇺🇸 US_211
-  - 🇸🇪SE-151.236.206.42-5463
-  - 🇺🇸 US_210
-  - 🇨🇭CH-156.146.62.161-0356
-  - HK香港(mibei77.com 米贝节点分享) 10
-  - 美国 351
-  - 🏁RELAY-104.21.64.1-0901
-  - _49
-  - _62
-  - SS-瑞典-NF解锁瑞典地区非自制剧-ChatGPT-TikTok-YouTube-151.236.206.42:39649
-  - 🇺🇸US_283
-  - 美国 404
-  - Hy2-dongtaiwang
-  - 🇺🇸US-23.157.40.101-0479
-  - 🇲🇩MD-86.104.74.243-5448
-  - 🇺🇸_US_美国_2
+  - US美国(mibei77.com 米贝节点分享) 44
   - 美国 079
-  - 🇪🇸ES-5.188.181.201-5292
-  - _30
-  - 🇬🇧GB-146.70.61.18-0339
-  - 🇧🇪BE-192.71.249.146-0428
-  - 🇨🇿CZ-195.181.160.6-0347
-  - 🇦🇺_AU_澳大利亚
-  - AlvinQuick-2
-  - 🇧🇪BE-192.71.249.78-0426
-  - 🇩🇪DE-185.177.229.245-0434
-  - 美国 003
-  - 🇺🇸 US_222
-  - 🇸🇪 SE_202
-  - 🇺🇸 US_215
-  - 🇺🇸 US_214
-  - 🇨🇭CH-156.146.62.162-0353
-  - 🇵🇱PL-217.30.10.70-8858
-  - 🇩🇪DE_105
-  - 🇨🇭_CH_瑞士->🇧🇪_BE_比利时
-  - 🇷🇴 RO_190
-  - 🏁RELAY-104.17.213.241-1162
-  - US美国(mibei77.com 米贝节点分享) 67
-  - 🏁RELAY-104.19.48.236-1159
-  - 🇺🇸 US_209
-  - 🇵🇱PL-92.118.205.228-0357
-  - 🇫🇷FR-51.15.86.181-0792
-  - 🇪🇸ES-5.188.181.201-5354
-  - 🇩🇪 DE_103
-  - 🏁 ZZ_291
-  - 🏁RELAY-141.101.120.195-2345
-  - _45
-  - 🇪🇸ES-45.154.206.192-5464
-  - 🏁RELAY-104.17.213.241-0693
-  - 美国 CloudFlare节点-dZi1
-  - AlvinQuick-3
-  - 🇸🇪SE-121.127.46.147-5578
-  - 🇮🇹_IT_意大利->🇷🇺_RU_俄罗斯
-  - 🏁RELAY-104.19.48.236-0920
-  - US美国(mibei77.com 米贝节点分享) 71
-  - 🇺🇸 US_225
-  - 🏁RELAY-104.18.149.76-0680
-  - 🇩🇪DE-80.92.204.106-5268
-  - 🇩🇰DK-192.36.27.94-0418
-  - 🏁RELAY-104.21.80.1-0909
-  - VMESS-未知>美国-NF解锁自制剧-TikTok-YouTube-US7-01.890624.XyZ:443
-  - 🇫🇷FR-45.158.171.66-5548
-  - 🇱🇹LT-45.87.175.69-5660
-  - 🏁RELAY-141.101.120.27-0808
-  - 🇳🇱NL-193.29.139.189-5435
-  - 🇱🇹LT-185.237.185.160-5664
-  - 🇺🇸US-38.110.1.88-5316
-  - 🇲🇹MT-171.22.254.17-5344
-  - 🇹🇷TR-185.123.101.241-0376
-  - 🇬🇧GB-212.102.53.197-0331
+  - NL_18def_0011
+  - xiaoer886_US_9
+  - US_18def_0079
+  - NL_18def_0025
+  - _42
+  - _67
+  - _41
+  - _16
+  - GB_London_Amazon Technologies Inc._OpenAI
+  - _35
+  - xiaoer886_US_11
+  - _40
+  - _43
+  - _24
   - _06
-  - 🇷🇴RO-194.14.217.38-0358
-  - 🇩🇪DE_104
-  - 🇱🇹LT-45.87.175.192-5417
-  - 🇩🇪_DE_德国-c1Tl
-  - 🏁RELAY-104.21.112.1-5634
-  - 🇪🇸ES-5.188.181.201-0429
-  - 🇬🇧_GB_英国
-  - 🇺🇸US-166.88.131.195-5553
-  - 🏁RELAY-104.17.221.248-0909
-  - 🇫🇷FR-141.227.138.29-0352
-  - 🇬🇧GB-141.98.101.178-0363
-  - 🇳🇱NL-213.109.147.242-5566
-  - 🏁RELAY-104.16.155.10-0927
-  - 🇩🇪DE_107
-  - 🏁RELAY-104.17.213.241-0924
-  - 🇺🇸US-38.121.43.97-5542
-  - 🇷🇸RS-194.71.126.31-0361
-  - 🏁RELAY-104.16.155.10-0917
-  - 🇯🇵JP-149.22.87.240-0367
-  - 🇸🇪 SE_203
-  - 🇺🇸US-38.121.43.97-5287
-  - 🇺🇸US-173.230.155.32-0771
-  - 🇺🇸US-45.33.50.141-0772
-  - _17
-  - 🇺🇸US-23.157.40.101-0481
-  - 🇨🇴CO-181.119.30.20-5369
-  - xiaoer886_CA_1
-  - 🇺🇸_US_美国_1_1
-  - 🇹🇷 TR_206
-  - 🇩🇪DE-80.92.204.106-5382
-  - 🇫🇷FR-141.227.160.167-0351
-  - 🇹🇷TR-45.89.52.66-5328
-  - US_2db7b_0100
-  - 🇩🇪DE_106
-  - 🇺🇦 UA_207
-  - _08
-  - _07
-  - 🇬🇧_GB_英国->🇯🇵_JP_日本
-  - 🇩🇪DE-80.92.204.106-5282
-  - 美国 CloudFlare节点-Xdzp
-  - 🇩🇪DE-80.92.204.106-5283
-  - 🇺🇸US-64.176.184.129-1152
-  - 🇭🇷HR-46.183.184.60-5348
-  - 🏁 ZZ_303
-  - 🏁RELAY-172.67.189.27-0788
-  - 🇮🇸IS-37.235.49.152-0485
-  - 🇫🇷FR-45.158.171.146-0355
-  - 🇯🇵JP-149.22.87.241-0368
-  - US_2db7b_0092
-  - 🇳🇱NL-167.99.35.214-5576
-  - 🇲🇰MK-46.183.185.37-5434
-  - US_2db7b_0097
-  - US_2db7b_0091
-  - 🇷🇺RU_199
-  - 🇬🇧 GB_123
-  - 🇳🇱NL-188.119.112.242-5443
-  - 🏁RELAY-172.67.189.27-0795
-  - 🇱🇹 LT_172
+  - _38
+  - 🇺🇸US-38.121.43.71-0470
+  - 🇺🇸US-38.121.43.71-0442
+  - _23
+  - 🇺🇸US-38.121.43.71-0452
+  - 🇺🇸US-38.121.43.71-0465
+  - _47
+  - 🇺🇸US-38.121.43.71-0463
+  - 🇺🇸US-38.121.43.71-0455
+  - 🇺🇸US-38.121.43.71-0446
+  - 🇺🇸US-38.121.43.71-0443
   - _39
-  - 🇰🇷KR-154.90.63.193-0484
-  - US_2db7b_0094
-  - xiaoer886_IR_1
-  - 🏁RELAY-172.67.71.160-7606
-  - 🇱🇹 LT_154
-  - 🇺🇸US_273
-  - 🇳🇱NL-208.67.105.87-5487
-  - 🇷🇺RU_197
-  - 🇩🇪DE-80.92.204.106-5267
-  - 🏁RELAY-104.21.80.1-0705
-  - 🇺🇸US_282
-  - 🇺🇸 US_216
-  - 🇷🇺RU-45.151.62.54-5452
-  - 🏁RELAY-172.67.175.56-7595
-  - 🇸🇰_SK_斯洛伐克
-  - 10|@ا ا
-  - 🇷🇺RU_198
-  - SS-瑞士-NF解锁荷兰地区非自制剧-ChatGPT-TikTok-YouTube-91.103.253.151:19057
-  - 11|11|11|11|11|11,16|日本|@ripaojie...
-  - 🏁RELAY-104.21.94.64-7628
-  - xiaoer886_JO_1
-  - 🇱🇹LT-45.87.175.171-5423
-  - 🇦🇺AU-103.224.212.127-3043
-  - 美国 CloudFlare节点-Di7s
-  - 2|🇩🇪5
-  - 🏁RELAY-104.21.31.62-7571
-  - 🇺🇸US_268
-  - 🇹🇷TR-45.89.52.66-8735
-  - 美国 387
-  - 美国 072
-  - 🇬🇧GB-185.5.38.111-5397
-  - 🏁RELAY-172.67.220.10-7579
-  - 🇺🇸US_258
-  - 🇧🇴BO-185.93.173.218-5432
-  - 🇳🇱NL_182
-  - 🏁RELAY-104.21.32.1-0397
-  - 🇬🇧 GB_122
-  - 🇸🇬SG-68.183.227.4-0381
-  - 🇺🇸US_265
-  - 🏁RELAY-104.26.0.95-7599
-  - 🇵🇱PL-45.144.48.63-0432
-  - 🇱🇹 LT_141
-  - 🇩🇪DE-80.92.204.106-5379
-  - 🇸🇬SG-45.80.181.77-0411
-  - 🇭🇰 HK_136
-  - 🇱🇹 LT_142
-  - 🏁RELAY-104.17.213.241-1177
-  - 🇺🇸US-103.36.91.23-5409
-  - 🇹🇷TR-95.164.116.35-5405
-  - 🇺🇸US-38.121.43.97-5260
-  - 英国 007
-  - 🇺🇸_美国_7
-  - 🇺🇸_US_美国_1
-  - 🇬🇧 GB_124
-  - 🇺🇸US-38.121.43.97-5559
-  - 🇺🇸US-38.110.1.88-5319
-  - CH_2db7b_0001
-  - 🇺🇸US-38.121.43.97-5551
-  - 🇪🇨EC-185.47.253.227-5398
-  - 🇺🇸US-166.1.157.228-5471
-  - 🇷🇺_RU_俄罗斯_6
-  - xiaoer886_US_22
-  - SS-英国-NF解锁荷兰地区非自制剧-ChatGPT-TikTok-YouTube-77.239.117.121:28694
-  - 🏁RELAY-172.67.210.210-0809
-  - _09
-  - 美国 183
-  - 🇹🇷TR-45.89.52.66-8731
-  - 🇺🇸US_266
-  - 🇩🇪 DE_101
-  - 🇩🇪DE-80.92.204.106-2446
-  - 🏁RELAY-104.21.23.115-0810
-  - xiaoer886_US_15
-  - _27
-  - _26
-  - 🇵🇱PL-217.30.10.18-5668
-  - 🇺🇸US_262
-  - 🇭🇰 香港
-  - 🏁RELAY-141.101.120.176-2224
-  - 美国 056
-  - 🇹🇷TR-45.89.52.66-5459
-  - 🇺🇸US_259
-  - 🇷🇺_RU_俄罗斯_10
-  - US_2db7b_0103
-  - 🇩🇪DE-80.92.204.106-5377
-  - 🇱🇹 LT_146
-  - 🇬🇧 GB_126
-  - 🇩🇪DE_109
-  - 🇬🇧_英国_2
-  - 🏁RELAY-104.16.155.10-0755
-  - 🇩🇪DE_113
-  - US美国(mibei77.com 米贝节点分享) 98
-  - 🇳🇱 NL_181
-  - 🇿🇦 ZA_286
-  - 🇬🇧_英国_1
-  - 🇱🇹 LT_157
-  - 🇯🇵JP-5.253.41.160-5355
+  - 🇺🇸US-38.121.43.71-0456
+  - _25
+  - _14
+  - _37
+  - 🇺🇸US-38.121.43.71-0483
+  - 🇺🇸US-38.121.43.71-0439
+  - FR_Paris_Oracle Corporation_OpenAI
+  - 🇺🇸US-38.121.43.71-0453
+  - _49
+  - 🇺🇸US-38.121.43.71-0445
+  - 🇺🇸US-38.121.43.71-0448
+  - 🇺🇸US-38.121.43.71-5544
+  - _60
+  - GOzaRGAh-TLS
+  - 美国 071
+  - _45
+  - 🇺🇸US-38.121.43.71-0444
+  - 🇺🇸US-38.121.43.71-0474
+  - 🇺🇸US-38.121.43.71-0451
+  - 🇺🇸US-38.121.43.71-0471
+  - _44
+  - 🇺🇸US-38.121.43.71-0468
+  - 🇺🇸US-194.116.173.21-0379
+  - 🇺🇸US-38.121.43.71-0467
+  - NL_18def_0022
+  - NL_18def_0038
+  - US_18def_0083
+  - 🇺🇸US-38.121.43.71-0475
+  - 🇺🇸US-38.121.43.71-0460
+  - _51
+  - 🇺🇸US-38.121.43.71-0449
+  - 美国 107
+  - 🇺🇸US-142.202.49.84-0440
+  - 美国 105
+  - US_18def_0074
+  - 🇺🇸US-142.202.49.84-0450
+  - 美国 103
+  - _22
+  - 🇺🇸US-38.121.43.71-0472
+  - _52
+  - 美国 070
+  - 🇺🇸US-38.121.43.71-0473
+  - 美国 100
+  - 🇺🇸US-38.121.43.71-0478
+  - 🏁RELAY-104.21.90.210-0900
+  - 美国 106
+  - US-WS-1
+  - 🇺🇸US-38.121.43.97-5543
+  - 🇺🇸US-38.121.43.97-5542
+  - 🇺🇸US-38.121.43.71-0476
+  - 🇨🇦CA-142.4.216.225-0421
+  - 🇺🇸US-38.121.43.97-5549
+  - 美国 102
+  - _46
+  - 🏁RELAY-104.21.57.38-0782
+  - 🇺🇸US-38.121.43.71-0441
+  - 美国 104
+  - 美国 099
+  - 美国 101
+  - 🇺🇸US-38.121.43.71-0447
+  - 🏁RELAY-172.67.189.27-0779
+  - US_18def_0084
+  - 🇺🇸US-142.202.49.84-0461
   - 🇺🇸US-38.121.43.97-5557
-  - 🇩🇪DE_112
-  - 🇮🇳 IN_138
-  - 🇱🇹LT-45.87.175.92-5659
-  - 🇩🇪DE-80.92.204.106-5279
-  - 🇯🇵JP-13.231.87.40-1963
-  - 🇷🇺 RU_195
-  - 🏁RELAY-104.21.57.38-5585
-  - 🇩🇪DE_111
-  - 🏁RELAY-104.21.57.38-5589
-  - 🇬🇧 GB_125
-  - 🇱🇹 LT_158
-  - 🇮🇳IN-159.65.149.72-0385
-  - 🏁RELAY-104.21.57.38-0794
-  - 🇻🇳VN-103.163.218.2-0400
-  - 🇸🇮SI-192.71.244.150-5349
-  - 🇺🇸US_264
-  - 🇬🇧GB-185.5.38.111-5396
-  - 🇵🇱PL-217.30.10.18-5666
-  - 🇩🇪DE-80.92.204.106-5384
-  - US_2db7b_0108
-  - _11
-  - AlvinSingbox-2
-  - 🇮🇩ID-38.9.140.66-4488
-  - 🇱🇹 LT_171
-  - 🇺🇸_US_美国_6
-  - 🇩🇪DE-80.92.204.106-5378
-  - 🇬🇧 GB_121
-  - 🇳🇱NL-193.29.139.251-5442
-  - 🇷🇺_RU_俄罗斯_9
-  - Hy-dongtaiwang
-  - 🇬🇧 GB_120
-  - 🇺🇸_US_美国_3_1
-  - 🇳🇱 NL_178
-  - _20
-  - AlvinQuick-1
-  - 🇳🇱NL-208.67.105.196-5489
-  - 🇷🇺_RU_俄罗斯_7
-  - 🇳🇱NL-103.104.247.47-5438
-  - 🇮🇳IN-103.174.86.114-0391
-  - 🇨🇦CA-51.79.102.253-1153
-  - 🇷🇺_RU_俄罗斯_4
-  - 🇷🇺_RU_俄罗斯_2
-  - 🇵🇱PL_189
-  - 🇷🇺_RU_俄罗斯
-  - 🇱🇹LT-45.87.175.35-5661
-  - 🇩🇪DE-80.92.204.106-5266
-  - 🏁RELAY-172.67.220.83-7590
-  - 🏁RELAY-104.21.83.208-7593
-  - 🇯🇵JP-43.207.112.226-5356
-  - JP_2db7b_0018
-  - 🇭🇰HK-20.255.96.114-3268
-  - 🇰🇷KR-152.70.249.97-0383
-  - 🇹🇷TR-45.89.52.66-8734
-  - 🇩🇪DE-80.92.204.106-5376
-  - 🇮🇩ID-38.9.140.66-4491
-  - 🇳🇱NL-89.23.103.125-5455
-  - 🇿🇦 ZA_287
-  - 🇩🇪DE-80.92.204.106-5271
-  - TW_2db7b_0084
-  - 🇱🇹LT-45.87.175.154-0224
-  - 🇩🇪DE-80.92.204.106-5383
+  - US美国(mibei77.com 米贝节点分享) 52
+  - 🇺🇸US-38.121.43.71-4754
+  - 美国 082
+  - 美国 090
+  - 🇺🇸US-38.121.43.97-5289
+  - US美国(mibei77.com 米贝节点分享) 39
+  - 美国 088
+  - 美国 084
+  - 🇺🇸US-38.110.1.197-0459
+  - 🇺🇸US-38.121.43.71-0482
+  - 🇨🇦CA_98
+  - _27
+  - 🇺🇸US-216.39.248.133-0477
+  - 美国 080
+  - 🏁RELAY-172.67.189.27-0783
+  - _26
+  - _05
+  - 🇺🇸US-38.121.43.97-5288
+  - 美国 385
+  - US_18def_0082
+  - _75
+  - US_18def_0080
+  - 🇺🇸US-38.114.114.143-0457
+  - 🇺🇸US-38.114.114.245-2372
+  - 🇺🇸US-38.110.1.88-5316
+  - 美国 387
+  - 🇺🇸US-38.121.43.97-5559
+  - 🇺🇸US-38.114.114.143-0454
+  - _65
+  - 🇺🇸US-38.114.114.143-0462
+  - 🇺🇸US-38.114.114.143-0466
+  - 🇺🇸US-45.55.2.232-0310
+  - US美国(mibei77.com 米贝节点分享) 35
+  - _50
   - 🇺🇸US-38.110.1.88-5301
-  - 🇭🇰HK-150.107.46.21-5483
-  - 🇱🇹 LT_163
-  - HK-HTTP-1
+  - _28
+  - US美国(mibei77.com 米贝节点分享) 67
+  - 🇺🇸US-2.58.87.221-5541
+  - _66
+  - _11
+  - 🇬🇧GB-212.102.53.195-0330
+  - 🇬🇧GB_129
+  - 🇬🇧GB-212.102.53.81-0335
+  - 🇬🇧GB_130
+  - _70
+  - _74
+  - _68
+  - 🇬🇧GB-212.102.53.198-0333
+  - 🇱🇹 LT_139
+  - 🇺🇸US-38.121.43.97-5287
+  - _53
+  - 🇳🇱NL-103.104.247.47-5438
+  - 🇬🇧 GB_122
+  - 🇱🇹LT-45.87.175.35-5661
+  - 🇳🇱NL-193.29.139.202-5441
+  - 🇫🇷FR_121
+  - 🇬🇧GB-141.98.101.178-0363
+  - 🇪🇸ES-5.188.181.201-5259
+  - 🇪🇸ES-5.188.181.201-5387
+  - 🇪🇸ES-5.188.181.201-5354
+  - 🇱🇹LT-45.87.175.69-5660
+  - 🇩🇪_DE_德国
+  - 🇺🇦_UA_乌克兰
+  - 🇺🇸US-23.157.40.101-5534
+  - 🇬🇧GB-169.150.210.233-0345
+  - _29
+  - 🇱🇹LT-45.87.175.58-5662
+  - 🇪🇸ES-5.188.181.201-5291
+  - _32
+  - _72
+  - 🇱🇹LT-45.87.175.92-5659
+  - 🇳🇱NL-103.104.247.49-5436
+  - 🇦🇹AT-95.164.9.144-5322
+  - 🇱🇹LT-45.87.175.192-5417
+  - 🇺🇸US-23.157.40.101-0481
+  - 🇱🇹LT-45.87.175.171-5423
+  - 🇺🇸US-38.121.43.97-5551
+  - 🏁RELAY-172.67.210.210-0809
+  - 🇪🇸ES-5.188.181.201-5298
+  - _31
+  - 🇲🇩MD-86.104.74.243-5448
+  - 🇱🇹 LT_148
+  - 🇱🇹LT-45.87.175.164-0362
+  - _61
+  - 🇳🇱NL-208.67.105.87-5487
+  - 🇺🇸US-23.157.40.101-0480
+  - 🇱🇹 LT_138
+  - _30
+  - 美国 089
+  - 🇱🇹 LT_146
+  - 🇺🇸US-38.110.1.88-5319
+  - 🇪🇸ES-5.188.181.201-5292
+  - 🇳🇱NL-193.29.139.251-5442
+  - 美国 324
+  - 捷克 001
+  - 🇨🇦CA-142.4.216.225-0419
+  - 🇳🇱NL-193.29.139.189-5435
+  - VMESS-未知>乌克兰-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-104.21.112.1:80
+  - 🇪🇸ES-5.188.181.201-5295
+  - 🇱🇹 LT_155
+  - 🇱🇹 LT_143
+  - _18
+  - SS-瑞典-NF解锁瑞典地区非自制剧-ChatGPT-TikTok-YouTube-151.236.206.42:39649
+  - US美国(mibei77.com 米贝节点分享) 71
+  - 🇱🇹LT-45.87.175.166-5424
+  - 🇪🇸ES-5.188.181.201-5297
+  - _63
+  - 🇨🇭CH-156.146.62.162-0353
+  - _17
+  - 🇧🇩 BD_87
+  - 🇨🇭CH-156.146.62.161-0356
+  - 🇱🇹 LT_154
+  - 🇱🇹 LT_142
+  - 🇨🇭CH-156.146.62.163-0365
+  - 🇩🇪_DE_德国-CIFo
+  - _62
+  - 🇱🇹 LT_151
+  - 🏁RELAY-104.21.23.115-0810
+  - 🏁RELAY-104.21.3.219-0300
+  - 🇫🇷FR-45.158.171.66-5548
+  - 🇱🇹 LT_159
   - 🇱🇹LT-45.87.175.10-0424
+  - 丹麦 001
+  - 🇳🇱NL-213.109.147.242-5566
+  - 🇨🇿 CZ_104
+  - 🇺🇸US-38.121.43.97-5545
+  - 美国 351
+  - 🇱🇹LT-45.87.175.178-5416
+  - 🇺🇸US-64.176.184.129-1152
+  - 🇪🇸ES-5.188.181.201-5293
+  - 🇵🇱PL-217.30.10.18-5666
+  - 🏁RELAY-104.16.155.10-0755
+  - 🇺🇸US-23.157.40.101-0479
+  - 🇧🇬_BG_保加利亚->🇺🇸_US_美国
+  - 美国 325
+  - 🇷🇺_RU_俄罗斯_6
+  - 🇩🇪DE-80.92.204.106-5268
+  - 🇵🇱PL-217.30.10.18-5668
+  - 🇪🇸ES-5.188.181.201-5290
+  - 🇷🇺_RU_俄罗斯_1
+  - 🇷🇺_RU_俄罗斯_8
+  - 🇷🇺_RU_俄罗斯_10
+  - 🇨🇿CZ-195.181.160.6-0347
+  - 美国 336
+  - 🇷🇺_RU_俄罗斯_9
+  - 🇷🇺_RU_俄罗斯
+  - 🇳🇱NL-208.67.105.196-5489
+  - 🏁RELAY-104.19.48.236-0920
+  - 🇺🇸US-38.121.43.97-5260
+  - 🇷🇺_RU_俄罗斯_3
+  - VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-US7-02.890624.xyZ:443
+  - 🇱🇹 LT_144
+  - _83
+  - 🇩🇪 DE_106
+  - 🇩🇪 DE_105
+  - HK香港(mibei77.com 米贝节点分享) 10
+  - 🇧🇪BE-192.71.249.78-0426
+  - 🇵🇱PL-92.118.205.228-0357
+  - 🇦🇺_AU_澳大利亚
+  - _59
+  - Hy2-dongtaiwang
+  - _56
+  - 🏁RELAY-104.17.221.248-0909
+  - 🇱🇹 LT_156
+  - 🇩🇪DE-80.92.204.106-5383
+  - 🇩🇪DE-80.92.204.106-5266
+  - 🇸🇰_SK_斯洛伐克
+  - 🇪🇸ES-45.154.206.192-5464
+  - _71
+  - 🇷🇺_RU_俄罗斯_2
+  - 🇨🇭_CH_瑞士->🇧🇪_BE_比利时
+  - 🇨🇭CH-156.146.62.164-0350
+  - 🇵🇷PR-185.47.255.22-5400
+  - 🇧🇪BE-192.71.249.146-0428
+  - 🇱🇹 LT_141
+  - 美国 403
+  - 美国 335
+  - 🇱🇹 LT_140
+  - 🇩🇪DE-80.92.204.106-5382
+  - 🏁RELAY-104.18.149.76-0680
+  - 🇱🇹 LT_149
+  - 🇺🇸_美国_2
+  - _34
+  - 🏁RELAY-104.17.213.241-1162
+  - 🇪🇨EC-185.47.253.227-5398
+  - 🇮🇹_IT_意大利->🇷🇺_RU_俄罗斯
+  - _33
+  - US_18def_0081
+  - _54
+  - US美国(mibei77.com 米贝节点分享) 50
+  - 🇩🇪DE-80.92.204.106-5267
+  - 🇬🇧 GB_125
+  - 🇭🇷HR-46.183.184.60-5348
+  - _08
+  - 🏁RELAY-104.19.48.236-1159
+  - 🇱🇹 LT_147
+  - 🇩🇪DE-80.92.204.106-5283
+  - 🇸🇪SE-121.127.46.147-5578
+  - xiaoer886_US_17
+  - 🇩🇰DK-192.36.27.94-0418
+  - 🇱🇹 LT_152
+  - _78
+  - _03
+  - xiaoer886_US_16
+  - 🇩🇪DE-80.92.204.106-5381
+  - _20
+  - 🇲🇹MT-171.22.254.17-5344
+  - 🇩🇪DE-80.92.204.106-5279
+  - SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-109.120.177.122:6774
+  - 🇱🇹LT-45.87.175.154-0224
+  - AlvinQuick-2
+  - _09
+  - US美国(mibei77.com 米贝节点分享) 28
+  - 🇩🇪DE-80.92.204.106-5384
+  - 🇩🇪DE-130.61.160.153-2226
+  - 🇫🇷FR-141.227.160.167-0351
+  - 🇫🇷FR-141.227.138.29-0352
+  - _64
+  - 🏁RELAY-104.17.213.241-0924
+  - 🇺🇸US-166.88.131.195-5553
+  - xiaoer886_US_22
+  - 美国 CloudFlare节点-MQdU
+  - AlvinQuick-3
+  - _73
+  - 🇩🇪DE-80.92.204.106-5375
+  - 🇹🇷TR-185.123.101.241-0375
+  - 🇱🇹LT-185.237.185.160-5664
+  - _01
+  - 🇹🇷TR-185.123.101.241-0376
+  - 🇨🇴 CO_103
+  - 🇬🇧_GB_英国->🇯🇵_JP_日本
+  - 🇸🇪SE-151.236.206.42-5463
+  - 🇺🇸US-45.33.50.141-0772
+  - 🇬🇧GB-185.5.38.111-5396
+  - _77
+  - 🇩🇪DE-80.92.204.106-5282
+  - _21
+  - _57
+  - 🇺🇸US-173.230.155.32-0771
+  - 🇬🇧 GB_126
+  - 🇷🇴RO-194.14.217.38-0358
+  - _48
+  - 🇩🇪DE-80.92.204.106-5271
+  - 🇯🇵JP-149.22.87.241-0368
+  - _12
+  - 美国 404
+  - 🇩🇪DE_117
+  - 🇪🇸ES-141.227.128.69-0359
+  - _15
+  - 🇩🇪DE-80.92.204.106-5378
+  - _80
+  - 🇹🇷TR-45.89.52.66-5321
+  - 🇯🇵JP-149.22.87.240-0367
+  - 🇩🇪DE_116
+  - 🇩🇪DE_115
+  - 🏁RELAY-141.101.120.176-2224
+  - 🇺🇸US-15.197.162.184-3016
+  - 🇱🇹LT-45.87.175.199-0348
+  - 🇩🇪DE_114
+  - 🇹🇷TR-45.89.52.66-5328
+  - 🇵🇱PL-217.30.10.18-5671
+  - 🇩🇪DE-80.92.204.106-5376
+  - 🇩🇪DE_113
+  - 🇵🇾PY-38.165.233.18-0373
+  - 🇹🇷TR-45.89.52.66-5323
+  - _04
+  - 🇩🇪DE_112
+  - US美国(mibei77.com 米贝节点分享) 98
+  - 🇺🇸US-166.1.157.228-5471
+  - 🇰🇷KR-154.90.63.193-0484
+  - 🇩🇪DE_111
+  - 🇩🇪DE-80.92.204.106-5269
+  - 🇩🇪DE_109
+  - _13
+  - _19
+  - 🇹🇷TR-45.89.52.66-8731
+  - 🏁RELAY-104.21.48.1-0749
+  - 🇳🇱NL-188.119.112.242-5443
+  - US美国(mibei77.com 米贝节点分享) 20
+  - 🇵🇱PL-217.30.10.18-0486
+  - xiaoer886_IR_1
+  - 🇩🇪DE_110
+  - 🏁RELAY-104.21.57.38-0794
+  - CH_18def_0001
+  - _02
+  - 🇬🇧GB-130.162.189.112-2280
+  - 11|11|11|11|11|11,16|日本|@ripaojie...
+  - 🇲🇽MX-147.78.1.27-5665
+  - 🇷🇺RU-45.151.62.54-5452
+  - xiaoer886_US_19
+  - xiaoer886_US_8
+  - 🇵🇱PL-217.30.10.18-5604
+  - 🇷🇸RS-194.71.126.31-0361
+  - 🇦🇺AU-103.224.212.127-3043
+  - 🇷🇺_RU_俄罗斯_4
+  - 🏁RELAY-104.21.80.1-0766
+  - 15|🇸🇬 新加坡3|@ripaojiedian
+  - 🇭🇰 HK_136
+  - 🇺🇸_US_美国_1_1
+  - 🏁 ZZ_277
+  - 🏁RELAY-104.17.213.241-0693
+  - 🇿🇦ZA-129.232.134.112-5563
+  - 🇸🇬SG-68.183.227.4-0381
+  - 🇹🇷TR-45.89.52.66-5343
+  - 🏁RELAY-141.101.120.176-2223
+  - 🇨🇾CY-134.255.210.49-5386
+  - _36
+  - 🇫🇷FR-45.158.171.151-0360
+  - 🇩🇪DE-80.92.204.106-5379
+  - 🇩🇪DE-80.92.204.106-5281
+  - 🏁RELAY-141.101.120.27-0808
+  - 🇸🇬SG-45.80.181.77-0411
+  - 🏁RELAY-172.67.138.69-7547
+  - 🇸🇬SG-156.244.9.92-5562
+  - 🏁RELAY-104.21.32.1-0397
+  - 美国 260
+  - 🏁RELAY-104.21.57.38-5589
+  - _82
+  - 🇭🇰HK-203.23.128.33-5410
+  - 🇩🇪 DE_107
+  - 🏁RELAY-104.21.9.236-7582
+  - 🇨🇴CO-181.119.30.20-5369
+  - xiaoer886_US_15
+  - 🏁RELAY-104.21.94.168-7580
+  - 🇺🇸US-137.131.52.173-0704
+  - 🇬🇧GB-185.5.38.111-5397
+  - 🇹🇷TR-95.164.116.35-5405
+  - _55
+  - _07
+  - 🇩🇪DE_108
+  - RU_Moscow_LLC BAXET
+  - 🇩🇪DE-80.92.204.106-5377
+  - _79
+  - 🇵🇱PL-45.144.48.63-0432
+  - 🇫🇷FR-45.158.171.146-0355
+  - 🇨🇾CY-134.255.210.49-5657
+  - 🏁RELAY-104.21.15.36-7511
+  - 美国 183
+  - 🇨🇦CA-51.79.102.253-1153
+  - US美国(mibei77.com 米贝节点分享) 11
+  - 🏁RELAY-104.17.213.241-1177
+  - US_18def_0085
+  - 🇭🇰 香港
+  - 🇹🇷TR-45.89.52.66-8735
+  - 美国 056
+  - 9|@ا ا
+  - 英国 007
+  - 🇩🇪DE-91.195.240.12-7607
+  - 🏁RELAY-172.67.131.17-7536
+  - 🇩🇪DE-80.92.204.106-2446
+  - 🇩🇪DE-80.92.204.106-5380
+  - _81
+  - 🇺🇸_美国_7
+  - 🇻🇳VN-103.163.218.2-0400
+  - 🇺🇸US-23.154.136.148-5575
+  - 🇩🇪DE-130.61.160.153-2227
+  - 🇵🇱PL-217.30.10.18-5603
+  - 🏁RELAY-172.67.189.27-0788
+  - 🇲🇰MK-46.183.185.15-4703
+  - 🏁RELAY-188.114.99.134-7553
+  - 🇷🇺_RU_俄罗斯_7
+  - AlvinQuick-1
+  - Hy-dongtaiwang
+  - 🇬🇧_英国_1
+  - 🇰🇿KZ-95.164.114.43-5406
+  - 🇯🇵JP-5.253.41.160-5355
+  - 🏁RELAY-188.114.96.5-7559
+  - AlvinSingbox-2
+  - 🏁RELAY-172.67.179.199-7522
+  - 🇻🇳VN-160.19.78.75-5564
+  - 🇬🇧_英国_2
+  - 🏁RELAY-188.114.97.79-7531
+  - 🇬🇷GR-192.71.166.102-4097
+  - 🇮🇳IN-140.245.11.125-2281
+  - 🇺🇸US-69.5.52.204-5446
+  - 🏁RELAY-172.67.161.77-7528
+  - US美国(mibei77.com 米贝节点分享) 57
+  - 🏁RELAY-188.114.97.6-7534
+  - 🇺🇸US-38.150.13.64-7604
+  - 🇮🇳IN-159.65.149.72-0385
+  - 🇭🇰HK-150.107.46.21-5483
+  - 🏁RELAY-141.101.120.176-2222
+  - 🇺🇸US-103.36.91.23-5409
+  - 🇯🇵JP-43.207.112.226-5356
+  - 🏁RELAY-104.21.49.59-1160
+  - 🏁RELAY-188.114.99.205-7505
+  - 🇳🇬NG-185.255.123.92-5440
+  - 🇯🇵JP-57.182.217.176-3343
+  - 🇰🇷KR-152.70.249.97-0383
+  - JP_18def_0010
+  - 🇩🇪DE-80.92.204.106-5280
+  - 🇧🇴BO-185.93.173.218-5432
+  - US美国(mibei77.com 米贝节点分享) 56
+  - 🏁RELAY-104.21.49.59-5609
+  - TW_18def_0073
+  - _10
+  - 🇸🇮SI-192.71.244.150-5349
+  - 🏁RELAY-104.21.80.1-0705
+  - 🇫🇷FR-45.145.165.114-7529
+  - HK-HTTP-1
+  - 🇲🇰MK-46.183.185.37-5434
+  - 🇺🇸 美国-拉斯维加斯-002-1L
   url: http://www.gstatic.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
+  - 🇺🇸US-142.202.49.84-0464
+  - 🇺🇸US-142.202.49.84-0458
   - 🇺🇸US-15.197.162.184-3863
   - xiaoer886_US_24
-  - 🇺🇸US-142.202.49.84-0461
-  - 🇺🇸 US_208
-  - 🇺🇸US-37.19.198.243-0289
-  - 🇺🇸US-37.19.198.160-0291
-  - 🇺🇸US-37.19.198.244-0295
-  - xiaoer886_US_11
-  - xiaoer886_US_9
-  - _37
-  - 🇺🇸US-38.121.43.71-0443
-  - 🇺🇸US-38.121.43.71-0449
-  - _65
-  - 🇺🇸US_280
-  - _42
-  - 🇺🇸US-38.121.43.71-0471
-  - 🇺🇸US-38.121.43.71-0468
-  - 🇺🇸US-38.121.43.71-0451
-  - _48
-  - 🇺🇸US-38.121.43.71-0463
-  - _13
   - 🇺🇸US-142.202.49.84-0469
-  - 🇺🇸US-38.121.43.71-0442
-  - 🇺🇸US-38.121.43.71-0439
-  - 🇺🇸US-38.121.43.71-0456
-  - _24
-  - 🇺🇸US_272
-  - _46
-  - 🇺🇸US_263
-  - _15
-  - _25
-  - _69
-  - 🇺🇸US-38.121.43.71-0478
-  - 🇺🇸US-38.121.43.71-4754
-  - 🇺🇸US-38.121.43.71-0476
-  - _51
-  - _58
-  - _05
-  - _23
-  - 🇺🇸US-38.121.43.71-0447
-  - 🇺🇸US-38.121.43.71-0460
-  - _41
-  - 🇺🇸US-38.121.43.71-0448
-  - _33
-  - _35
-  - 🇺🇸US-38.121.43.71-0483
-  - 🇺🇸US-38.121.43.71-0467
-  - 🇺🇸US-38.121.43.71-0465
-  - 🇺🇸US-38.121.43.71-0474
-  - _50
-  - 🇺🇸US_271
-  - 🇺🇸US_261
-  - 🇺🇸US-38.121.43.71-0473
-  - 🇺🇸US-38.121.43.71-0446
-  - 🇺🇸US-38.121.43.71-0441
-  - 🇺🇸US-38.121.43.71-0470
-  - 🇺🇸US-142.202.49.84-0458
-  - _01
-  - US_2db7b_0096
-  - 🇺🇸US_278
-  - 🇺🇸US-38.121.43.71-0453
-  - 🇺🇸US_277
-  - 🇺🇸US-38.121.43.71-0445
-  - 🇺🇸US-38.121.43.71-5544
-  - 🇺🇸US-38.121.43.71-0452
-  - 🇺🇸US_269
-  - 🇺🇸US-38.121.43.71-0482
-  - 🇺🇸US-38.121.43.71-0472
-  - FR_Paris_Oracle Corporation_OpenAI
-  - _44
-  - _43
-  - NL_2db7b_0043
-  - 美国 082
-  - NL_2db7b_0051
-  - NL_2db7b_0026
-  - _38
-  - US_2db7b_0087
-  - _04
-  - 美国 385
-  - 🇺🇸US-194.5.215.59-0296
-  - GB_London_Amazon Technologies Inc._OpenAI
-  - 美国 102
-  - US_2db7b_0101
-  - 🏁RELAY-104.21.90.210-0900
-  - 美国 104
-  - 美国 100
-  - 🇺🇸 US_221
-  - NL_2db7b_0019
-  - 美国 106
-  - 🇺🇸US-23.154.136.148-5575
-  - 🇺🇸 US_223
-  - NL_2db7b_0025
-  - _22
-  - 🇺🇸US-216.39.248.133-0477
-  - 美国 071
-  - 🏁RELAY-104.21.48.1-5641
-  - 🇺🇸 US_212
-  - 🇺🇸US_279
-  - 🇺🇸US-156.146.38.168-0290
-  - 🇺🇸US-156.146.38.169-0292
-  - 美国 099
-  - 美国 090
-  - vpnshield
-  - 美国 101
-  - 美国 103
-  - 🏁RELAY-104.21.16.1-0923
-  - 🇺🇸US-156.146.38.167-0294
-  - US_2db7b_0098
-  - 🇺🇸US-156.146.38.170-0293
-  - GOzaRGAh-TLS
-  - 美国 080
-  - 美国 070
-  - 🏁ZZ_304
-  - 🇨🇦CA-142.4.216.225-0421
-  - 🇺🇸US-38.121.43.97-5288
-  - 美国 084
-  - 美国 107
-  - 🏁RELAY-172.67.189.27-0779
-  - 🇺🇸US_267
-  - 美国 105
-  - 🏁RELAY-104.21.80.1-5635
-  - US_2db7b_0102
-  - US_2db7b_0099
-  - 🇺🇸US-38.110.1.197-0459
-  - US_2db7b_0093
-  - 🇺🇸 US_213
-  - 🏁RELAY-172.67.189.27-0783
-  - 🏁RELAY-104.21.57.38-0782
-  - 🇺🇸US-104.207.155.64-0321
-  - 🇺🇸US_275
-  - 🇺🇸US-38.114.114.143-0466
-  - 🇺🇸US-38.114.114.143-0457
-  - 🇺🇸US-38.114.114.143-0462
-  - _47
-  - _63
-  - 🇺🇸US_270
-  - 🇺🇸US-38.114.114.143-0454
-  - 🇺🇸US-212.102.47.132-0309
-  - _61
-  - 🇺🇸US-15.197.162.184-3016
-  - 🇺🇸US-45.55.2.232-0310
-  - 捷克 001
-  - 🇺🇸 US_217
-  - 🇺🇸US-184.170.241.194-0297
-  - _34
-  - US美国(mibei77.com 米贝节点分享) 50
-  - 🇺🇸US_276
-  - xiaoer886_US_55
-  - 🇺🇸US-173.244.56.6-0301
-  - 丹麦 001
-  - 🏁RELAY-104.21.64.1-0751
-  - 🇺🇸US-38.121.43.71-0444
-  - _02
-  - 🇬🇧GB-212.102.53.194-0106
-  - _03
-  - 🇬🇧GB-212.102.53.193-0325
-  - 🇬🇧GB-212.102.53.196-0327
-  - 美国 336
-  - 🇬🇧GB_129
-  - US_2db7b_0085
-  - 🇬🇧GB_130
-  - 🇬🇧GB-212.102.53.80-0324
-  - 🇳🇱NL-109.201.152.181-0319
-  - 🇬🇧GB-212.102.53.78-0329
-  - 🇬🇧GB-212.102.53.197-0326
-  - 🇱🇹 LT_166
-  - 🇬🇧GB-212.102.53.81-0335
-  - _40
-  - 🇨🇦CA-142.4.216.225-0419
-  - 🇳🇱NL-149.34.244.71-0337
-  - 🇧🇬_BG_保加利亚->🇺🇸_US_美国
-  - 🇳🇱NL-149.34.244.68-0340
-  - _10
-  - 🇬🇧GB-212.102.53.195-0330
-  - 🇬🇧GB-212.102.53.79-0332
-  - 🇺🇸US-38.114.114.245-2372
-  - _56
-  - 🇬🇧GB-212.102.53.198-0333
-  - 🇪🇸ES-5.188.181.201-5298
-  - 美国 325
-  - _59
-  - 🇫🇷FR_118
-  - 🇫🇷FR-195.154.185.174-0320
-  - 🇺🇸US-2.58.87.221-5541
-  - 🇬🇧GB-169.150.210.233-0345
-  - 🇫🇷FR-45.158.171.110-5429
-  - 🇪🇸ES-5.188.181.201-5297
-  - 🏁RELAY-104.21.3.219-0300
-  - _60
-  - 🇪🇸ES-5.188.181.201-5295
-  - 🇺🇸US-212.102.47.131-0303
-  - 🇺🇸US-212.102.47.130-0307
-  - 🇪🇸ES-5.188.181.201-5293
-  - 美国 335
-  - _52
-  - 🇬🇧 GB_127
-  - 🇺🇸_美国_2
-  - NL_2db7b_0044
-  - 🇫🇷FR-195.154.169.198-0328
-  - 🇱🇹 LT_170
-  - 🇺🇸US_281
-  - 美国 085
-  - US美国(mibei77.com 米贝节点分享) 56
-  - 美国 403
-  - 🇨🇭CH-156.146.62.164-0350
-  - 🇨🇭CH-156.146.62.163-0365
-  - 美国 086
-  - 🇺🇸 US_211
-  - 🇸🇪SE-151.236.206.42-5463
-  - 🇺🇸 US_210
-  - 🇨🇭CH-156.146.62.161-0356
-  - HK香港(mibei77.com 米贝节点分享) 10
-  - 美国 351
-  - 🏁RELAY-104.21.64.1-0901
-  - _49
-  - _62
-  - SS-瑞典-NF解锁瑞典地区非自制剧-ChatGPT-TikTok-YouTube-151.236.206.42:39649
-  - 🇺🇸US_283
-  - 美国 404
-  - Hy2-dongtaiwang
-  - 🇺🇸US-23.157.40.101-0479
-  - 🇲🇩MD-86.104.74.243-5448
-  - 🇺🇸_US_美国_2
+  - US美国(mibei77.com 米贝节点分享) 44
   - 美国 079
-  - 🇪🇸ES-5.188.181.201-5292
-  - _30
-  - 🇬🇧GB-146.70.61.18-0339
-  - 🇧🇪BE-192.71.249.146-0428
-  - 🇨🇿CZ-195.181.160.6-0347
-  - 🇦🇺_AU_澳大利亚
-  - AlvinQuick-2
-  - 🇧🇪BE-192.71.249.78-0426
-  - 🇩🇪DE-185.177.229.245-0434
-  - 美国 003
-  - 🇺🇸 US_222
-  - 🇸🇪 SE_202
-  - 🇺🇸 US_215
-  - 🇺🇸 US_214
-  - 🇨🇭CH-156.146.62.162-0353
-  - 🇵🇱PL-217.30.10.70-8858
-  - 🇩🇪DE_105
-  - 🇨🇭_CH_瑞士->🇧🇪_BE_比利时
-  - 🇷🇴 RO_190
-  - 🏁RELAY-104.17.213.241-1162
-  - US美国(mibei77.com 米贝节点分享) 67
-  - 🏁RELAY-104.19.48.236-1159
-  - 🇺🇸 US_209
-  - 🇵🇱PL-92.118.205.228-0357
-  - 🇫🇷FR-51.15.86.181-0792
-  - 🇪🇸ES-5.188.181.201-5354
-  - 🇩🇪 DE_103
-  - 🏁 ZZ_291
-  - 🏁RELAY-141.101.120.195-2345
-  - _45
-  - 🇪🇸ES-45.154.206.192-5464
-  - 🏁RELAY-104.17.213.241-0693
-  - 美国 CloudFlare节点-dZi1
-  - AlvinQuick-3
-  - 🇸🇪SE-121.127.46.147-5578
-  - 🇮🇹_IT_意大利->🇷🇺_RU_俄罗斯
-  - 🏁RELAY-104.19.48.236-0920
-  - US美国(mibei77.com 米贝节点分享) 71
-  - 🇺🇸 US_225
-  - 🏁RELAY-104.18.149.76-0680
-  - 🇩🇪DE-80.92.204.106-5268
-  - 🇩🇰DK-192.36.27.94-0418
-  - 🏁RELAY-104.21.80.1-0909
-  - VMESS-未知>美国-NF解锁自制剧-TikTok-YouTube-US7-01.890624.XyZ:443
-  - 🇫🇷FR-45.158.171.66-5548
-  - 🇱🇹LT-45.87.175.69-5660
-  - 🏁RELAY-141.101.120.27-0808
-  - 🇳🇱NL-193.29.139.189-5435
-  - 🇱🇹LT-185.237.185.160-5664
-  - 🇺🇸US-38.110.1.88-5316
-  - 🇲🇹MT-171.22.254.17-5344
-  - 🇹🇷TR-185.123.101.241-0376
-  - 🇬🇧GB-212.102.53.197-0331
+  - NL_18def_0011
+  - xiaoer886_US_9
+  - US_18def_0079
+  - NL_18def_0025
+  - _42
+  - _67
+  - _41
+  - _16
+  - GB_London_Amazon Technologies Inc._OpenAI
+  - _35
+  - xiaoer886_US_11
+  - _40
+  - _43
+  - _24
   - _06
-  - 🇷🇴RO-194.14.217.38-0358
-  - 🇩🇪DE_104
-  - 🇱🇹LT-45.87.175.192-5417
-  - 🇩🇪_DE_德国-c1Tl
-  - 🏁RELAY-104.21.112.1-5634
-  - 🇪🇸ES-5.188.181.201-0429
-  - 🇬🇧_GB_英国
-  - 🇺🇸US-166.88.131.195-5553
-  - 🏁RELAY-104.17.221.248-0909
-  - 🇫🇷FR-141.227.138.29-0352
-  - 🇬🇧GB-141.98.101.178-0363
-  - 🇳🇱NL-213.109.147.242-5566
-  - 🏁RELAY-104.16.155.10-0927
-  - 🇩🇪DE_107
-  - 🏁RELAY-104.17.213.241-0924
-  - 🇺🇸US-38.121.43.97-5542
-  - 🇷🇸RS-194.71.126.31-0361
-  - 🏁RELAY-104.16.155.10-0917
-  - 🇯🇵JP-149.22.87.240-0367
-  - 🇸🇪 SE_203
-  - 🇺🇸US-38.121.43.97-5287
-  - 🇺🇸US-173.230.155.32-0771
-  - 🇺🇸US-45.33.50.141-0772
-  - _17
-  - 🇺🇸US-23.157.40.101-0481
-  - 🇨🇴CO-181.119.30.20-5369
-  - xiaoer886_CA_1
-  - 🇺🇸_US_美国_1_1
-  - 🇹🇷 TR_206
-  - 🇩🇪DE-80.92.204.106-5382
-  - 🇫🇷FR-141.227.160.167-0351
-  - 🇹🇷TR-45.89.52.66-5328
-  - US_2db7b_0100
-  - 🇩🇪DE_106
-  - 🇺🇦 UA_207
-  - _08
-  - _07
-  - 🇬🇧_GB_英国->🇯🇵_JP_日本
-  - 🇩🇪DE-80.92.204.106-5282
-  - 美国 CloudFlare节点-Xdzp
-  - 🇩🇪DE-80.92.204.106-5283
-  - 🇺🇸US-64.176.184.129-1152
-  - 🇭🇷HR-46.183.184.60-5348
-  - 🏁 ZZ_303
-  - 🏁RELAY-172.67.189.27-0788
-  - 🇮🇸IS-37.235.49.152-0485
-  - 🇫🇷FR-45.158.171.146-0355
-  - 🇯🇵JP-149.22.87.241-0368
-  - US_2db7b_0092
-  - 🇳🇱NL-167.99.35.214-5576
-  - 🇲🇰MK-46.183.185.37-5434
-  - US_2db7b_0097
-  - US_2db7b_0091
-  - 🇷🇺RU_199
-  - 🇬🇧 GB_123
-  - 🇳🇱NL-188.119.112.242-5443
-  - 🏁RELAY-172.67.189.27-0795
-  - 🇱🇹 LT_172
+  - _38
+  - 🇺🇸US-38.121.43.71-0470
+  - 🇺🇸US-38.121.43.71-0442
+  - _23
+  - 🇺🇸US-38.121.43.71-0452
+  - 🇺🇸US-38.121.43.71-0465
+  - _47
+  - 🇺🇸US-38.121.43.71-0463
+  - 🇺🇸US-38.121.43.71-0455
+  - 🇺🇸US-38.121.43.71-0446
+  - 🇺🇸US-38.121.43.71-0443
   - _39
-  - 🇰🇷KR-154.90.63.193-0484
-  - US_2db7b_0094
-  - xiaoer886_IR_1
-  - 🏁RELAY-172.67.71.160-7606
-  - 🇱🇹 LT_154
-  - 🇺🇸US_273
-  - 🇳🇱NL-208.67.105.87-5487
-  - 🇷🇺RU_197
-  - 🇩🇪DE-80.92.204.106-5267
-  - 🏁RELAY-104.21.80.1-0705
-  - 🇺🇸US_282
-  - 🇺🇸 US_216
-  - 🇷🇺RU-45.151.62.54-5452
-  - 🏁RELAY-172.67.175.56-7595
-  - 🇸🇰_SK_斯洛伐克
-  - 10|@ا ا
-  - 🇷🇺RU_198
-  - SS-瑞士-NF解锁荷兰地区非自制剧-ChatGPT-TikTok-YouTube-91.103.253.151:19057
-  - 11|11|11|11|11|11,16|日本|@ripaojie...
-  - 🏁RELAY-104.21.94.64-7628
-  - xiaoer886_JO_1
-  - 🇱🇹LT-45.87.175.171-5423
-  - 🇦🇺AU-103.224.212.127-3043
-  - 美国 CloudFlare节点-Di7s
-  - 2|🇩🇪5
-  - 🏁RELAY-104.21.31.62-7571
-  - 🇺🇸US_268
-  - 🇹🇷TR-45.89.52.66-8735
-  - 美国 387
-  - 美国 072
-  - 🇬🇧GB-185.5.38.111-5397
-  - 🏁RELAY-172.67.220.10-7579
-  - 🇺🇸US_258
-  - 🇧🇴BO-185.93.173.218-5432
-  - 🇳🇱NL_182
-  - 🏁RELAY-104.21.32.1-0397
-  - 🇬🇧 GB_122
-  - 🇸🇬SG-68.183.227.4-0381
-  - 🇺🇸US_265
-  - 🏁RELAY-104.26.0.95-7599
-  - 🇵🇱PL-45.144.48.63-0432
-  - 🇱🇹 LT_141
-  - 🇩🇪DE-80.92.204.106-5379
-  - 🇸🇬SG-45.80.181.77-0411
-  - 🇭🇰 HK_136
-  - 🇱🇹 LT_142
-  - 🏁RELAY-104.17.213.241-1177
-  - 🇺🇸US-103.36.91.23-5409
-  - 🇹🇷TR-95.164.116.35-5405
-  - 🇺🇸US-38.121.43.97-5260
-  - 英国 007
-  - 🇺🇸_美国_7
-  - 🇺🇸_US_美国_1
-  - 🇬🇧 GB_124
-  - 🇺🇸US-38.121.43.97-5559
-  - 🇺🇸US-38.110.1.88-5319
-  - CH_2db7b_0001
-  - 🇺🇸US-38.121.43.97-5551
-  - 🇪🇨EC-185.47.253.227-5398
-  - 🇺🇸US-166.1.157.228-5471
-  - 🇷🇺_RU_俄罗斯_6
-  - xiaoer886_US_22
-  - SS-英国-NF解锁荷兰地区非自制剧-ChatGPT-TikTok-YouTube-77.239.117.121:28694
-  - 🏁RELAY-172.67.210.210-0809
-  - _09
-  - 美国 183
-  - 🇹🇷TR-45.89.52.66-8731
-  - 🇺🇸US_266
-  - 🇩🇪 DE_101
-  - 🇩🇪DE-80.92.204.106-2446
-  - 🏁RELAY-104.21.23.115-0810
-  - xiaoer886_US_15
-  - _27
-  - _26
-  - 🇵🇱PL-217.30.10.18-5668
-  - 🇺🇸US_262
-  - 🇭🇰 香港
-  - 🏁RELAY-141.101.120.176-2224
-  - 美国 056
-  - 🇹🇷TR-45.89.52.66-5459
-  - 🇺🇸US_259
-  - 🇷🇺_RU_俄罗斯_10
-  - US_2db7b_0103
-  - 🇩🇪DE-80.92.204.106-5377
-  - 🇱🇹 LT_146
-  - 🇬🇧 GB_126
-  - 🇩🇪DE_109
-  - 🇬🇧_英国_2
-  - 🏁RELAY-104.16.155.10-0755
-  - 🇩🇪DE_113
-  - US美国(mibei77.com 米贝节点分享) 98
-  - 🇳🇱 NL_181
-  - 🇿🇦 ZA_286
-  - 🇬🇧_英国_1
-  - 🇱🇹 LT_157
-  - 🇯🇵JP-5.253.41.160-5355
+  - 🇺🇸US-38.121.43.71-0456
+  - _25
+  - _14
+  - _37
+  - 🇺🇸US-38.121.43.71-0483
+  - 🇺🇸US-38.121.43.71-0439
+  - FR_Paris_Oracle Corporation_OpenAI
+  - 🇺🇸US-38.121.43.71-0453
+  - _49
+  - 🇺🇸US-38.121.43.71-0445
+  - 🇺🇸US-38.121.43.71-0448
+  - 🇺🇸US-38.121.43.71-5544
+  - _60
+  - GOzaRGAh-TLS
+  - 美国 071
+  - _45
+  - 🇺🇸US-38.121.43.71-0444
+  - 🇺🇸US-38.121.43.71-0474
+  - 🇺🇸US-38.121.43.71-0451
+  - 🇺🇸US-38.121.43.71-0471
+  - _44
+  - 🇺🇸US-38.121.43.71-0468
+  - 🇺🇸US-194.116.173.21-0379
+  - 🇺🇸US-38.121.43.71-0467
+  - NL_18def_0022
+  - NL_18def_0038
+  - US_18def_0083
+  - 🇺🇸US-38.121.43.71-0475
+  - 🇺🇸US-38.121.43.71-0460
+  - _51
+  - 🇺🇸US-38.121.43.71-0449
+  - 美国 107
+  - 🇺🇸US-142.202.49.84-0440
+  - 美国 105
+  - US_18def_0074
+  - 🇺🇸US-142.202.49.84-0450
+  - 美国 103
+  - _22
+  - 🇺🇸US-38.121.43.71-0472
+  - _52
+  - 美国 070
+  - 🇺🇸US-38.121.43.71-0473
+  - 美国 100
+  - 🇺🇸US-38.121.43.71-0478
+  - 🏁RELAY-104.21.90.210-0900
+  - 美国 106
+  - US-WS-1
+  - 🇺🇸US-38.121.43.97-5543
+  - 🇺🇸US-38.121.43.97-5542
+  - 🇺🇸US-38.121.43.71-0476
+  - 🇨🇦CA-142.4.216.225-0421
+  - 🇺🇸US-38.121.43.97-5549
+  - 美国 102
+  - _46
+  - 🏁RELAY-104.21.57.38-0782
+  - 🇺🇸US-38.121.43.71-0441
+  - 美国 104
+  - 美国 099
+  - 美国 101
+  - 🇺🇸US-38.121.43.71-0447
+  - 🏁RELAY-172.67.189.27-0779
+  - US_18def_0084
+  - 🇺🇸US-142.202.49.84-0461
   - 🇺🇸US-38.121.43.97-5557
-  - 🇩🇪DE_112
-  - 🇮🇳 IN_138
-  - 🇱🇹LT-45.87.175.92-5659
-  - 🇩🇪DE-80.92.204.106-5279
-  - 🇯🇵JP-13.231.87.40-1963
-  - 🇷🇺 RU_195
-  - 🏁RELAY-104.21.57.38-5585
-  - 🇩🇪DE_111
-  - 🏁RELAY-104.21.57.38-5589
-  - 🇬🇧 GB_125
-  - 🇱🇹 LT_158
-  - 🇮🇳IN-159.65.149.72-0385
-  - 🏁RELAY-104.21.57.38-0794
-  - 🇻🇳VN-103.163.218.2-0400
-  - 🇸🇮SI-192.71.244.150-5349
-  - 🇺🇸US_264
-  - 🇬🇧GB-185.5.38.111-5396
-  - 🇵🇱PL-217.30.10.18-5666
-  - 🇩🇪DE-80.92.204.106-5384
-  - US_2db7b_0108
-  - _11
-  - AlvinSingbox-2
-  - 🇮🇩ID-38.9.140.66-4488
-  - 🇱🇹 LT_171
-  - 🇺🇸_US_美国_6
-  - 🇩🇪DE-80.92.204.106-5378
-  - 🇬🇧 GB_121
-  - 🇳🇱NL-193.29.139.251-5442
-  - 🇷🇺_RU_俄罗斯_9
-  - Hy-dongtaiwang
-  - 🇬🇧 GB_120
-  - 🇺🇸_US_美国_3_1
-  - 🇳🇱 NL_178
-  - _20
-  - AlvinQuick-1
-  - 🇳🇱NL-208.67.105.196-5489
-  - 🇷🇺_RU_俄罗斯_7
-  - 🇳🇱NL-103.104.247.47-5438
-  - 🇮🇳IN-103.174.86.114-0391
-  - 🇨🇦CA-51.79.102.253-1153
-  - 🇷🇺_RU_俄罗斯_4
-  - 🇷🇺_RU_俄罗斯_2
-  - 🇵🇱PL_189
-  - 🇷🇺_RU_俄罗斯
-  - 🇱🇹LT-45.87.175.35-5661
-  - 🇩🇪DE-80.92.204.106-5266
-  - 🏁RELAY-172.67.220.83-7590
-  - 🏁RELAY-104.21.83.208-7593
-  - 🇯🇵JP-43.207.112.226-5356
-  - JP_2db7b_0018
-  - 🇭🇰HK-20.255.96.114-3268
-  - 🇰🇷KR-152.70.249.97-0383
-  - 🇹🇷TR-45.89.52.66-8734
-  - 🇩🇪DE-80.92.204.106-5376
-  - 🇮🇩ID-38.9.140.66-4491
-  - 🇳🇱NL-89.23.103.125-5455
-  - 🇿🇦 ZA_287
-  - 🇩🇪DE-80.92.204.106-5271
-  - TW_2db7b_0084
-  - 🇱🇹LT-45.87.175.154-0224
-  - 🇩🇪DE-80.92.204.106-5383
+  - US美国(mibei77.com 米贝节点分享) 52
+  - 🇺🇸US-38.121.43.71-4754
+  - 美国 082
+  - 美国 090
+  - 🇺🇸US-38.121.43.97-5289
+  - US美国(mibei77.com 米贝节点分享) 39
+  - 美国 088
+  - 美国 084
+  - 🇺🇸US-38.110.1.197-0459
+  - 🇺🇸US-38.121.43.71-0482
+  - 🇨🇦CA_98
+  - _27
+  - 🇺🇸US-216.39.248.133-0477
+  - 美国 080
+  - 🏁RELAY-172.67.189.27-0783
+  - _26
+  - _05
+  - 🇺🇸US-38.121.43.97-5288
+  - 美国 385
+  - US_18def_0082
+  - _75
+  - US_18def_0080
+  - 🇺🇸US-38.114.114.143-0457
+  - 🇺🇸US-38.114.114.245-2372
+  - 🇺🇸US-38.110.1.88-5316
+  - 美国 387
+  - 🇺🇸US-38.121.43.97-5559
+  - 🇺🇸US-38.114.114.143-0454
+  - _65
+  - 🇺🇸US-38.114.114.143-0462
+  - 🇺🇸US-38.114.114.143-0466
+  - 🇺🇸US-45.55.2.232-0310
+  - US美国(mibei77.com 米贝节点分享) 35
+  - _50
   - 🇺🇸US-38.110.1.88-5301
-  - 🇭🇰HK-150.107.46.21-5483
-  - 🇱🇹 LT_163
-  - HK-HTTP-1
+  - _28
+  - US美国(mibei77.com 米贝节点分享) 67
+  - 🇺🇸US-2.58.87.221-5541
+  - _66
+  - _11
+  - 🇬🇧GB-212.102.53.195-0330
+  - 🇬🇧GB_129
+  - 🇬🇧GB-212.102.53.81-0335
+  - 🇬🇧GB_130
+  - _70
+  - _74
+  - _68
+  - 🇬🇧GB-212.102.53.198-0333
+  - 🇱🇹 LT_139
+  - 🇺🇸US-38.121.43.97-5287
+  - _53
+  - 🇳🇱NL-103.104.247.47-5438
+  - 🇬🇧 GB_122
+  - 🇱🇹LT-45.87.175.35-5661
+  - 🇳🇱NL-193.29.139.202-5441
+  - 🇫🇷FR_121
+  - 🇬🇧GB-141.98.101.178-0363
+  - 🇪🇸ES-5.188.181.201-5259
+  - 🇪🇸ES-5.188.181.201-5387
+  - 🇪🇸ES-5.188.181.201-5354
+  - 🇱🇹LT-45.87.175.69-5660
+  - 🇩🇪_DE_德国
+  - 🇺🇦_UA_乌克兰
+  - 🇺🇸US-23.157.40.101-5534
+  - 🇬🇧GB-169.150.210.233-0345
+  - _29
+  - 🇱🇹LT-45.87.175.58-5662
+  - 🇪🇸ES-5.188.181.201-5291
+  - _32
+  - _72
+  - 🇱🇹LT-45.87.175.92-5659
+  - 🇳🇱NL-103.104.247.49-5436
+  - 🇦🇹AT-95.164.9.144-5322
+  - 🇱🇹LT-45.87.175.192-5417
+  - 🇺🇸US-23.157.40.101-0481
+  - 🇱🇹LT-45.87.175.171-5423
+  - 🇺🇸US-38.121.43.97-5551
+  - 🏁RELAY-172.67.210.210-0809
+  - 🇪🇸ES-5.188.181.201-5298
+  - _31
+  - 🇲🇩MD-86.104.74.243-5448
+  - 🇱🇹 LT_148
+  - 🇱🇹LT-45.87.175.164-0362
+  - _61
+  - 🇳🇱NL-208.67.105.87-5487
+  - 🇺🇸US-23.157.40.101-0480
+  - 🇱🇹 LT_138
+  - _30
+  - 美国 089
+  - 🇱🇹 LT_146
+  - 🇺🇸US-38.110.1.88-5319
+  - 🇪🇸ES-5.188.181.201-5292
+  - 🇳🇱NL-193.29.139.251-5442
+  - 美国 324
+  - 捷克 001
+  - 🇨🇦CA-142.4.216.225-0419
+  - 🇳🇱NL-193.29.139.189-5435
+  - VMESS-未知>乌克兰-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-104.21.112.1:80
+  - 🇪🇸ES-5.188.181.201-5295
+  - 🇱🇹 LT_155
+  - 🇱🇹 LT_143
+  - _18
+  - SS-瑞典-NF解锁瑞典地区非自制剧-ChatGPT-TikTok-YouTube-151.236.206.42:39649
+  - US美国(mibei77.com 米贝节点分享) 71
+  - 🇱🇹LT-45.87.175.166-5424
+  - 🇪🇸ES-5.188.181.201-5297
+  - _63
+  - 🇨🇭CH-156.146.62.162-0353
+  - _17
+  - 🇧🇩 BD_87
+  - 🇨🇭CH-156.146.62.161-0356
+  - 🇱🇹 LT_154
+  - 🇱🇹 LT_142
+  - 🇨🇭CH-156.146.62.163-0365
+  - 🇩🇪_DE_德国-CIFo
+  - _62
+  - 🇱🇹 LT_151
+  - 🏁RELAY-104.21.23.115-0810
+  - 🏁RELAY-104.21.3.219-0300
+  - 🇫🇷FR-45.158.171.66-5548
+  - 🇱🇹 LT_159
   - 🇱🇹LT-45.87.175.10-0424
+  - 丹麦 001
+  - 🇳🇱NL-213.109.147.242-5566
+  - 🇨🇿 CZ_104
+  - 🇺🇸US-38.121.43.97-5545
+  - 美国 351
+  - 🇱🇹LT-45.87.175.178-5416
+  - 🇺🇸US-64.176.184.129-1152
+  - 🇪🇸ES-5.188.181.201-5293
+  - 🇵🇱PL-217.30.10.18-5666
+  - 🏁RELAY-104.16.155.10-0755
+  - 🇺🇸US-23.157.40.101-0479
+  - 🇧🇬_BG_保加利亚->🇺🇸_US_美国
+  - 美国 325
+  - 🇷🇺_RU_俄罗斯_6
+  - 🇩🇪DE-80.92.204.106-5268
+  - 🇵🇱PL-217.30.10.18-5668
+  - 🇪🇸ES-5.188.181.201-5290
+  - 🇷🇺_RU_俄罗斯_1
+  - 🇷🇺_RU_俄罗斯_8
+  - 🇷🇺_RU_俄罗斯_10
+  - 🇨🇿CZ-195.181.160.6-0347
+  - 美国 336
+  - 🇷🇺_RU_俄罗斯_9
+  - 🇷🇺_RU_俄罗斯
+  - 🇳🇱NL-208.67.105.196-5489
+  - 🏁RELAY-104.19.48.236-0920
+  - 🇺🇸US-38.121.43.97-5260
+  - 🇷🇺_RU_俄罗斯_3
+  - VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-US7-02.890624.xyZ:443
+  - 🇱🇹 LT_144
+  - _83
+  - 🇩🇪 DE_106
+  - 🇩🇪 DE_105
+  - HK香港(mibei77.com 米贝节点分享) 10
+  - 🇧🇪BE-192.71.249.78-0426
+  - 🇵🇱PL-92.118.205.228-0357
+  - 🇦🇺_AU_澳大利亚
+  - _59
+  - Hy2-dongtaiwang
+  - _56
+  - 🏁RELAY-104.17.221.248-0909
+  - 🇱🇹 LT_156
+  - 🇩🇪DE-80.92.204.106-5383
+  - 🇩🇪DE-80.92.204.106-5266
+  - 🇸🇰_SK_斯洛伐克
+  - 🇪🇸ES-45.154.206.192-5464
+  - _71
+  - 🇷🇺_RU_俄罗斯_2
+  - 🇨🇭_CH_瑞士->🇧🇪_BE_比利时
+  - 🇨🇭CH-156.146.62.164-0350
+  - 🇵🇷PR-185.47.255.22-5400
+  - 🇧🇪BE-192.71.249.146-0428
+  - 🇱🇹 LT_141
+  - 美国 403
+  - 美国 335
+  - 🇱🇹 LT_140
+  - 🇩🇪DE-80.92.204.106-5382
+  - 🏁RELAY-104.18.149.76-0680
+  - 🇱🇹 LT_149
+  - 🇺🇸_美国_2
+  - _34
+  - 🏁RELAY-104.17.213.241-1162
+  - 🇪🇨EC-185.47.253.227-5398
+  - 🇮🇹_IT_意大利->🇷🇺_RU_俄罗斯
+  - _33
+  - US_18def_0081
+  - _54
+  - US美国(mibei77.com 米贝节点分享) 50
+  - 🇩🇪DE-80.92.204.106-5267
+  - 🇬🇧 GB_125
+  - 🇭🇷HR-46.183.184.60-5348
+  - _08
+  - 🏁RELAY-104.19.48.236-1159
+  - 🇱🇹 LT_147
+  - 🇩🇪DE-80.92.204.106-5283
+  - 🇸🇪SE-121.127.46.147-5578
+  - xiaoer886_US_17
+  - 🇩🇰DK-192.36.27.94-0418
+  - 🇱🇹 LT_152
+  - _78
+  - _03
+  - xiaoer886_US_16
+  - 🇩🇪DE-80.92.204.106-5381
+  - _20
+  - 🇲🇹MT-171.22.254.17-5344
+  - 🇩🇪DE-80.92.204.106-5279
+  - SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-109.120.177.122:6774
+  - 🇱🇹LT-45.87.175.154-0224
+  - AlvinQuick-2
+  - _09
+  - US美国(mibei77.com 米贝节点分享) 28
+  - 🇩🇪DE-80.92.204.106-5384
+  - 🇩🇪DE-130.61.160.153-2226
+  - 🇫🇷FR-141.227.160.167-0351
+  - 🇫🇷FR-141.227.138.29-0352
+  - _64
+  - 🏁RELAY-104.17.213.241-0924
+  - 🇺🇸US-166.88.131.195-5553
+  - xiaoer886_US_22
+  - 美国 CloudFlare节点-MQdU
+  - AlvinQuick-3
+  - _73
+  - 🇩🇪DE-80.92.204.106-5375
+  - 🇹🇷TR-185.123.101.241-0375
+  - 🇱🇹LT-185.237.185.160-5664
+  - _01
+  - 🇹🇷TR-185.123.101.241-0376
+  - 🇨🇴 CO_103
+  - 🇬🇧_GB_英国->🇯🇵_JP_日本
+  - 🇸🇪SE-151.236.206.42-5463
+  - 🇺🇸US-45.33.50.141-0772
+  - 🇬🇧GB-185.5.38.111-5396
+  - _77
+  - 🇩🇪DE-80.92.204.106-5282
+  - _21
+  - _57
+  - 🇺🇸US-173.230.155.32-0771
+  - 🇬🇧 GB_126
+  - 🇷🇴RO-194.14.217.38-0358
+  - _48
+  - 🇩🇪DE-80.92.204.106-5271
+  - 🇯🇵JP-149.22.87.241-0368
+  - _12
+  - 美国 404
+  - 🇩🇪DE_117
+  - 🇪🇸ES-141.227.128.69-0359
+  - _15
+  - 🇩🇪DE-80.92.204.106-5378
+  - _80
+  - 🇹🇷TR-45.89.52.66-5321
+  - 🇯🇵JP-149.22.87.240-0367
+  - 🇩🇪DE_116
+  - 🇩🇪DE_115
+  - 🏁RELAY-141.101.120.176-2224
+  - 🇺🇸US-15.197.162.184-3016
+  - 🇱🇹LT-45.87.175.199-0348
+  - 🇩🇪DE_114
+  - 🇹🇷TR-45.89.52.66-5328
+  - 🇵🇱PL-217.30.10.18-5671
+  - 🇩🇪DE-80.92.204.106-5376
+  - 🇩🇪DE_113
+  - 🇵🇾PY-38.165.233.18-0373
+  - 🇹🇷TR-45.89.52.66-5323
+  - _04
+  - 🇩🇪DE_112
+  - US美国(mibei77.com 米贝节点分享) 98
+  - 🇺🇸US-166.1.157.228-5471
+  - 🇰🇷KR-154.90.63.193-0484
+  - 🇩🇪DE_111
+  - 🇩🇪DE-80.92.204.106-5269
+  - 🇩🇪DE_109
+  - _13
+  - _19
+  - 🇹🇷TR-45.89.52.66-8731
+  - 🏁RELAY-104.21.48.1-0749
+  - 🇳🇱NL-188.119.112.242-5443
+  - US美国(mibei77.com 米贝节点分享) 20
+  - 🇵🇱PL-217.30.10.18-0486
+  - xiaoer886_IR_1
+  - 🇩🇪DE_110
+  - 🏁RELAY-104.21.57.38-0794
+  - CH_18def_0001
+  - _02
+  - 🇬🇧GB-130.162.189.112-2280
+  - 11|11|11|11|11|11,16|日本|@ripaojie...
+  - 🇲🇽MX-147.78.1.27-5665
+  - 🇷🇺RU-45.151.62.54-5452
+  - xiaoer886_US_19
+  - xiaoer886_US_8
+  - 🇵🇱PL-217.30.10.18-5604
+  - 🇷🇸RS-194.71.126.31-0361
+  - 🇦🇺AU-103.224.212.127-3043
+  - 🇷🇺_RU_俄罗斯_4
+  - 🏁RELAY-104.21.80.1-0766
+  - 15|🇸🇬 新加坡3|@ripaojiedian
+  - 🇭🇰 HK_136
+  - 🇺🇸_US_美国_1_1
+  - 🏁 ZZ_277
+  - 🏁RELAY-104.17.213.241-0693
+  - 🇿🇦ZA-129.232.134.112-5563
+  - 🇸🇬SG-68.183.227.4-0381
+  - 🇹🇷TR-45.89.52.66-5343
+  - 🏁RELAY-141.101.120.176-2223
+  - 🇨🇾CY-134.255.210.49-5386
+  - _36
+  - 🇫🇷FR-45.158.171.151-0360
+  - 🇩🇪DE-80.92.204.106-5379
+  - 🇩🇪DE-80.92.204.106-5281
+  - 🏁RELAY-141.101.120.27-0808
+  - 🇸🇬SG-45.80.181.77-0411
+  - 🏁RELAY-172.67.138.69-7547
+  - 🇸🇬SG-156.244.9.92-5562
+  - 🏁RELAY-104.21.32.1-0397
+  - 美国 260
+  - 🏁RELAY-104.21.57.38-5589
+  - _82
+  - 🇭🇰HK-203.23.128.33-5410
+  - 🇩🇪 DE_107
+  - 🏁RELAY-104.21.9.236-7582
+  - 🇨🇴CO-181.119.30.20-5369
+  - xiaoer886_US_15
+  - 🏁RELAY-104.21.94.168-7580
+  - 🇺🇸US-137.131.52.173-0704
+  - 🇬🇧GB-185.5.38.111-5397
+  - 🇹🇷TR-95.164.116.35-5405
+  - _55
+  - _07
+  - 🇩🇪DE_108
+  - RU_Moscow_LLC BAXET
+  - 🇩🇪DE-80.92.204.106-5377
+  - _79
+  - 🇵🇱PL-45.144.48.63-0432
+  - 🇫🇷FR-45.158.171.146-0355
+  - 🇨🇾CY-134.255.210.49-5657
+  - 🏁RELAY-104.21.15.36-7511
+  - 美国 183
+  - 🇨🇦CA-51.79.102.253-1153
+  - US美国(mibei77.com 米贝节点分享) 11
+  - 🏁RELAY-104.17.213.241-1177
+  - US_18def_0085
+  - 🇭🇰 香港
+  - 🇹🇷TR-45.89.52.66-8735
+  - 美国 056
+  - 9|@ا ا
+  - 英国 007
+  - 🇩🇪DE-91.195.240.12-7607
+  - 🏁RELAY-172.67.131.17-7536
+  - 🇩🇪DE-80.92.204.106-2446
+  - 🇩🇪DE-80.92.204.106-5380
+  - _81
+  - 🇺🇸_美国_7
+  - 🇻🇳VN-103.163.218.2-0400
+  - 🇺🇸US-23.154.136.148-5575
+  - 🇩🇪DE-130.61.160.153-2227
+  - 🇵🇱PL-217.30.10.18-5603
+  - 🏁RELAY-172.67.189.27-0788
+  - 🇲🇰MK-46.183.185.15-4703
+  - 🏁RELAY-188.114.99.134-7553
+  - 🇷🇺_RU_俄罗斯_7
+  - AlvinQuick-1
+  - Hy-dongtaiwang
+  - 🇬🇧_英国_1
+  - 🇰🇿KZ-95.164.114.43-5406
+  - 🇯🇵JP-5.253.41.160-5355
+  - 🏁RELAY-188.114.96.5-7559
+  - AlvinSingbox-2
+  - 🏁RELAY-172.67.179.199-7522
+  - 🇻🇳VN-160.19.78.75-5564
+  - 🇬🇧_英国_2
+  - 🏁RELAY-188.114.97.79-7531
+  - 🇬🇷GR-192.71.166.102-4097
+  - 🇮🇳IN-140.245.11.125-2281
+  - 🇺🇸US-69.5.52.204-5446
+  - 🏁RELAY-172.67.161.77-7528
+  - US美国(mibei77.com 米贝节点分享) 57
+  - 🏁RELAY-188.114.97.6-7534
+  - 🇺🇸US-38.150.13.64-7604
+  - 🇮🇳IN-159.65.149.72-0385
+  - 🇭🇰HK-150.107.46.21-5483
+  - 🏁RELAY-141.101.120.176-2222
+  - 🇺🇸US-103.36.91.23-5409
+  - 🇯🇵JP-43.207.112.226-5356
+  - 🏁RELAY-104.21.49.59-1160
+  - 🏁RELAY-188.114.99.205-7505
+  - 🇳🇬NG-185.255.123.92-5440
+  - 🇯🇵JP-57.182.217.176-3343
+  - 🇰🇷KR-152.70.249.97-0383
+  - JP_18def_0010
+  - 🇩🇪DE-80.92.204.106-5280
+  - 🇧🇴BO-185.93.173.218-5432
+  - US美国(mibei77.com 米贝节点分享) 56
+  - 🏁RELAY-104.21.49.59-5609
+  - TW_18def_0073
+  - _10
+  - 🇸🇮SI-192.71.244.150-5349
+  - 🏁RELAY-104.21.80.1-0705
+  - 🇫🇷FR-45.145.165.114-7529
+  - HK-HTTP-1
+  - 🇲🇰MK-46.183.185.37-5434
+  - 🇺🇸 美国-拉斯维加斯-002-1L
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
