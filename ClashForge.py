@@ -2424,7 +2424,7 @@ if __name__ == '__main__':
   "https://sub.reajason.eu.org/clash.yaml",
   "https://proxypool.link/trojan/sub",
   "https://proxypool.link/ss/sub|ss",
-  "https://github.com/midpoint/pools2/raw/refs/heads/master/Eternity.yml",
+  "https://raw.githubusercontent.com/midpoint/pools2/refs/heads/master/Eternity.yml",
   "https://mjj.oldzhg.com"
 ]
     work(links, check=True, only_check=False, allowed_types=["ss","hysteria2","hy2","vless","vmess","trojan"])
