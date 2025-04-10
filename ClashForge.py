@@ -2389,8 +2389,8 @@ if __name__ == '__main__':
 #         "https://v1210clash.pimax.com",
 #         "http://v1210clash.pimax.com",
 #         "https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/refs/heads/master/list.yml",
-#         "https://proxypool.link/clash/proxies",
 #         "https://www.sstank.top/link/sAHQuZoZ1tzQWjrn?clash=1",
+  # "https://www.freeclashnode.com/uploads/{Y}/{m}/1-{Ymd}.yaml",
 # ]
     links = [
   "https://slink.ltd/https://raw.githubusercontent.com/firefoxmmx2/v2rayshare_subcription/main/subscription/clash_sub.yaml",
@@ -2420,11 +2420,11 @@ if __name__ == '__main__':
   "https://slink.ltd/https://raw.githubusercontent.com/anaer/Sub/refs/heads/main/clash.yaml",
   "https://slink.ltd/https://raw.githubusercontent.com/free18/v2ray/refs/heads/main/c.yaml",
   "https://www.freeclashnode.com/uploads/{Y}/{m}/0-{Ymd}.yaml",
-  "https://www.freeclashnode.com/uploads/{Y}/{m}/1-{Ymd}.yaml",
   "https://sub.reajason.eu.org/clash.yaml",
   "https://proxypool.link/trojan/sub",
   "https://proxypool.link/ss/sub|ss",
   "https://raw.githubusercontent.com/midpoint/pools2/refs/heads/master/Eternity.yml",
-  "https://mjj.oldzhg.com"
+  "https://mjj.oldzhg.com",
+  "https://proxypool.link/clash/proxies"
 ]
     work(links, check=True, only_check=False, allowed_types=["ss","hysteria2","hy2","vless","vmess","trojan"])
