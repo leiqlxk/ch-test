@@ -2391,6 +2391,7 @@ if __name__ == '__main__':
   # "https://www.freeclashnode.com/uploads/{Y}/{m}/1-{Ymd}.yaml",
     # "https://mjj.oldzhg.com",
   # "https://proxypool.link/clash/proxies"
+  # "https://proxypool.link/ss/sub|ss",
 # ]
     links = [
   "https://slink.ltd/https://raw.githubusercontent.com/firefoxmmx2/v2rayshare_subcription/main/subscription/clash_sub.yaml",
@@ -2422,7 +2423,6 @@ if __name__ == '__main__':
   "https://www.freeclashnode.com/uploads/{Y}/{m}/0-{Ymd}.yaml",
   "https://sub.reajason.eu.org/clash.yaml",
   "https://proxypool.link/trojan/sub",
-  "https://proxypool.link/ss/sub|ss",
   "https://raw.githubusercontent.com/midpoint/pools2/refs/heads/master/Eternity.yml",
   "http://103.67.52.65"
 ]
