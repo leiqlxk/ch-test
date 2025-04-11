@@ -2337,7 +2337,6 @@ def work(links,check=False,allowed_types=[],only_check=False):
 if __name__ == '__main__':
 #     links = [
 #  "http://1.116.162.163:10090",
-#         "http://103.67.52.65",
 #         "http://dingyue.davesuen.store",
 #         "https://dy.5468936.xyz",
 #         "http://dy.5468936.xyz",
@@ -2358,11 +2357,10 @@ if __name__ == '__main__':
 #         "https://sub.ss5.xyz",
 #         "https://webhook.ss5.xyz",
 #         "http://sub.ss5.xyz",
-#         "http://license.ss5.xyz",
+#         "http://license.ss5.xyz",  
 #         "https://webhook.taoqu88.com",
 #         "http://webhook.taoqu88.com",
-#         "http://webhook.ss5.xyz",
-#         "http://mjj.oldzhg.com",
+#         "http://webhook.ss5.xyz", 
 #         "http://116.31.166.7:81",
 #         "http://139.9.83.218:7777",
 #         "http://www.velaton.xyz",
@@ -2391,6 +2389,8 @@ if __name__ == '__main__':
 #         "https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/refs/heads/master/list.yml",
 #         "https://www.sstank.top/link/sAHQuZoZ1tzQWjrn?clash=1",
   # "https://www.freeclashnode.com/uploads/{Y}/{m}/1-{Ymd}.yaml",
+    # "https://mjj.oldzhg.com",
+  # "https://proxypool.link/clash/proxies"
 # ]
     links = [
   "https://slink.ltd/https://raw.githubusercontent.com/firefoxmmx2/v2rayshare_subcription/main/subscription/clash_sub.yaml",
@@ -2424,7 +2424,6 @@ if __name__ == '__main__':
   "https://proxypool.link/trojan/sub",
   "https://proxypool.link/ss/sub|ss",
   "https://raw.githubusercontent.com/midpoint/pools2/refs/heads/master/Eternity.yml",
-  "https://mjj.oldzhg.com",
-  "https://proxypool.link/clash/proxies"
+  "http://103.67.52.65"
 ]
     work(links, check=True, only_check=False, allowed_types=["ss","hysteria2","hy2","vless","vmess","trojan"])
