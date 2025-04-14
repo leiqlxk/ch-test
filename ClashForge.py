@@ -2401,7 +2401,7 @@ if __name__ == '__main__':
   "https://slink.ltd/https://raw.githubusercontent.com/Q3dlaXpoaQ/V2rayN_Clash_Node_Getter/refs/heads/main/APIs/sc3.yaml",
   "https://slink.ltd/https://raw.githubusercontent.com/Q3dlaXpoaQ/V2rayN_Clash_Node_Getter/refs/heads/main/APIs/sc4.yaml",
   "https://slink.ltd/https://raw.githubusercontent.com/xiaoji235/airport-free/refs/heads/main/clash/naidounode.txt",
-  "https://slink.ltd/https://raw.githubusercontent.com/xiaoer8867785/jddy5/refs/heads/main/data/{Y_m_d}/{x}.yaml",
+  # "https://slink.ltd/https://raw.githubusercontent.com/xiaoer8867785/jddy5/refs/heads/main/data/{Y_m_d}/{x}.yaml",
   "https://slink.ltd/https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/LogInfo.txt|links",
   "https://slink.ltd/https://raw.githubusercontent.com/mahdibland/SSAggregator/master/sub/sub_merge_yaml.yml",
   "https://slink.ltd/https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity.yml",
