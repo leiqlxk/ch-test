@@ -2453,6 +2453,7 @@ if __name__ == '__main__':
   "https://slink.ltd/https://raw.githubusercontent.com/Q3dlaXpoaQ/V2rayN_Clash_Node_Getter/refs/heads/main/APIs/sc2.yaml",
   "https://slink.ltd/https://raw.githubusercontent.com/Q3dlaXpoaQ/V2rayN_Clash_Node_Getter/refs/heads/main/APIs/sc3.yaml",
   "https://slink.ltd/https://raw.githubusercontent.com/Q3dlaXpoaQ/V2rayN_Clash_Node_Getter/refs/heads/main/APIs/sc4.yaml",
+  "https://ghproxy.net/https://raw.githubusercontent.com/xiaoer8867785/jddy5/refs/heads/main/data/{Y_m_d}/{x}.yaml",
   "https://slink.ltd/https://raw.githubusercontent.com/xiaoji235/airport-free/refs/heads/main/clash/naidounode.txt",
   "https://slink.ltd/https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/LogInfo.txt|links",
   "https://slink.ltd/https://raw.githubusercontent.com/mahdibland/SSAggregator/master/sub/sub_merge_yaml.yml",
@@ -2473,6 +2474,10 @@ if __name__ == '__main__':
   "https://slink.ltd/https://raw.githubusercontent.com/anaer/Sub/refs/heads/main/clash.yaml",
   "https://slink.ltd/https://raw.githubusercontent.com/free18/v2ray/refs/heads/main/c.yaml",
   "https://www.freeclashnode.com/uploads/{Y}/{m}/0-{Ymd}.yaml",
+  "https://www.freeclashnode.com/uploads/{Y}/{m}/1-{Ymd}.yaml",
+  "https://www.freeclashnode.com/uploads/{Y}/{m}/2-{Ymd}.yaml",
+  "https://www.freeclashnode.com/uploads/{Y}/{m}/3-{Ymd}.yaml",
+  "https://www.freeclashnode.com/uploads/{Y}/{m}/4-{Ymd}.yaml",
   "https://sub.reajason.eu.org/clash.yaml",
   "https://proxypool.link/trojan/sub",
   "https://slink.ltd/https://raw.githubusercontent.com/midpoint/pools2/refs/heads/master/Eternity.yml",
@@ -2485,6 +2490,7 @@ if __name__ == '__main__':
   "https://ghproxy.net/https://raw.githubusercontent.com/roosterkid/openproxylist/main/V2RAY_BASE64.txt",
   "https://ghproxy.net/https://raw.githubusercontent.com/vpnmarket/sub/refs/heads/main/hiddify1.txt",
   "https://ghproxy.net/https://raw.githubusercontent.com/vpnmarket/sub/refs/heads/main/hiddify2.txt",
-  "https://ghproxy.net/https://raw.githubusercontent.com/vpnmarket/sub/refs/heads/main/hiddify3.txt"
+  "https://ghproxy.net/https://raw.githubusercontent.com/vpnmarket/sub/refs/heads/main/hiddify3.txt"，
+  "http://mm.mibei77.com/{Ym}/{m}.{d}Clashild.yaml"
             ]
     work(links, check=True, only_check=False, allowed_types=["ss","hysteria2","hy2","vless","vmess","trojan"])
