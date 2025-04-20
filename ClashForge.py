@@ -108,8 +108,8 @@ clash_config_template = {
             "type": "url-test",
             "exclude-filter": "(?i)中国|China|CN|电信|移动|联通",
             "proxies": [],
-            # "url": "http://www.gstatic.com/generate_204",
-            "url": "http://www.pinterest.com",
+            "url": "http://www.gstatic.com/generate_204",
+            # "url": "http://www.pinterest.com",
             "interval": 300,
             "tolerance": 50
         },
