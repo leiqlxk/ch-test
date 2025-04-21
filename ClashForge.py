@@ -897,7 +897,6 @@ clash_config_template = {
         "DOMAIN-SUFFIX,smoot.apple.com,节点选择",
         "DOMAIN,lookup-api.apple.com,节点选择",
         "DOMAIN,beta.music.apple.com,节点选择",
-        "DOMAIN-SUFFIX,bing.com,节点选择",
         "DOMAIN-SUFFIX,cccat.io,节点选择",
         "DOMAIN-SUFFIX,dubox.com,节点选择",
         "DOMAIN-SUFFIX,duboxcdn.com,节点选择",
