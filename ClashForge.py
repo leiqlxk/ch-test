@@ -38,7 +38,7 @@ CLASH_API_HOST = "127.0.0.1"
 CLASH_API_SECRET = ""
 TIMEOUT = 3
 # 存储所有节点的速度测试结果
-SPEED_TEST = True
+SPEED_TEST = False
 SPEED_TEST_LIMIT = 30 # 只测试前30个节点的下行速度，每个节点测试5秒
 results_speed = []
 MAX_CONCURRENT_TESTS = 100
