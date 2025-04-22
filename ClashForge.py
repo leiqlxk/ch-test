@@ -1209,7 +1209,7 @@ clash_config_template = {
         "DOMAIN-SUFFIX,zhimg.com,DIRECT",
         "DOMAIN-SUFFIX,zhuihd.com,DIRECT",
         "DOMAIN-SUFFIX,bing.com,DIRECT",
-        "DOMAIN-SUFFIX,cn.investing.com,DIRECT",
+        "DOMAIN-SUFFIX,investing.com,DIRECT",
         "DOMAIN,download.jetbrains.com,DIRECT",
         "DOMAIN,images-cn.ssl-images-amazon.com,DIRECT",
         "DOMAIN-SUFFIX,local,DIRECT",
