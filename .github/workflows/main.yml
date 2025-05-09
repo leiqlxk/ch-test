@@ -39,14 +39,14 @@ jobs:
           git commit -m "update" || echo "No changes to commit"
           git push https://${{ secrets.BOT }}:x-oauth-basic@github.com/${GITHUB_REPOSITORY}.git
 
-      - name: to target repo
-        uses: s0/git-publish-subdir-action@develop
+      - name: Pushes to another repository
+        uses: cpina/github-action-push-to-another-repository@main
         env:
-          # 换成自己的目标仓库
-          REPO: git@github.com:leiqlxk/config.git
-          # 目标分支
-          BRANCH: main 
-          # 要推送的目录
-          FOLDER: dist 
-          # 保存在secrets里面生成的ssh私钥
-          SSH_PRIVATE_KEY: ${{ secrets.BOT }}
+          SSH_DEPLOY_KEY: ${{ secrets.BOT }}
+          API_TOKEN_GITHUB: ${{ secrets.BOT }}
+        with:
+          source-directory: 'dist'
+          destination-github-username: 'cpina'
+          destination-repository-name: 'config'
+          user-email: lql@qq.com
+          target-branch: main
