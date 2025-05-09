@@ -38,7 +38,7 @@ CLASH_API_HOST = "127.0.0.1"
 CLASH_API_SECRET = ""
 TIMEOUT = 3
 # 存储所有节点的速度测试结果
-SPEED_TEST = False
+SPEED_TEST = True
 SPEED_TEST_LIMIT = 20 # 只测试前30个节点的下行速度，每个节点测试5秒
 results_speed = []
 MAX_CONCURRENT_TESTS = 100
@@ -2464,7 +2464,7 @@ def work(links,check=False,allowed_types=[],only_check=False):
                 switch_proxy('DIRECT')
                 asyncio.run(proxy_clean())
                 print(f'批量检测完毕')
-                upload_and_generate_urls()
+                # upload_and_generate_urls()
             except Exception as e:
                 print("Error calling Clash API:", e)
             finally:
