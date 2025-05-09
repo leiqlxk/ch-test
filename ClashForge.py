@@ -2464,7 +2464,7 @@ def work(links,check=False,allowed_types=[],only_check=False):
                 switch_proxy('DIRECT')
                 asyncio.run(proxy_clean())
                 print(f'批量检测完毕')
-                upload_and_generate_urls（）
+                upload_and_generate_urls()
             except Exception as e:
                 print("Error calling Clash API:", e)
             finally:
