@@ -2407,6 +2407,43 @@ def test_proxy_speed(proxy_name):
     results_speed.append((proxy_name, f"{speed / 1024 / 1024:.2f}"))  # 记录速度测试结果
     return speed / 1024 / 1024  # 返回 MB/s
 
+def upload_and_generate_urls(file_path=CONFIG_FILE):
+    # api_url = "https://catbox.moe/user/api.php"
+    api_url = "https://f2.252035.xyz/user/api.php"
+    result = {"clash_url": None, "singbox_url": None}
+
+    try:
+        if not os.path.isfile(file_path):
+            print(f"错误：文件 {file_path} 不存在。")
+            return result
+        if os.path.getsize(file_path) > 209715200:
+            print("错误：文件大小超过 200MB 限制。")
+            return result
+
+        # Upload Clash config
+        with open(file_path, 'rb') as file:
+            response = requests.post(api_url, data={"reqtype": "fileupload"}, files={"fileToUpload": file})
+            if response.status_code == 200:
+                clash_url = response.text.strip()
+                result["clash_url"] = clash_url
+                print(f"Clash 配置文件上传成功！直链：{clash_url}")
+
+                # sb_full_url = f'https://url.v1.mk/sub?target=singbox&url={clash_url}&insert=false&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_NoAuto.ini&emoji=true&list=false&xudp=false&udp=false&tfo=false&expand=true&scv=false&fdn=false'
+                # encoded_url = base64.urlsafe_b64encode(sb_full_url.encode()).decode()
+                # response = requests.post("https://v1.mk/short", json={"longUrl": encoded_url})
+                # if response.status_code == 200:
+                #     data = response.json()
+                #     if data.get("Code") == 1:
+                #         singbox_url = data["ShortUrl"]
+                #         result["singbox_url"] = singbox_url
+                #         print(f"singbox 配置文件上传成功！直链：{singbox_url}")
+
+    except Exception as e:
+        print(f"发生错误：{e}")
+
+    return result
+
+
 def work(links,check=False,allowed_types=[],only_check=False):
     try:
         if not only_check:
@@ -2427,6 +2464,7 @@ def work(links,check=False,allowed_types=[],only_check=False):
                 switch_proxy('DIRECT')
                 asyncio.run(proxy_clean())
                 print(f'批量检测完毕')
+                upload_and_generate_urls（）
             except Exception as e:
                 print("Error calling Clash API:", e)
             finally:
