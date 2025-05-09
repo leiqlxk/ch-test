@@ -38,3 +38,15 @@ jobs:
           git add clash_config.yaml
           git commit -m "update" || echo "No changes to commit"
           git push https://${{ secrets.BOT }}:x-oauth-basic@github.com/${GITHUB_REPOSITORY}.git
+
+      - name: to target repo
+        uses: s0/git-publish-subdir-action@develop
+        env:
+          # 换成自己的目标仓库
+          REPO: git@github.com:leiqlxk/config.git
+          # 目标分支
+          BRANCH: main 
+          # 要推送的目录
+          FOLDER: dist 
+          # 保存在secrets里面生成的ssh私钥
+          SSH_PRIVATE_KEY: ${{ secrets.BOT }}
