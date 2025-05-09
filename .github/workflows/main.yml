@@ -42,8 +42,8 @@ jobs:
       - name: Pushes to another repository
         uses: cpina/github-action-push-to-another-repository@main
         env:
-          SSH_DEPLOY_KEY: ${{ secrets.BOT }}
-          API_TOKEN_GITHUB: ${{ secrets.BOT }}
+          # SSH_DEPLOY_KEY: ${{ secrets.API }}
+          API_TOKEN_GITHUB: ${{ secrets.API }}
         with:
           source-directory: 'dist'
           destination-github-username: 'leiqlxk'
