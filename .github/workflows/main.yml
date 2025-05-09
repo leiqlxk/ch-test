@@ -49,4 +49,4 @@ jobs:
           destination-github-username: 'leiqlxk'
           destination-repository-name: 'config'
           user-email: lql@qq.com
-          target-branch: main
+          target-branch: master
