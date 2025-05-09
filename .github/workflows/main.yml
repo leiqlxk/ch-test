@@ -46,7 +46,7 @@ jobs:
           API_TOKEN_GITHUB: ${{ secrets.BOT }}
         with:
           source-directory: 'dist'
-          destination-github-username: 'cpina'
+          destination-github-username: 'leiqlxk'
           destination-repository-name: 'config'
           user-email: lql@qq.com
           target-branch: main
