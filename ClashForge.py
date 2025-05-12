@@ -39,7 +39,7 @@ CLASH_API_SECRET = ""
 TIMEOUT = 3
 # 存储所有节点的速度测试结果
 SPEED_TEST = True
-SPEED_TEST_LIMIT = 20 # 只测试前30个节点的下行速度，每个节点测试5秒
+SPEED_TEST_LIMIT = 5 # 只测试前30个节点的下行速度，每个节点测试5秒
 results_speed = []
 MAX_CONCURRENT_TESTS = 100
 LIMIT = 700 # 最多保留LIMIT个节点
