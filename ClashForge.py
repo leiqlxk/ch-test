@@ -2558,14 +2558,14 @@ if __name__ == '__main__':
 	"https://slink.ltd/https://raw.githubusercontent.com/Ruk1ng001/freeSub/main/clash.yaml",
 	"https://slink.ltd/https://raw.githubusercontent.com/wangyingbo/yb_clashgithub_sub/main/clash_sub.yml",
 	"https://sub.fqzsnai.ggff.net/auto",
-	# "https://proxypool.link/ss/sub",
-	# "https://proxypool.link/vmess/sub",
-	# "https://clash.221207.xyz/pubclashyaml",
-	# "https://SOS.CMLiussss.net/auto",
-	# "https://gy.xiaozi.us.kg/sub?token=lzj666",
-	# "https://clash.llleman.com/clach.yml",
-	# "https://v1.mk/HuaplNe",
-	# "https://zrf.zrf.me/zrf",
-	# "https://c7dabe95.proxy-978.pages.dev/767b6340-96dc-4aa0-8013-a8af7513d920?clash"
+	"https://proxypool.link/ss/sub",
+	"https://proxypool.link/vmess/sub",
+	"https://clash.221207.xyz/pubclashyaml",
+	"https://SOS.CMLiussss.net/auto",
+	"https://gy.xiaozi.us.kg/sub?token=lzj666",
+	"https://clash.llleman.com/clach.yml",
+	"https://v1.mk/HuaplNe",
+	"https://zrf.zrf.me/zrf",
+	"https://c7dabe95.proxy-978.pages.dev/767b6340-96dc-4aa0-8013-a8af7513d920?clash"
             ]
     work(links, check=True, only_check=False, allowed_types=["ss","hysteria2","hy2","vless","vmess","trojan"])
