@@ -2518,7 +2518,7 @@ if __name__ == '__main__':
 	"https://sub.reajason.eu.org/clash.yaml",
 	"https://proxypool.link/trojan/sub",
 	"https://slink.ltd/https://raw.githubusercontent.com/midpoint/pools2/refs/heads/master/Eternity.yml",
-	"http://103.67.52.65",
+	# "http://103.67.52.65",
 	"http://1.116.162.163:10090",
 	"http://dingyue.davesuen.store",
 	"https://mxlsub.me/newfull",
