@@ -2560,10 +2560,10 @@ if __name__ == '__main__':
 	"https://sub.fqzsnai.ggff.net/auto",
 	"https://proxypool.link/ss/sub",
 	"https://proxypool.link/vmess/sub",
-	"https://clash.221207.xyz/pubclashyaml",
+	# "https://clash.221207.xyz/pubclashyaml",
 	"https://SOS.CMLiussss.net/auto",
 	"https://gy.xiaozi.us.kg/sub?token=lzj666",
-	"https://clash.llleman.com/clach.yml",
+	# "https://clash.llleman.com/clach.yml",
 	"https://v1.mk/HuaplNe",
 	"https://zrf.zrf.me/zrf",
 	"https://c7dabe95.proxy-978.pages.dev/767b6340-96dc-4aa0-8013-a8af7513d920?clash"
